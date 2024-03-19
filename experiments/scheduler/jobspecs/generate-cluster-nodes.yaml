@@ -1,0 +1,44 @@
+version: 1
+resources:
+- count: 4
+  type: node
+  with:
+  - count: 4
+    label: compspec
+    type: slot
+    with:
+    - count: 4
+      type: core
+
+task:
+  transform:
+    - step: set
+      key: sharedfs
+      value: false
+
+    - step: write
+      filename: job.sh
+      executable: true
+
+    - step: stage
+      filename: job.sh
+
+    - step: submit
+      filename: job.sh
+      watch: true
+
+  scripts: 
+    - name: job.sh
+      content: |
+        #!/bin/bash
+        compspec extract --name library --name nfd[cpu,memory,network,storage,system] --name system[cpu,processor,arch,memory] --out /root/rainbow/cluster/node-${FLUX_TASK_RANK}.json
+        if [[ "${FlUX_TASK_RANK}" == "0" ]]; then
+           cd /root/rainbow/cluster
+           ls 
+           sleep 10
+           compspec create nodes --cluster-name ${CLUSTER_NAME} --node-dir /root/rainbow/cluster/ --nodes-output /root/rainbow/cluster-nodes.json
+        fi
+                
+  count:
+    per_slot: 1
+  slot: compspec

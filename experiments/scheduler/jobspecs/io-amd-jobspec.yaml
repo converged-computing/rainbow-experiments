@@ -1,0 +1,49 @@
+# TODO test these out on on x86, then create arm specs
+version: 1
+resources:
+- count: 1
+  type: node
+  with:
+  - count: 1
+    label: ior
+    type: slot
+    with:
+    - count: 1
+      type: core
+
+task:
+  transform:
+    - step: set
+      key: sharedfs
+      value: false
+
+    - step: write
+      filename: batch.sh
+      executable: true
+
+    - step: stage
+      filename: batch.sh
+
+    - step: batch
+      filename: batch.sh
+
+  scripts: 
+    - name: batch.sh
+      content: |
+        #!/bin/bash
+        which ior || (
+          git clone https://github.com/hpc/ior /tmp/ior
+          cd /tmp/ior && ./bootstrap && ./configure && make && make install
+        )
+        flux submit -N 1 --watch ior -b 10g -O summaryFormat=json 
+
+  count:
+    per_slot: 1
+  resources:
+    hardware:
+      hardware.gpu.available: 'no'
+    disk:
+      size: 10GB
+    io.archspec:
+      cpu.target: amd64
+  slot: ior

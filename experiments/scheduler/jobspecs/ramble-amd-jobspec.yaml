@@ -1,0 +1,45 @@
+version: 1
+resources:
+- count: 1
+  type: node
+  with:
+  - count: 1
+    label: ramble
+    type: slot
+    with:
+    - count: 4
+      type: core
+
+task:
+  transform:
+    - step: set
+      key: sharedfs
+      value: false
+
+    - step: write
+      filename: batch.sh
+      executable: true
+
+    - step: stage
+      filename: batch.sh
+
+    - step: batch
+      filename: batch.sh
+
+  scripts: 
+    - name: batch.sh
+      content: |
+        #!/bin/bash
+        cd /tmp/benchpark
+        . ./workspace/setup.sh
+        cd /tmp/benchpark/workspace/saxpy/openmp/nosite-x86_64/workspace/
+        ramble --workspace-dir . --disable-progress-bar --disable-logger  -c config:spack_flags:install:'--no-check-signature' workspace setup
+        
+  count:
+    per_slot: 1
+  resources:
+    software:
+      ramble: "yes"
+    io.archspec:
+      cpu.target: amd64
+  slot: ramble

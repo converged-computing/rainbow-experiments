@@ -1,0 +1,48 @@
+version: 1
+resources:
+- count: 1
+  type: node
+  with:
+  - count: 1
+    label: lammps
+    type: slot
+    with:
+    - count: 1
+      type: core
+
+task:
+  transform:
+    - step: set
+      key: sharedfs
+      value: false
+
+    - step: set
+      key: stage
+      value: /opt/lammps/examples/reaxff/HNS
+
+    - step: write
+      filename: batch.sh
+      executable: true
+
+    - step: stage
+      filename: batch.sh
+
+    - step: submit
+      filename: batch.sh
+      watch: true
+
+  scripts: 
+    - name: batch.sh
+      content: |
+        #!/bin/bash
+        cd /opt/lammps/examples/reaxff/HNS
+        mpirun -N 1 lmp -v x 2 -v y 2 -v z 2 -in ./in.reaxff.hns -nocite 
+
+  count:
+    per_slot: 1
+  resources:
+    transformer:
+      name: "local"
+    io.archspec:
+      cpu.target: amd64
+  slot: lammps

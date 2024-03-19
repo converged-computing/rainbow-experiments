@@ -1,0 +1,42 @@
+attributes: {}
+resources:
+- count: 2
+  type: node
+  with:
+  - count: 1
+    label: lammps-mpi
+    type: slot
+    with:
+    - count: 4
+      type: core
+tasks:
+- command:
+  - lmp_gpu
+  - -v
+  - x
+  - '2'
+  - -v
+  - y
+  - '2'
+  - -v
+  - z
+  - '2'
+  - -in
+  - ./in.reaxff.hns
+  - -nocite
+  count:
+    per_slot: 1
+  resources:
+    hardware:
+      hardware.gpu.available: 'yes'
+    io.archspec:
+      cpu.target: amd64
+    mpi:
+      mpi.implementation: OpenMPI
+      mpi.version: 4.0.3
+    os:
+      os.name: Ubuntu 20.04.6 LTS
+      os.release: 20.04.6
+      os.vendor: ubuntu
+  slot: lammps-mpi
+version: 1

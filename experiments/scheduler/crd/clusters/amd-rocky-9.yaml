@@ -1,0 +1,26 @@
+apiVersion: flux-framework.org/v1alpha2
+kind: MiniCluster
+metadata:
+  name: rocky-amd-9
+spec:
+  size: 4
+  interactive: true
+  logging:
+    quiet: false
+  containers:
+    - image: ghcr.io/converged-computing/rainbow-experiments/scheduler-v1:rocky-9
+      pullAlways: true
+      environment:
+        CLUSTER_NAME: rocky-amd-9
+      commands:
+        init: python3 -m pip install rainbow-scheduler jobspec
+        pre: /usr/sbin/sshd -D &
+      securityContext:
+        privileged: true
+      resources:
+        limits:
+          cpu: "3"
+        requests:
+          cpu: "3"
+          
+          

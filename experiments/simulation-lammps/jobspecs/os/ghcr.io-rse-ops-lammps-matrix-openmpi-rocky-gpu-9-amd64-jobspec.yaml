@@ -1,0 +1,36 @@
+attributes: {}
+resources:
+- count: 2
+  type: node
+  with:
+  - count: 1
+    label: lammps-os
+    type: slot
+    with:
+    - count: 4
+      type: core
+tasks:
+- command:
+  - lmp_gpu
+  - -v
+  - x
+  - '2'
+  - -v
+  - y
+  - '2'
+  - -v
+  - z
+  - '2'
+  - -in
+  - ./in.reaxff.hns
+  - -nocite
+  count:
+    per_slot: 1
+  resources:
+    io.archspec:
+      cpu.target: amd64
+    os:
+      os.name: Rocky Linux 9.3 (Blue Onyx)
+      os.vendor: rocky
+  slot: lammps-os
+version: 1

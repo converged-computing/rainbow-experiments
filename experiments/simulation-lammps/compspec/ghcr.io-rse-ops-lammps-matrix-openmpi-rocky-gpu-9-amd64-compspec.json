@@ -1,0 +1,49 @@
+{
+  "version": "0.0.0",
+  "kind": "CompatibilitySpec",
+  "metadata": {
+    "name": "lammps-prototype",
+    "schemas": {
+      "io.archspec": "https://raw.githubusercontent.com/compspec/schemas/main/archspec/compspec.json",
+      "mpi": "https://raw.githubusercontent.com/compspec/schemas/main/mpi/compspec.json",
+      "os": "https://raw.githubusercontent.com/compspec/schemas/main/os/compspec.json",
+      "hardware": "https://raw.githubusercontent.com/compspec/schemas/main/hardware/compspec.json"
+    }
+  },
+  "compatibilities": [
+    {
+      "name": "hardware",
+      "version": "0.0.0",
+      "attributes": {
+        "hardware.gpu.available": "yes"
+      }
+    },
+    {
+      "name": "mpi",
+      "version": "0.0.0",
+      "attributes": {
+        "mpi.implementation": "OpenMPI",
+        "mpi.version": "4.1.1"
+      }
+    },
+    {
+      "name": "os",
+      "version": "0.0.0",
+      "attributes": {
+        "os.name": "Rocky Linux 9.3 (Blue Onyx)",
+        "os.release": "9.3",
+        "os.vendor": "rocky",
+        "os.version": "9.3"
+      }
+    },
+    {
+      "name": "io.archspec",
+      "version": "0.0.0",
+      "attributes": {
+        "cpu.model": "Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz",
+        "cpu.target": "amd64",
+        "cpu.vendor": "GenuineIntel"
+      }
+    }
+  ]
+}

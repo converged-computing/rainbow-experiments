@@ -1,0 +1,44 @@
+# TODO test these out on on x86, then create arm specs
+version: 1
+resources:
+- count: 1
+  type: node
+  with:
+  - count: 1
+    label: salad
+    type: slot
+    with:
+    - count: 1
+      type: core
+
+task:
+  transform:
+    - step: set
+      key: sharedfs
+      value: false
+
+    - step: write
+      filename: job.sh
+      executable: true
+
+    - step: stage
+      filename: job.sh
+
+    - step: submit
+      filename: job.sh
+      watch: true
+
+  scripts: 
+    - name: job.sh
+      content: |
+        #!/bin/bash
+        singularity run docker://vanessa/salad
+
+  count:
+    per_slot: 1
+  resources:
+    hardware:
+      hardware.gpu.available: 'no'
+    io.archspec:
+      cpu.target: amd64
+  slot: salad

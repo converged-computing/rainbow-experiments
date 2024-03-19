@@ -1,0 +1,49 @@
+ARG tag=focal
+FROM ubuntu:${tag} as builder
+ARG arch=amd64
+ENV arch=$arch
+
+# docker build -f Dockerfile.focal --build-arg tag=focal -t ghcr.io/converged-computing/rainbow-experiments/scheduler-v1:ubuntu-focal .
+# docker push ghcr.io/converged-computing/rainbow-experiments/scheduler-v1:ubuntu-focal
+
+# on a t2a-standard-8 instance on Google Cloud
+# docker build --build-arg arch=arm64 -f Dockerfile.focal --build-arg tag=focal -t ghcr.io/converged-computing/rainbow-experiments/scheduler-v1:ubuntu-focal-arm .
+# docker push ghcr.io/converged-computing/rainbow-experiments/scheduler-v1:ubuntu-focal-arm
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Basic dependencies for flux operator
+RUN apt-get update && apt-get install -y wget curl python3-pip git \
+    build-essential autoconf libtool pkg-config mpich vim python3-cffi \
+    openssh-server openssh-client cmake
+
+# Install Go
+RUN wget https://go.dev/dl/go1.20.14.linux-${arch}.tar.gz && \
+    tar -C /usr/local -xzf go1.20.14.linux-${arch}.tar.gz
+
+ENV PATH=/opt/spack/bin:/opt/ramble/bin:/usr/local/go/bin:$PATH
+
+# Install compspec and fractal
+RUN git clone --depth 1 https://github.com/compspec/compspec-go /opt/compspec-go && \ 
+    cd /opt/compspec-go && \
+    make build && cp ./bin/compspec* /usr/local/bin/ && \
+    rm -rf /opt/compspec-go
+
+RUN git clone https://github.com/converged-computing/distributed-fractal /tmp/df && \
+    cd /tmp/df && make build && cp ./bin/fractal /usr/local/bin/fractal  && \
+    rm -rf /tmp/df
+
+# install lammps
+RUN git clone -b release --depth 1 https://github.com/lammps/lammps.git /opt/lammps && \
+    mkdir /opt/lammps/build && cd /opt/lammps/build && \
+    cmake ../cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DPKG_REAXFF=yes -DBUILD_MPI=yes -DPKG_OPT=yes -DFFT=FFTW3 && \
+    make && make install && cp ./lmp /usr/bin/
+
+# Hack for ssh for now...
+RUN echo "        LogLevel ERROR" >> /etc/ssh/ssh_config && \
+    echo "        StrictHostKeyChecking no" >> /etc/ssh/ssh_config && \
+    echo "        UserKnownHostsFile=/dev/null" >> /etc/ssh/ssh_config && \
+    cd /root && \
+    mkdir -p /run/sshd && \
+    ssh-keygen -t rsa -N "" -f /root/.ssh/id_rsa && chmod og+rX . && \
+    cd .ssh && cat id_rsa.pub > authorized_keys && chmod 644 authorized_keys

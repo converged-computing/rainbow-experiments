@@ -1,0 +1,27 @@
+apiVersion: flux-framework.org/v1alpha2
+kind: MiniCluster
+metadata:
+  name: ubuntu-amd-jammy
+spec:
+  size: 4
+  interactive: true
+  logging:
+    quiet: false
+  flux:
+    container:
+      image: ghcr.io/converged-computing/flux-view-ubuntu:tag-jammy
+  containers:
+    - image: ghcr.io/converged-computing/rainbow-experiments/scheduler-v1:ubuntu-jammy 
+      pullAlways: true
+      environment:
+        CLUSTER_NAME: ubuntu-amd-jammy
+      commands:
+        init: python3 -m pip install rainbow-scheduler jobspec
+        pre: /usr/sbin/sshd -D &
+      resources:
+        limits:
+          cpu: "3"
+        requests:
+          cpu: "3"
+          
+          

@@ -1,0 +1,49 @@
+{
+  "version": "0.0.0",
+  "kind": "CompatibilitySpec",
+  "metadata": {
+    "name": "lammps-prototype",
+    "schemas": {
+      "io.archspec": "https://raw.githubusercontent.com/compspec/schemas/main/archspec/compspec.json",
+      "mpi": "https://raw.githubusercontent.com/compspec/schemas/main/mpi/compspec.json",
+      "os": "https://raw.githubusercontent.com/compspec/schemas/main/os/compspec.json",
+      "hardware": "https://raw.githubusercontent.com/compspec/schemas/main/hardware/compspec.json"
+    }
+  },
+  "compatibilities": [
+    {
+      "name": "hardware",
+      "version": "0.0.0",
+      "attributes": {
+        "hardware.gpu.available": "no"
+      }
+    },
+    {
+      "name": "mpi",
+      "version": "0.0.0",
+      "attributes": {
+        "mpi.implementation": "mpich",
+        "mpi.version": "3.3.2"
+      }
+    },
+    {
+      "name": "os",
+      "version": "0.0.0",
+      "attributes": {
+        "os.name": "Ubuntu 20.04.6 LTS",
+        "os.release": "20.04.6",
+        "os.vendor": "ubuntu",
+        "os.version": "20.04"
+      }
+    },
+    {
+      "name": "io.archspec",
+      "version": "0.0.0",
+      "attributes": {
+        "cpu.model": "0x1",
+        "cpu.target": "arm64",
+        "cpu.vendor": "ARM"
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+apiVersion: flux-framework.org/v1alpha2
+kind: MiniCluster
+metadata:
+  name: ubuntu-amd-focal
+spec:
+  size: 4
+  interactive: true
+  logging:
+    quiet: false
+  flux:
+    container:
+      image: ghcr.io/converged-computing/flux-view-ubuntu:tag-focal
+  containers:
+    - image: ghcr.io/converged-computing/rainbow-experiments/scheduler-v1:ubuntu-focal 
+      pullAlways: true
+      environment:
+        CLUSTER_NAME: ubuntu-amd-focal
+      commands:
+        init: python3 -m pip install rainbow-scheduler jobspec
+        pre: /usr/sbin/sshd -D &
+      resources:
+        limits:
+          cpu: "3"
+        requests:
+          cpu: "3"
+          
+          

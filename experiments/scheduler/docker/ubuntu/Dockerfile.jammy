@@ -1,0 +1,63 @@
+ARG tag=jammy
+FROM ubuntu:${tag} as builder
+ARG arch=amd64
+ENV arch=$arch
+
+# docker build -f Dockerfile.jammy -t ghcr.io/converged-computing/rainbow-experiments/scheduler-v1:ubuntu-jammy .
+# docker push ghcr.io/converged-computing/rainbow-experiments/scheduler-v1:ubuntu-jammy 
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Basic dependencies for flux operator
+RUN apt-get update && apt-get install -y wget curl python3-pip git \
+    build-essential autoconf libtool pkg-config mpich vim python3-cffi \
+    openssh-server openssh-client cmake
+
+# Install Go
+RUN wget https://go.dev/dl/go1.20.14.linux-${arch}.tar.gz && \
+    tar -C /usr/local -xzf go1.20.14.linux-${arch}.tar.gz
+
+ENV PATH=/opt/spack/bin:/opt/ramble/bin:/usr/local/go/bin:$PATH
+
+# Install compspec and fractal
+RUN git clone --depth 1 https://github.com/compspec/compspec-go /opt/compspec-go && \ 
+    cd /opt/compspec-go && \
+    make build && cp ./bin/compspec* /usr/local/bin/ && \
+    rm -rf /opt/compspec-go
+
+RUN git clone https://github.com/converged-computing/distributed-fractal /tmp/df && \
+    cd /tmp/df && make build && cp ./bin/fractal /usr/local/bin/fractal  && \
+    rm -rf /tmp/df
+
+# Install software with pixi!
+# RUN /bin/bash -c "curl -fsSL https://pixi.sh/install.sh | bash" && \
+#    . /root/.bashrc && pixi global install lammps
+# ENV PATH=/root/.pixi/bin:$PATH
+
+# install lammps
+RUN git clone -b release --depth 1 https://github.com/lammps/lammps.git /opt/lammps && \
+    mkdir /opt/lammps/build && cd /opt/lammps/build && \
+    cmake ../cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DPKG_REAXFF=yes -DBUILD_MPI=yes -DPKG_OPT=yes -DFFT=FFTW3 && \
+    make && make install && cp ./lmp /usr/bin/
+
+# This is just for ramble to work
+RUN git clone --depth 1 https://github.com/LLNL/benchpark /opt/benchpark && \
+    ./bin/benchpark setup saxpy/openmp nosite-x86_64 workspace/ && \
+    . /opt/benchpark/workspace/setup.sh && \
+    spack mirror add ci-buildcache oci://ghcr.io/llnl/benchpark-binary-cache && \
+    spack config add "packages:all:target:[nosite-x86_64_v3]" && \
+    cd workspace/saxpy/openmp/nosite-x86_64/workspace/ && \
+    ramble --workspace-dir . --disable-progress-bar --disable-logger  -c config:spack_flags:install:'--no-check-signature' workspace setup  
+
+# Note that I had to add --allow-run-as-root manually to all files in
+# /tmp/benchpark/workspace/saxpy/openmp/nosite-x86_64/workspace/experiments/saxpy/problem/saxpy_*/execute_experiment
+# then: ramble -c variables:n_nodes:1  -c variables:n_ranks:1 --workspace-dir . --disable-progress-bar --disable-logger on    
+
+# Hack for ssh for now...
+RUN echo "        LogLevel ERROR" >> /etc/ssh/ssh_config && \
+    echo "        StrictHostKeyChecking no" >> /etc/ssh/ssh_config && \
+    echo "        UserKnownHostsFile=/dev/null" >> /etc/ssh/ssh_config && \
+    cd /root && \
+    mkdir -p /run/sshd && \
+    ssh-keygen -t rsa -N "" -f /root/.ssh/id_rsa && chmod og+rX . && \
+    cd .ssh && cat id_rsa.pub > authorized_keys && chmod 644 authorized_keys
