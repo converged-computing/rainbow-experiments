@@ -4,7 +4,12 @@ These are experiments with the rainbow scheduler. They are a continuation of [la
 
  - [scheduler](experiments/scheduler)
  - [simulation-lammps](experiments/simulation-lammps): simulation using original lammps metadata
- - **simulation**: TBA a more robust simulation that adds more subsystems
+ - **simulation-X**: TBA a more robust simulation that adds more subsystems
+
+> How do I contribute?
+
+Please don't modify an already done experiment - instead make a new subdirectory in [experiments](experiments) that reflects
+your experiment, and keep all notes there. Once an experiment is done, we consider it frozen and need to retain that state for future reference, reproducibility, etc. Yes, even if it's bad. I will be doing (and refining) a first set of simulations, and this is still a work in progress.
 
 ## License
 
