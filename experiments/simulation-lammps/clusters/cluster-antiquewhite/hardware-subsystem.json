@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "hardware0": {
+        "label": "hardware0",
+        "metadata": {
+          "basename": "hardware",
+          "exclusive": false,
+          "id": 0,
+          "name": "hardware0",
+          "paths": {
+            "containment": "/hardware0"
+          },
+          "size": 1,
+          "type": "hardware",
+          "uniq_id": 0
+        }
+      },
+      "hardware1": {
+        "label": "hardware1",
+        "metadata": {
+          "basename": "hardware.gpu.available=no",
+          "exclusive": true,
+          "id": 1,
+          "name": "hardware.gpu.available=no0",
+          "paths": {
+            "containment": "/hardware1/hardware.gpu.available=no0"
+          },
+          "size": 1,
+          "type": "hardware.gpu.available=no",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "hardware0",
+        "relation": "contains"
+      },
+      {
+        "source": "hardware0",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "hardware0",
+        "relation": "contains"
+      },
+      {
+        "source": "hardware0",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "hardware0",
+        "relation": "contains"
+      },
+      {
+        "source": "hardware0",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "hardware0",
+        "relation": "contains"
+      },
+      {
+        "source": "hardware0",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

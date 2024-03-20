@@ -1,0 +1,4 @@
+matplotlib
+pyyaml
+pandas
+Jinja2
