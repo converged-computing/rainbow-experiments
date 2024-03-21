@@ -6,6 +6,17 @@ I had a cool idea - the perfect experiment would have a perfect cluster for ever
 
 This experiment will simulate clusters, meaning we will deploy rainbow, and it can even be locally, and then create several (48) faux clusters locally, and receive jobs to them (and assuming we have a lookup of correct assignment, determine which are correct and which are not). It's a bit artificial, but that's probably OK. I'll try this in unison with actual clusters. For all clusters we will assume the same size (4 nodes) and jobs won't go beyond that, but we will vary the subsystem metadata. Once this is working we will add additional subsystem metadata and do a larger simulation.
 
+**Simulations I want to do**
+
+- Assess utility of each subsystem in isolation 
+- Assess utility of adding them (one at a time) in an order
+
+That is what the experiments here do.
+
+#### Notes
+
+Note that I mangled the jobspec quite a bit, and honestly I'm not happy with it (meaning, the current v1) and I'm holding off changing more in fear of people being angry. To start, it should be allowed to not define a slot explicitly, and then it be assumed that the slot is the top level at the node (meaning, our task block is asking for subsystem resources at the level of the node, which is reasonable to do). Secondly, it doesn't make sense to have a list of tasks OR resources if the limit is 1 or 2 items. I think this was designed with extendability in mind? For this prototype, I changed tasks to just "Task" but left the resource list as is. I'm getting rather ornery about the design and probably need to stop and just let someone else figure it out, because I feel strongly about things and am likely to disagree and make people dislike me more. We will eventually want models that can assess the value of subsystem features, but I think this is a good start.
+
 ## Usage
 
 This is the general outline of running a simulation. Each step will be provided in more detail, but with setup first.
@@ -119,6 +130,54 @@ So basically, just do:
 
 ```bash
 python run_experiments.py
+```
+
+**warning** the output is noisy! I haven't made levels of logging for rainbow yet.  And you'll see the scores:
+
+```console
+{
+    "none": {
+        "total": 360,
+        "correct": 14.0,
+        "accuracy": 0.03888888888888889
+    },
+    "io.archspec": {
+        "total": 360,
+        "correct": 24.5,
+        "accuracy": 0.06805555555555555
+    },
+    "os": {
+        "total": 360,
+        "correct": 31.5,
+        "accuracy": 0.0875
+    },
+    "mpi": {
+        "total": 360,
+        "correct": 22.0,
+        "accuracy": 0.06111111111111111
+    },
+    "hardware": {
+        "total": 360,
+        "correct": 17.0,
+        "accuracy": 0.04722222222222222
+    },
+    "io.archspec+os": {
+        "total": 360,
+        "correct": 76.0,
+        "accuracy": 0.2111111111111111
+    },
+    "io.archspec+os+mpi": {
+        "total": 360,
+        "correct": 239.5,
+        "accuracy": 0.6652777777777777
+    },
+    "io.archspec+os+mpi+hardware": {
+        "total": 360,
+        "correct": 360.0,
+        "accuracy": 1.0
+    }
+}
+🧪️ Experiments are finished. See output in /home/vanessa/Desktop/Code/rainbow-experiments/experiments/simulation-lammps/results
 ```
 
 And that's it. Cheers.

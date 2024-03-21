@@ -1,0 +1,215 @@
+# jobspecs.yaml is a flattened version of the lammps runs, intended for
+# more programmatic generation of jobspecs. This is ultimately the kind of format
+# it will be parsed into (and this will change). This also provides a unique id for
+# the slot name so we can associate an assigned jobspec after.
+#
+# tasks:
+# - command:
+#  - ior
+#    slot: default
+#    count:
+#    per_slot: 1
+#  resources:
+#    io:
+#     match:
+#     - type: shm
+# note that os versions (os.release) were truncated
+# this is exactly the metadata I want to use for each
+jobspecs:
+- name: intel-mpi-rocky-8-amd64
+  resources:
+    hardware:
+      hardware.gpu.available: 'no'
+    io.archspec:
+      cpu.target: amd64
+    mpi:
+      mpi.implementation: intel-mpi
+    os:
+      os.full: rocky8
+
+- name: intel-mpi-rocky-9-amd64
+  resources:
+    hardware:
+      hardware.gpu.available: 'no'
+    io.archspec:
+      cpu.target: amd64
+    mpi:
+      mpi.implementation: intel-mpi
+    os:
+      os.full: rocky9
+
+- name: mpich-ubuntu-20.04-amd64
+  resources:
+    hardware:
+      hardware.gpu.available: 'no'
+    io.archspec:
+      cpu.target: amd64
+    mpi:
+      mpi.implementation: mpich
+    os:
+      os.full: ubuntu20.04
+
+- name: mpich-ubuntu-20.04-arm64
+  resources:
+    hardware:
+      hardware.gpu.available: 'no'
+    io.archspec:
+      cpu.target: arm64
+    mpi:
+      mpi.implementation: mpich
+    os:
+      os.full: ubuntu20.04
+
+- name: mpich-ubuntu-22.04-amd64
+  resources:
+    hardware:
+      hardware.gpu.available: 'no'
+    io.archspec:
+      cpu.target: amd64
+    mpi:
+      mpi.implementation: mpich
+    os:
+      os.full: ubuntu22.04
+
+- name: mpich-ubuntu-22.04-arm64
+  resources:
+    hardware:
+      hardware.gpu.available: 'no'
+    io.archspec:
+      cpu.target: arm64
+    mpi:
+      mpi.implementation: mpich
+    os:
+      os.full: ubuntu22.04
+
+- name: openmpi-rocky-gpu-8-amd64
+  resources:
+    hardware:
+      hardware.gpu.available: 'yes'
+    io.archspec:
+      cpu.target: amd64
+    mpi:
+      mpi.implementation: openmpi
+    os:
+      os.full: rocky8
+
+- name: openmpi-rocky-gpu-8-arm64
+  resources:
+    hardware:
+      hardware.gpu.available: 'yes'
+    io.archspec:
+      cpu.target: arm64
+    mpi:
+      mpi.implementation: openmpi
+    os:
+      os.full: rocky8
+
+- name: openmpi-rocky-gpu-9-amd64
+  resources:
+    hardware:
+      hardware.gpu.available: 'yes'
+    io.archspec:
+      cpu.target: amd64
+    mpi:
+      mpi.implementation: openmpi
+    os:
+      os.full: rocky9
+
+- name: openmpi-rocky-gpu-9-arm64
+  resources:
+    hardware:
+      hardware.gpu.available: 'yes'
+    io.archspec:
+      cpu.target: arm64
+    mpi:
+      mpi.implementation: openmpi
+    os:
+      os.full: rocky9
+
+- name: openmpi-ubuntu-20.04-amd64
+  resources:
+    hardware:
+      hardware.gpu.available: 'no'
+    io.archspec:
+      cpu.target: amd64
+    mpi:
+      mpi.implementation: openmpi
+    os:
+      os.full: ubuntu20.04
+
+- name: openmpi-ubuntu-20.04-arm64
+  resources:
+    hardware:
+      hardware.gpu.available: 'no'
+    io.archspec:
+      cpu.target: arm64
+    mpi:
+      mpi.implementation: openmpi
+    os:
+      os.full: ubuntu20.04
+
+- name: openmpi-ubuntu-22.04-amd64
+  resources:
+    hardware:
+      hardware.gpu.available: 'no'
+    io.archspec:
+      cpu.target: amd64
+    mpi:
+      mpi.implementation: openmpi
+    os:
+      os.full: ubuntu22.04
+
+- name: openmpi-ubuntu-22.04-arm64
+  resources:
+    hardware:
+      hardware.gpu.available: 'no'
+    io.archspec:
+      cpu.target: arm64
+    mpi:
+      mpi.implementation: openmpi
+    os:
+      os.full: ubuntu22.04
+
+- name: openmpi-ubuntu-gpu-20.04-amd64
+  resources:
+    hardware:
+      hardware.gpu.available: 'yes'
+    io.archspec:
+      cpu.target: amd64
+    mpi:
+      mpi.implementation: openmpi
+    os:
+      os.full: ubuntu20.04
+
+- name: openmpi-ubuntu-gpu-20.04-arm64
+  resources:
+    hardware:
+      hardware.gpu.available: 'yes'
+    io.archspec:
+      cpu.target: arm64
+    mpi:
+      mpi.implementation: openmpi
+    os:
+      os.full: ubuntu20.04
+
+- name: openmpi-ubuntu-gpu-22.04-amd64
+  resources:
+    hardware:
+      hardware.gpu.available: 'yes'
+    io.archspec:
+      cpu.target: amd64
+    mpi:
+      mpi.implementation: openmpi
+    os:
+      os.full: ubuntu22.04
+
+- name: openmpi-ubuntu-gpu-22.04-arm64
+  resources:
+    hardware:
+      hardware.gpu.available: 'yes'
+    io.archspec:
+      cpu.target: arm64
+    mpi:
+      mpi.implementation: openmpi
+    os:
+      os.full: ubuntu22.04

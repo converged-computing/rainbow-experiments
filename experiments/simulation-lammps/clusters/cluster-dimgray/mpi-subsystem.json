@@ -20,15 +20,15 @@
       "mpi1": {
         "label": "mpi1",
         "metadata": {
-          "basename": "mpi.implementation=openmpi",
+          "basename": "mpi.implementation=mpich",
           "exclusive": true,
           "id": 1,
-          "name": "mpi.implementation=openmpi0",
+          "name": "mpi.implementation=mpich0",
           "paths": {
-            "containment": "/mpi1/mpi.implementation=openmpi0"
+            "containment": "/mpi1/mpi.implementation=mpich0"
           },
           "size": 1,
-          "type": "mpi.implementation=openmpi",
+          "type": "mpi.implementation=mpich",
           "uniq_id": 1
         }
       }
@@ -36,41 +36,41 @@
     "edges": [
       {
         "source": "2",
-        "target": "mpi0",
+        "target": "mpi1",
         "relation": "contains"
       },
       {
-        "source": "mpi0",
+        "source": "mpi1",
         "target": "2",
         "relation": "in"
       },
       {
         "source": "14",
-        "target": "mpi0",
+        "target": "mpi1",
         "relation": "contains"
       },
       {
-        "source": "mpi0",
+        "source": "mpi1",
         "target": "14",
         "relation": "in"
       },
       {
         "source": "10",
-        "target": "mpi0",
+        "target": "mpi1",
         "relation": "contains"
       },
       {
-        "source": "mpi0",
+        "source": "mpi1",
         "target": "10",
         "relation": "in"
       },
       {
         "source": "5",
-        "target": "mpi0",
+        "target": "mpi1",
         "relation": "contains"
       },
       {
-        "source": "mpi0",
+        "source": "mpi1",
         "target": "6",
         "relation": "in"
       }

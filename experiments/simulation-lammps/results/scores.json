@@ -1,0 +1,42 @@
+{
+    "none": {
+        "total": 360,
+        "correct": 14.0,
+        "accuracy": 0.03888888888888889
+    },
+    "io.archspec": {
+        "total": 360,
+        "correct": 24.5,
+        "accuracy": 0.06805555555555555
+    },
+    "os": {
+        "total": 360,
+        "correct": 31.5,
+        "accuracy": 0.0875
+    },
+    "mpi": {
+        "total": 360,
+        "correct": 22.0,
+        "accuracy": 0.06111111111111111
+    },
+    "hardware": {
+        "total": 360,
+        "correct": 17.0,
+        "accuracy": 0.04722222222222222
+    },
+    "io.archspec+os": {
+        "total": 360,
+        "correct": 76.0,
+        "accuracy": 0.2111111111111111
+    },
+    "io.archspec+os+mpi": {
+        "total": 360,
+        "correct": 239.5,
+        "accuracy": 0.6652777777777777
+    },
+    "io.archspec+os+mpi+hardware": {
+        "total": 360,
+        "correct": 360.0,
+        "accuracy": 1.0
+    }
+}

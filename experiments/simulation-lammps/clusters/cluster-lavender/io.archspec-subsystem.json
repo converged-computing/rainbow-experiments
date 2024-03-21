@@ -20,15 +20,15 @@
       "io.archspec1": {
         "label": "io.archspec1",
         "metadata": {
-          "basename": "cpu.target=arm64",
+          "basename": "cpu.target=amd64",
           "exclusive": true,
           "id": 1,
-          "name": "cpu.target=arm640",
+          "name": "cpu.target=amd640",
           "paths": {
-            "containment": "/io.archspec1/cpu.target=arm640"
+            "containment": "/io.archspec1/cpu.target=amd640"
           },
           "size": 1,
-          "type": "cpu.target=arm64",
+          "type": "cpu.target=amd64",
           "uniq_id": 1
         }
       }
@@ -36,41 +36,41 @@
     "edges": [
       {
         "source": "2",
-        "target": "io.archspec0",
+        "target": "io.archspec1",
         "relation": "contains"
       },
       {
-        "source": "io.archspec0",
+        "source": "io.archspec1",
         "target": "2",
         "relation": "in"
       },
       {
         "source": "14",
-        "target": "io.archspec0",
+        "target": "io.archspec1",
         "relation": "contains"
       },
       {
-        "source": "io.archspec0",
+        "source": "io.archspec1",
         "target": "14",
         "relation": "in"
       },
       {
         "source": "10",
-        "target": "io.archspec0",
+        "target": "io.archspec1",
         "relation": "contains"
       },
       {
-        "source": "io.archspec0",
+        "source": "io.archspec1",
         "target": "10",
         "relation": "in"
       },
       {
         "source": "5",
-        "target": "io.archspec0",
+        "target": "io.archspec1",
         "relation": "contains"
       },
       {
-        "source": "io.archspec0",
+        "source": "io.archspec1",
         "target": "6",
         "relation": "in"
       }

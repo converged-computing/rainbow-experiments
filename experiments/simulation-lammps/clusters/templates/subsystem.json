@@ -36,41 +36,41 @@
     "edges": [{% for node in nodes %}
       {
         "source": "2",
-        "target": "{{ name }}0",
+        "target": "{{ name }}1",
         "relation": "contains"
       },
       {
-        "source": "{{ name }}0",
+        "source": "{{ name }}1",
         "target": "2",
         "relation": "in"
       },
       {
         "source": "14",
-        "target": "{{ name }}0",
+        "target": "{{ name }}1",
         "relation": "contains"
       },
       {
-        "source": "{{ name }}0",
+        "source": "{{ name }}1",
         "target": "14",
         "relation": "in"
       },
       {
         "source": "10",
-        "target": "{{ name }}0",
+        "target": "{{ name }}1",
         "relation": "contains"
       },
       {
-        "source": "{{ name }}0",
+        "source": "{{ name }}1",
         "target": "10",
         "relation": "in"
       },
       {
         "source": "5",
-        "target": "{{ name }}0",
+        "target": "{{ name }}1",
         "relation": "contains"
       },
       {
-        "source": "{{ name }}0",
+        "source": "{{ name }}1",
         "target": "6",
         "relation": "in"
       }{% if loop.last %}{% else %},{% endif %}{% endfor %}

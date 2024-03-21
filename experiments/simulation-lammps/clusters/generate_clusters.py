@@ -21,8 +21,6 @@ root = os.path.dirname(here)
 # cluster template
 cluster_template = os.path.join(here, "templates", "cluster-nodes.json")
 subsystem_template = os.path.join(here, "templates", "subsystem.json")
-template = Template(read_file(cluster_template))
-subsys_template = Template(read_file(subsystem_template))
 
 # Nice selection of colors for cluster names (rainbow...)
 colors = list(mcolors.CSS4_COLORS)
@@ -69,6 +67,9 @@ def read_file(filename):
     with open(filename, "r") as fd:
         content = fd.read()
     return content
+
+template = Template(read_file(cluster_template))
+subsys_template = Template(read_file(subsystem_template))
 
 
 def load_yaml(filename):
