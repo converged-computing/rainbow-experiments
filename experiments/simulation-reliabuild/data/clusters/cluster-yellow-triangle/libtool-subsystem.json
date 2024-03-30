@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libtool0": {
+        "label": "libtool0",
+        "metadata": {
+          "basename": "libtool",
+          "exclusive": false,
+          "id": 0,
+          "name": "libtool0",
+          "paths": {
+            "containment": "/libtool0"
+          },
+          "size": 1,
+          "type": "libtool",
+          "uniq_id": 0
+        }
+      },
+      "libtool1": {
+        "label": "libtool1",
+        "metadata": {
+          "basename": "libtool-version=develop",
+          "exclusive": true,
+          "id": 1,
+          "name": "libtool-version=develop0",
+          "paths": {
+            "containment": "/libtool1/libtool-version=develop0"
+          },
+          "size": 1,
+          "type": "libtool-version=develop",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libtool1",
+        "relation": "contains"
+      },
+      {
+        "source": "libtool1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libtool1",
+        "relation": "contains"
+      },
+      {
+        "source": "libtool1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libtool1",
+        "relation": "contains"
+      },
+      {
+        "source": "libtool1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libtool1",
+        "relation": "contains"
+      },
+      {
+        "source": "libtool1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

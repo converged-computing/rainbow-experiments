@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "shuffile0": {
+        "label": "shuffile0",
+        "metadata": {
+          "basename": "shuffile",
+          "exclusive": false,
+          "id": 0,
+          "name": "shuffile0",
+          "paths": {
+            "containment": "/shuffile0"
+          },
+          "size": 1,
+          "type": "shuffile",
+          "uniq_id": 0
+        }
+      },
+      "shuffile1": {
+        "label": "shuffile1",
+        "metadata": {
+          "basename": "shuffile-version=absent",
+          "exclusive": true,
+          "id": 1,
+          "name": "shuffile-version=absent0",
+          "paths": {
+            "containment": "/shuffile1/shuffile-version=absent0"
+          },
+          "size": 1,
+          "type": "shuffile-version=absent",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "shuffile1",
+        "relation": "contains"
+      },
+      {
+        "source": "shuffile1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "shuffile1",
+        "relation": "contains"
+      },
+      {
+        "source": "shuffile1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "shuffile1",
+        "relation": "contains"
+      },
+      {
+        "source": "shuffile1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "shuffile1",
+        "relation": "contains"
+      },
+      {
+        "source": "shuffile1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

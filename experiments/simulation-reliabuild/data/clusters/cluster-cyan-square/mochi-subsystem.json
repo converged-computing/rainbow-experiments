@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "mochi0": {
+        "label": "mochi0",
+        "metadata": {
+          "basename": "mochi",
+          "exclusive": false,
+          "id": 0,
+          "name": "mochi0",
+          "paths": {
+            "containment": "/mochi0"
+          },
+          "size": 1,
+          "type": "mochi",
+          "uniq_id": 0
+        }
+      },
+      "mochi1": {
+        "label": "mochi1",
+        "metadata": {
+          "basename": "mochi-margo-version=0.5",
+          "exclusive": true,
+          "id": 1,
+          "name": "mochi-margo-version=0.50",
+          "paths": {
+            "containment": "/mochi1/mochi-margo-version=0.50"
+          },
+          "size": 1,
+          "type": "mochi-margo-version=0.5",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "mochi1",
+        "relation": "contains"
+      },
+      {
+        "source": "mochi1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "mochi1",
+        "relation": "contains"
+      },
+      {
+        "source": "mochi1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "mochi1",
+        "relation": "contains"
+      },
+      {
+        "source": "mochi1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "mochi1",
+        "relation": "contains"
+      },
+      {
+        "source": "mochi1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

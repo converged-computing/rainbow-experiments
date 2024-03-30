@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "openpmd0": {
+        "label": "openpmd0",
+        "metadata": {
+          "basename": "openpmd",
+          "exclusive": false,
+          "id": 0,
+          "name": "openpmd0",
+          "paths": {
+            "containment": "/openpmd0"
+          },
+          "size": 1,
+          "type": "openpmd",
+          "uniq_id": 0
+        }
+      },
+      "openpmd1": {
+        "label": "openpmd1",
+        "metadata": {
+          "basename": "openpmd-api-version=0.11.1",
+          "exclusive": true,
+          "id": 1,
+          "name": "openpmd-api-version=0.11.10",
+          "paths": {
+            "containment": "/openpmd1/openpmd-api-version=0.11.10"
+          },
+          "size": 1,
+          "type": "openpmd-api-version=0.11.1",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "openpmd1",
+        "relation": "contains"
+      },
+      {
+        "source": "openpmd1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "openpmd1",
+        "relation": "contains"
+      },
+      {
+        "source": "openpmd1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "openpmd1",
+        "relation": "contains"
+      },
+      {
+        "source": "openpmd1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "openpmd1",
+        "relation": "contains"
+      },
+      {
+        "source": "openpmd1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "openssh0": {
+        "label": "openssh0",
+        "metadata": {
+          "basename": "openssh",
+          "exclusive": false,
+          "id": 0,
+          "name": "openssh0",
+          "paths": {
+            "containment": "/openssh0"
+          },
+          "size": 1,
+          "type": "openssh",
+          "uniq_id": 0
+        }
+      },
+      "openssh1": {
+        "label": "openssh1",
+        "metadata": {
+          "basename": "openssh-version=8.6p1",
+          "exclusive": true,
+          "id": 1,
+          "name": "openssh-version=8.6p10",
+          "paths": {
+            "containment": "/openssh1/openssh-version=8.6p10"
+          },
+          "size": 1,
+          "type": "openssh-version=8.6p1",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "openssh1",
+        "relation": "contains"
+      },
+      {
+        "source": "openssh1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "openssh1",
+        "relation": "contains"
+      },
+      {
+        "source": "openssh1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "openssh1",
+        "relation": "contains"
+      },
+      {
+        "source": "openssh1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "openssh1",
+        "relation": "contains"
+      },
+      {
+        "source": "openssh1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

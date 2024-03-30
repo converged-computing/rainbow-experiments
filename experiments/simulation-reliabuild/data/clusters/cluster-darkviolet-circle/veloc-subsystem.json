@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "veloc0": {
+        "label": "veloc0",
+        "metadata": {
+          "basename": "veloc",
+          "exclusive": false,
+          "id": 0,
+          "name": "veloc0",
+          "paths": {
+            "containment": "/veloc0"
+          },
+          "size": 1,
+          "type": "veloc",
+          "uniq_id": 0
+        }
+      },
+      "veloc1": {
+        "label": "veloc1",
+        "metadata": {
+          "basename": "veloc-version=1.5",
+          "exclusive": true,
+          "id": 1,
+          "name": "veloc-version=1.50",
+          "paths": {
+            "containment": "/veloc1/veloc-version=1.50"
+          },
+          "size": 1,
+          "type": "veloc-version=1.5",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "veloc1",
+        "relation": "contains"
+      },
+      {
+        "source": "veloc1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "veloc1",
+        "relation": "contains"
+      },
+      {
+        "source": "veloc1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "veloc1",
+        "relation": "contains"
+      },
+      {
+        "source": "veloc1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "veloc1",
+        "relation": "contains"
+      },
+      {
+        "source": "veloc1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

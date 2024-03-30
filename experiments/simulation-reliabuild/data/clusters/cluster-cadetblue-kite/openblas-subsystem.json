@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "openblas0": {
+        "label": "openblas0",
+        "metadata": {
+          "basename": "openblas",
+          "exclusive": false,
+          "id": 0,
+          "name": "openblas0",
+          "paths": {
+            "containment": "/openblas0"
+          },
+          "size": 1,
+          "type": "openblas",
+          "uniq_id": 0
+        }
+      },
+      "openblas1": {
+        "label": "openblas1",
+        "metadata": {
+          "basename": "openblas-version=0.3.10",
+          "exclusive": true,
+          "id": 1,
+          "name": "openblas-version=0.3.100",
+          "paths": {
+            "containment": "/openblas1/openblas-version=0.3.100"
+          },
+          "size": 1,
+          "type": "openblas-version=0.3.10",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "openblas1",
+        "relation": "contains"
+      },
+      {
+        "source": "openblas1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "openblas1",
+        "relation": "contains"
+      },
+      {
+        "source": "openblas1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "openblas1",
+        "relation": "contains"
+      },
+      {
+        "source": "openblas1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "openblas1",
+        "relation": "contains"
+      },
+      {
+        "source": "openblas1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

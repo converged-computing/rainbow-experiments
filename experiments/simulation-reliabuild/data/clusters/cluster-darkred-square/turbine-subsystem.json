@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "turbine0": {
+        "label": "turbine0",
+        "metadata": {
+          "basename": "turbine",
+          "exclusive": false,
+          "id": 0,
+          "name": "turbine0",
+          "paths": {
+            "containment": "/turbine0"
+          },
+          "size": 1,
+          "type": "turbine",
+          "uniq_id": 0
+        }
+      },
+      "turbine1": {
+        "label": "turbine1",
+        "metadata": {
+          "basename": "turbine-version=master",
+          "exclusive": true,
+          "id": 1,
+          "name": "turbine-version=master0",
+          "paths": {
+            "containment": "/turbine1/turbine-version=master0"
+          },
+          "size": 1,
+          "type": "turbine-version=master",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "turbine1",
+        "relation": "contains"
+      },
+      {
+        "source": "turbine1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "turbine1",
+        "relation": "contains"
+      },
+      {
+        "source": "turbine1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "turbine1",
+        "relation": "contains"
+      },
+      {
+        "source": "turbine1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "turbine1",
+        "relation": "contains"
+      },
+      {
+        "source": "turbine1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "axl0": {
+        "label": "axl0",
+        "metadata": {
+          "basename": "axl",
+          "exclusive": false,
+          "id": 0,
+          "name": "axl0",
+          "paths": {
+            "containment": "/axl0"
+          },
+          "size": 1,
+          "type": "axl",
+          "uniq_id": 0
+        }
+      },
+      "axl1": {
+        "label": "axl1",
+        "metadata": {
+          "basename": "axl-version=main",
+          "exclusive": true,
+          "id": 1,
+          "name": "axl-version=main0",
+          "paths": {
+            "containment": "/axl1/axl-version=main0"
+          },
+          "size": 1,
+          "type": "axl-version=main",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "axl1",
+        "relation": "contains"
+      },
+      {
+        "source": "axl1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "axl1",
+        "relation": "contains"
+      },
+      {
+        "source": "axl1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "axl1",
+        "relation": "contains"
+      },
+      {
+        "source": "axl1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "axl1",
+        "relation": "contains"
+      },
+      {
+        "source": "axl1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

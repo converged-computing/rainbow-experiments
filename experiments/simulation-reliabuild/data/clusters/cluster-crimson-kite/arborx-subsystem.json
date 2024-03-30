@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "arborx0": {
+        "label": "arborx0",
+        "metadata": {
+          "basename": "arborx",
+          "exclusive": false,
+          "id": 0,
+          "name": "arborx0",
+          "paths": {
+            "containment": "/arborx0"
+          },
+          "size": 1,
+          "type": "arborx",
+          "uniq_id": 0
+        }
+      },
+      "arborx1": {
+        "label": "arborx1",
+        "metadata": {
+          "basename": "arborx-version=master",
+          "exclusive": true,
+          "id": 1,
+          "name": "arborx-version=master0",
+          "paths": {
+            "containment": "/arborx1/arborx-version=master0"
+          },
+          "size": 1,
+          "type": "arborx-version=master",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "arborx1",
+        "relation": "contains"
+      },
+      {
+        "source": "arborx1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "arborx1",
+        "relation": "contains"
+      },
+      {
+        "source": "arborx1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "arborx1",
+        "relation": "contains"
+      },
+      {
+        "source": "arborx1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "arborx1",
+        "relation": "contains"
+      },
+      {
+        "source": "arborx1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

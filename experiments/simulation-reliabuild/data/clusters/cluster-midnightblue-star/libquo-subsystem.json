@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libquo0": {
+        "label": "libquo0",
+        "metadata": {
+          "basename": "libquo",
+          "exclusive": false,
+          "id": 0,
+          "name": "libquo0",
+          "paths": {
+            "containment": "/libquo0"
+          },
+          "size": 1,
+          "type": "libquo",
+          "uniq_id": 0
+        }
+      },
+      "libquo1": {
+        "label": "libquo1",
+        "metadata": {
+          "basename": "libquo-version=1.3",
+          "exclusive": true,
+          "id": 1,
+          "name": "libquo-version=1.30",
+          "paths": {
+            "containment": "/libquo1/libquo-version=1.30"
+          },
+          "size": 1,
+          "type": "libquo-version=1.3",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libquo1",
+        "relation": "contains"
+      },
+      {
+        "source": "libquo1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libquo1",
+        "relation": "contains"
+      },
+      {
+        "source": "libquo1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libquo1",
+        "relation": "contains"
+      },
+      {
+        "source": "libquo1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libquo1",
+        "relation": "contains"
+      },
+      {
+        "source": "libquo1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

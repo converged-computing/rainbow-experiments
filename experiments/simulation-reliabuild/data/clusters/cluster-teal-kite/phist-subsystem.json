@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "phist0": {
+        "label": "phist0",
+        "metadata": {
+          "basename": "phist",
+          "exclusive": false,
+          "id": 0,
+          "name": "phist0",
+          "paths": {
+            "containment": "/phist0"
+          },
+          "size": 1,
+          "type": "phist",
+          "uniq_id": 0
+        }
+      },
+      "phist1": {
+        "label": "phist1",
+        "metadata": {
+          "basename": "phist-version=1.7.5",
+          "exclusive": true,
+          "id": 1,
+          "name": "phist-version=1.7.50",
+          "paths": {
+            "containment": "/phist1/phist-version=1.7.50"
+          },
+          "size": 1,
+          "type": "phist-version=1.7.5",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "phist1",
+        "relation": "contains"
+      },
+      {
+        "source": "phist1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "phist1",
+        "relation": "contains"
+      },
+      {
+        "source": "phist1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "phist1",
+        "relation": "contains"
+      },
+      {
+        "source": "phist1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "phist1",
+        "relation": "contains"
+      },
+      {
+        "source": "phist1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

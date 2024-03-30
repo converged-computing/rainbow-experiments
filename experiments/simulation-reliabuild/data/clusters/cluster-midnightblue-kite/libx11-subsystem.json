@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libx110": {
+        "label": "libx110",
+        "metadata": {
+          "basename": "libx11",
+          "exclusive": false,
+          "id": 0,
+          "name": "libx110",
+          "paths": {
+            "containment": "/libx110"
+          },
+          "size": 1,
+          "type": "libx11",
+          "uniq_id": 0
+        }
+      },
+      "libx111": {
+        "label": "libx111",
+        "metadata": {
+          "basename": "libx11-version=1.6.7",
+          "exclusive": true,
+          "id": 1,
+          "name": "libx11-version=1.6.70",
+          "paths": {
+            "containment": "/libx111/libx11-version=1.6.70"
+          },
+          "size": 1,
+          "type": "libx11-version=1.6.7",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libx111",
+        "relation": "contains"
+      },
+      {
+        "source": "libx111",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libx111",
+        "relation": "contains"
+      },
+      {
+        "source": "libx111",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libx111",
+        "relation": "contains"
+      },
+      {
+        "source": "libx111",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libx111",
+        "relation": "contains"
+      },
+      {
+        "source": "libx111",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

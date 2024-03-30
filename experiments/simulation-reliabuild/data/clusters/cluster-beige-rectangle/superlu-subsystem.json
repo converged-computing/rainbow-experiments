@@ -1,0 +1,134 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "superlu0": {
+        "label": "superlu0",
+        "metadata": {
+          "basename": "superlu",
+          "exclusive": false,
+          "id": 0,
+          "name": "superlu0",
+          "paths": {
+            "containment": "/superlu0"
+          },
+          "size": 1,
+          "type": "superlu",
+          "uniq_id": 0
+        }
+      },
+      "superlu1": {
+        "label": "superlu1",
+        "metadata": {
+          "basename": "superlu-dist-version=5.1.2",
+          "exclusive": true,
+          "id": 1,
+          "name": "superlu-dist-version=5.1.20",
+          "paths": {
+            "containment": "/superlu1/superlu-dist-version=5.1.20"
+          },
+          "size": 1,
+          "type": "superlu-dist-version=5.1.2",
+          "uniq_id": 1
+        }
+      },
+      "superlu2": {
+        "label": "superlu2",
+        "metadata": {
+          "basename": "superlu-version=5.3.0",
+          "exclusive": true,
+          "id": 1,
+          "name": "superlu-version=5.3.01",
+          "paths": {
+            "containment": "/superlu2/superlu-version=5.3.01"
+          },
+          "size": 1,
+          "type": "superlu-version=5.3.0",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "superlu1",
+        "relation": "contains"
+      },
+      {
+        "source": "superlu1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "superlu1",
+        "relation": "contains"
+      },
+      {
+        "source": "superlu1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "superlu1",
+        "relation": "contains"
+      },
+      {
+        "source": "superlu1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "superlu1",
+        "relation": "contains"
+      },
+      {
+        "source": "superlu1",
+        "target": "6",
+        "relation": "in"
+      },
+      {
+        "source": "2",
+        "target": "superlu1",
+        "relation": "contains"
+      },
+      {
+        "source": "superlu1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "superlu1",
+        "relation": "contains"
+      },
+      {
+        "source": "superlu1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "superlu1",
+        "relation": "contains"
+      },
+      {
+        "source": "superlu1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "superlu1",
+        "relation": "contains"
+      },
+      {
+        "source": "superlu1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

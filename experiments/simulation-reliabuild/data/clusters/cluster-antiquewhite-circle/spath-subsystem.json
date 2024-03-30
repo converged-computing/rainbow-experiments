@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "spath0": {
+        "label": "spath0",
+        "metadata": {
+          "basename": "spath",
+          "exclusive": false,
+          "id": 0,
+          "name": "spath0",
+          "paths": {
+            "containment": "/spath0"
+          },
+          "size": 1,
+          "type": "spath",
+          "uniq_id": 0
+        }
+      },
+      "spath1": {
+        "label": "spath1",
+        "metadata": {
+          "basename": "spath-version=0.1.0",
+          "exclusive": true,
+          "id": 1,
+          "name": "spath-version=0.1.00",
+          "paths": {
+            "containment": "/spath1/spath-version=0.1.00"
+          },
+          "size": 1,
+          "type": "spath-version=0.1.0",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "spath1",
+        "relation": "contains"
+      },
+      {
+        "source": "spath1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "spath1",
+        "relation": "contains"
+      },
+      {
+        "source": "spath1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "spath1",
+        "relation": "contains"
+      },
+      {
+        "source": "spath1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "spath1",
+        "relation": "contains"
+      },
+      {
+        "source": "spath1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

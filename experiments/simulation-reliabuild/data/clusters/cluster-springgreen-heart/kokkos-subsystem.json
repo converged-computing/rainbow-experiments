@@ -1,0 +1,134 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "kokkos0": {
+        "label": "kokkos0",
+        "metadata": {
+          "basename": "kokkos",
+          "exclusive": false,
+          "id": 0,
+          "name": "kokkos0",
+          "paths": {
+            "containment": "/kokkos0"
+          },
+          "size": 1,
+          "type": "kokkos",
+          "uniq_id": 0
+        }
+      },
+      "kokkos1": {
+        "label": "kokkos1",
+        "metadata": {
+          "basename": "kokkos-version=3.0.00",
+          "exclusive": true,
+          "id": 1,
+          "name": "kokkos-version=3.0.000",
+          "paths": {
+            "containment": "/kokkos1/kokkos-version=3.0.000"
+          },
+          "size": 1,
+          "type": "kokkos-version=3.0.00",
+          "uniq_id": 1
+        }
+      },
+      "kokkos2": {
+        "label": "kokkos2",
+        "metadata": {
+          "basename": "kokkos-kernels-version=develop",
+          "exclusive": true,
+          "id": 1,
+          "name": "kokkos-kernels-version=develop1",
+          "paths": {
+            "containment": "/kokkos2/kokkos-kernels-version=develop1"
+          },
+          "size": 1,
+          "type": "kokkos-kernels-version=develop",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "kokkos1",
+        "relation": "contains"
+      },
+      {
+        "source": "kokkos1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "kokkos1",
+        "relation": "contains"
+      },
+      {
+        "source": "kokkos1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "kokkos1",
+        "relation": "contains"
+      },
+      {
+        "source": "kokkos1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "kokkos1",
+        "relation": "contains"
+      },
+      {
+        "source": "kokkos1",
+        "target": "6",
+        "relation": "in"
+      },
+      {
+        "source": "2",
+        "target": "kokkos1",
+        "relation": "contains"
+      },
+      {
+        "source": "kokkos1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "kokkos1",
+        "relation": "contains"
+      },
+      {
+        "source": "kokkos1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "kokkos1",
+        "relation": "contains"
+      },
+      {
+        "source": "kokkos1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "kokkos1",
+        "relation": "contains"
+      },
+      {
+        "source": "kokkos1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

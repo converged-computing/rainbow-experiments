@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "raja0": {
+        "label": "raja0",
+        "metadata": {
+          "basename": "raja",
+          "exclusive": false,
+          "id": 0,
+          "name": "raja0",
+          "paths": {
+            "containment": "/raja0"
+          },
+          "size": 1,
+          "type": "raja",
+          "uniq_id": 0
+        }
+      },
+      "raja1": {
+        "label": "raja1",
+        "metadata": {
+          "basename": "raja-version=0.11.0",
+          "exclusive": true,
+          "id": 1,
+          "name": "raja-version=0.11.00",
+          "paths": {
+            "containment": "/raja1/raja-version=0.11.00"
+          },
+          "size": 1,
+          "type": "raja-version=0.11.0",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "raja1",
+        "relation": "contains"
+      },
+      {
+        "source": "raja1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "raja1",
+        "relation": "contains"
+      },
+      {
+        "source": "raja1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "raja1",
+        "relation": "contains"
+      },
+      {
+        "source": "raja1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "raja1",
+        "relation": "contains"
+      },
+      {
+        "source": "raja1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

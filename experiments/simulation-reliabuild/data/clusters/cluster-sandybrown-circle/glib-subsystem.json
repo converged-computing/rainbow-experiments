@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "glib0": {
+        "label": "glib0",
+        "metadata": {
+          "basename": "glib",
+          "exclusive": false,
+          "id": 0,
+          "name": "glib0",
+          "paths": {
+            "containment": "/glib0"
+          },
+          "size": 1,
+          "type": "glib",
+          "uniq_id": 0
+        }
+      },
+      "glib1": {
+        "label": "glib1",
+        "metadata": {
+          "basename": "glib-version=2.68.3",
+          "exclusive": true,
+          "id": 1,
+          "name": "glib-version=2.68.30",
+          "paths": {
+            "containment": "/glib1/glib-version=2.68.30"
+          },
+          "size": 1,
+          "type": "glib-version=2.68.3",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "glib1",
+        "relation": "contains"
+      },
+      {
+        "source": "glib1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "glib1",
+        "relation": "contains"
+      },
+      {
+        "source": "glib1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "glib1",
+        "relation": "contains"
+      },
+      {
+        "source": "glib1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "glib1",
+        "relation": "contains"
+      },
+      {
+        "source": "glib1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

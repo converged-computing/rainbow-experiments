@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "sz0": {
+        "label": "sz0",
+        "metadata": {
+          "basename": "sz",
+          "exclusive": false,
+          "id": 0,
+          "name": "sz0",
+          "paths": {
+            "containment": "/sz0"
+          },
+          "size": 1,
+          "type": "sz",
+          "uniq_id": 0
+        }
+      },
+      "sz1": {
+        "label": "sz1",
+        "metadata": {
+          "basename": "sz-version=1.4.13.4",
+          "exclusive": true,
+          "id": 1,
+          "name": "sz-version=1.4.13.40",
+          "paths": {
+            "containment": "/sz1/sz-version=1.4.13.40"
+          },
+          "size": 1,
+          "type": "sz-version=1.4.13.4",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "sz1",
+        "relation": "contains"
+      },
+      {
+        "source": "sz1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "sz1",
+        "relation": "contains"
+      },
+      {
+        "source": "sz1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "sz1",
+        "relation": "contains"
+      },
+      {
+        "source": "sz1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "sz1",
+        "relation": "contains"
+      },
+      {
+        "source": "sz1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

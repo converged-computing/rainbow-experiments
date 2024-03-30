@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libpciaccess0": {
+        "label": "libpciaccess0",
+        "metadata": {
+          "basename": "libpciaccess",
+          "exclusive": false,
+          "id": 0,
+          "name": "libpciaccess0",
+          "paths": {
+            "containment": "/libpciaccess0"
+          },
+          "size": 1,
+          "type": "libpciaccess",
+          "uniq_id": 0
+        }
+      },
+      "libpciaccess1": {
+        "label": "libpciaccess1",
+        "metadata": {
+          "basename": "libpciaccess-version=0.13.5",
+          "exclusive": true,
+          "id": 1,
+          "name": "libpciaccess-version=0.13.50",
+          "paths": {
+            "containment": "/libpciaccess1/libpciaccess-version=0.13.50"
+          },
+          "size": 1,
+          "type": "libpciaccess-version=0.13.5",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libpciaccess1",
+        "relation": "contains"
+      },
+      {
+        "source": "libpciaccess1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libpciaccess1",
+        "relation": "contains"
+      },
+      {
+        "source": "libpciaccess1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libpciaccess1",
+        "relation": "contains"
+      },
+      {
+        "source": "libpciaccess1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libpciaccess1",
+        "relation": "contains"
+      },
+      {
+        "source": "libpciaccess1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

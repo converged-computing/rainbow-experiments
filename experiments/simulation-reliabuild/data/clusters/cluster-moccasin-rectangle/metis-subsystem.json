@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "metis0": {
+        "label": "metis0",
+        "metadata": {
+          "basename": "metis",
+          "exclusive": false,
+          "id": 0,
+          "name": "metis0",
+          "paths": {
+            "containment": "/metis0"
+          },
+          "size": 1,
+          "type": "metis",
+          "uniq_id": 0
+        }
+      },
+      "metis1": {
+        "label": "metis1",
+        "metadata": {
+          "basename": "metis-version=5.1.0",
+          "exclusive": true,
+          "id": 1,
+          "name": "metis-version=5.1.00",
+          "paths": {
+            "containment": "/metis1/metis-version=5.1.00"
+          },
+          "size": 1,
+          "type": "metis-version=5.1.0",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "metis1",
+        "relation": "contains"
+      },
+      {
+        "source": "metis1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "metis1",
+        "relation": "contains"
+      },
+      {
+        "source": "metis1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "metis1",
+        "relation": "contains"
+      },
+      {
+        "source": "metis1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "metis1",
+        "relation": "contains"
+      },
+      {
+        "source": "metis1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

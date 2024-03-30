@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "omega0": {
+        "label": "omega0",
+        "metadata": {
+          "basename": "omega",
+          "exclusive": false,
+          "id": 0,
+          "name": "omega0",
+          "paths": {
+            "containment": "/omega0"
+          },
+          "size": 1,
+          "type": "omega",
+          "uniq_id": 0
+        }
+      },
+      "omega1": {
+        "label": "omega1",
+        "metadata": {
+          "basename": "omega-h-version=9.34.1",
+          "exclusive": true,
+          "id": 1,
+          "name": "omega-h-version=9.34.10",
+          "paths": {
+            "containment": "/omega1/omega-h-version=9.34.10"
+          },
+          "size": 1,
+          "type": "omega-h-version=9.34.1",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "omega1",
+        "relation": "contains"
+      },
+      {
+        "source": "omega1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "omega1",
+        "relation": "contains"
+      },
+      {
+        "source": "omega1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "omega1",
+        "relation": "contains"
+      },
+      {
+        "source": "omega1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "omega1",
+        "relation": "contains"
+      },
+      {
+        "source": "omega1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

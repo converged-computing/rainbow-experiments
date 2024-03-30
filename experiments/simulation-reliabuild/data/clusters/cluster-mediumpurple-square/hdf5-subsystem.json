@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "hdf50": {
+        "label": "hdf50",
+        "metadata": {
+          "basename": "hdf5",
+          "exclusive": false,
+          "id": 0,
+          "name": "hdf50",
+          "paths": {
+            "containment": "/hdf50"
+          },
+          "size": 1,
+          "type": "hdf5",
+          "uniq_id": 0
+        }
+      },
+      "hdf51": {
+        "label": "hdf51",
+        "metadata": {
+          "basename": "hdf5-version=1.8.16",
+          "exclusive": true,
+          "id": 1,
+          "name": "hdf5-version=1.8.160",
+          "paths": {
+            "containment": "/hdf51/hdf5-version=1.8.160"
+          },
+          "size": 1,
+          "type": "hdf5-version=1.8.16",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "hdf51",
+        "relation": "contains"
+      },
+      {
+        "source": "hdf51",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "hdf51",
+        "relation": "contains"
+      },
+      {
+        "source": "hdf51",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "hdf51",
+        "relation": "contains"
+      },
+      {
+        "source": "hdf51",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "hdf51",
+        "relation": "contains"
+      },
+      {
+        "source": "hdf51",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

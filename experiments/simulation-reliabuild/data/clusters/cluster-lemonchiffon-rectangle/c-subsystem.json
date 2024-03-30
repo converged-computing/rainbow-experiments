@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "c0": {
+        "label": "c0",
+        "metadata": {
+          "basename": "c",
+          "exclusive": false,
+          "id": 0,
+          "name": "c0",
+          "paths": {
+            "containment": "/c0"
+          },
+          "size": 1,
+          "type": "c",
+          "uniq_id": 0
+        }
+      },
+      "c1": {
+        "label": "c1",
+        "metadata": {
+          "basename": "c-blosc-version=1.12.1",
+          "exclusive": true,
+          "id": 1,
+          "name": "c-blosc-version=1.12.10",
+          "paths": {
+            "containment": "/c1/c-blosc-version=1.12.10"
+          },
+          "size": 1,
+          "type": "c-blosc-version=1.12.1",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "c1",
+        "relation": "contains"
+      },
+      {
+        "source": "c1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "c1",
+        "relation": "contains"
+      },
+      {
+        "source": "c1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "c1",
+        "relation": "contains"
+      },
+      {
+        "source": "c1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "c1",
+        "relation": "contains"
+      },
+      {
+        "source": "c1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

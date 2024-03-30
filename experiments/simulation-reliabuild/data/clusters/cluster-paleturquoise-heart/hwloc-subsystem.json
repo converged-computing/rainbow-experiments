@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "hwloc0": {
+        "label": "hwloc0",
+        "metadata": {
+          "basename": "hwloc",
+          "exclusive": false,
+          "id": 0,
+          "name": "hwloc0",
+          "paths": {
+            "containment": "/hwloc0"
+          },
+          "size": 1,
+          "type": "hwloc",
+          "uniq_id": 0
+        }
+      },
+      "hwloc1": {
+        "label": "hwloc1",
+        "metadata": {
+          "basename": "hwloc-version=1.11.8",
+          "exclusive": true,
+          "id": 1,
+          "name": "hwloc-version=1.11.80",
+          "paths": {
+            "containment": "/hwloc1/hwloc-version=1.11.80"
+          },
+          "size": 1,
+          "type": "hwloc-version=1.11.8",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "hwloc1",
+        "relation": "contains"
+      },
+      {
+        "source": "hwloc1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "hwloc1",
+        "relation": "contains"
+      },
+      {
+        "source": "hwloc1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "hwloc1",
+        "relation": "contains"
+      },
+      {
+        "source": "hwloc1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "hwloc1",
+        "relation": "contains"
+      },
+      {
+        "source": "hwloc1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

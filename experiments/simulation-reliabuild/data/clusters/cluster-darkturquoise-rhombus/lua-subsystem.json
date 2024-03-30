@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "lua0": {
+        "label": "lua0",
+        "metadata": {
+          "basename": "lua",
+          "exclusive": false,
+          "id": 0,
+          "name": "lua0",
+          "paths": {
+            "containment": "/lua0"
+          },
+          "size": 1,
+          "type": "lua",
+          "uniq_id": 0
+        }
+      },
+      "lua1": {
+        "label": "lua1",
+        "metadata": {
+          "basename": "lua-version=5.2.2",
+          "exclusive": true,
+          "id": 1,
+          "name": "lua-version=5.2.20",
+          "paths": {
+            "containment": "/lua1/lua-version=5.2.20"
+          },
+          "size": 1,
+          "type": "lua-version=5.2.2",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "lua1",
+        "relation": "contains"
+      },
+      {
+        "source": "lua1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "lua1",
+        "relation": "contains"
+      },
+      {
+        "source": "lua1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "lua1",
+        "relation": "contains"
+      },
+      {
+        "source": "lua1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "lua1",
+        "relation": "contains"
+      },
+      {
+        "source": "lua1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

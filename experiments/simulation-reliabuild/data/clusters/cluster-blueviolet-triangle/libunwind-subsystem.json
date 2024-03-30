@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libunwind0": {
+        "label": "libunwind0",
+        "metadata": {
+          "basename": "libunwind",
+          "exclusive": false,
+          "id": 0,
+          "name": "libunwind0",
+          "paths": {
+            "containment": "/libunwind0"
+          },
+          "size": 1,
+          "type": "libunwind",
+          "uniq_id": 0
+        }
+      },
+      "libunwind1": {
+        "label": "libunwind1",
+        "metadata": {
+          "basename": "libunwind-version=master",
+          "exclusive": true,
+          "id": 1,
+          "name": "libunwind-version=master0",
+          "paths": {
+            "containment": "/libunwind1/libunwind-version=master0"
+          },
+          "size": 1,
+          "type": "libunwind-version=master",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libunwind1",
+        "relation": "contains"
+      },
+      {
+        "source": "libunwind1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libunwind1",
+        "relation": "contains"
+      },
+      {
+        "source": "libunwind1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libunwind1",
+        "relation": "contains"
+      },
+      {
+        "source": "libunwind1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libunwind1",
+        "relation": "contains"
+      },
+      {
+        "source": "libunwind1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

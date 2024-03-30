@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libsm0": {
+        "label": "libsm0",
+        "metadata": {
+          "basename": "libsm",
+          "exclusive": false,
+          "id": 0,
+          "name": "libsm0",
+          "paths": {
+            "containment": "/libsm0"
+          },
+          "size": 1,
+          "type": "libsm",
+          "uniq_id": 0
+        }
+      },
+      "libsm1": {
+        "label": "libsm1",
+        "metadata": {
+          "basename": "libsm-version=1.2.3",
+          "exclusive": true,
+          "id": 1,
+          "name": "libsm-version=1.2.30",
+          "paths": {
+            "containment": "/libsm1/libsm-version=1.2.30"
+          },
+          "size": 1,
+          "type": "libsm-version=1.2.3",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libsm1",
+        "relation": "contains"
+      },
+      {
+        "source": "libsm1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libsm1",
+        "relation": "contains"
+      },
+      {
+        "source": "libsm1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libsm1",
+        "relation": "contains"
+      },
+      {
+        "source": "libsm1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libsm1",
+        "relation": "contains"
+      },
+      {
+        "source": "libsm1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

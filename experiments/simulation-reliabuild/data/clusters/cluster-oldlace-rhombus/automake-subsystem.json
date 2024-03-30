@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "automake0": {
+        "label": "automake0",
+        "metadata": {
+          "basename": "automake",
+          "exclusive": false,
+          "id": 0,
+          "name": "automake0",
+          "paths": {
+            "containment": "/automake0"
+          },
+          "size": 1,
+          "type": "automake",
+          "uniq_id": 0
+        }
+      },
+      "automake1": {
+        "label": "automake1",
+        "metadata": {
+          "basename": "automake-version=1.15.1",
+          "exclusive": true,
+          "id": 1,
+          "name": "automake-version=1.15.10",
+          "paths": {
+            "containment": "/automake1/automake-version=1.15.10"
+          },
+          "size": 1,
+          "type": "automake-version=1.15.1",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "automake1",
+        "relation": "contains"
+      },
+      {
+        "source": "automake1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "automake1",
+        "relation": "contains"
+      },
+      {
+        "source": "automake1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "automake1",
+        "relation": "contains"
+      },
+      {
+        "source": "automake1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "automake1",
+        "relation": "contains"
+      },
+      {
+        "source": "automake1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

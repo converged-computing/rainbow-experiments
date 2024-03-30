@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libjpeg0": {
+        "label": "libjpeg0",
+        "metadata": {
+          "basename": "libjpeg",
+          "exclusive": false,
+          "id": 0,
+          "name": "libjpeg0",
+          "paths": {
+            "containment": "/libjpeg0"
+          },
+          "size": 1,
+          "type": "libjpeg",
+          "uniq_id": 0
+        }
+      },
+      "libjpeg1": {
+        "label": "libjpeg1",
+        "metadata": {
+          "basename": "libjpeg-turbo-version=2.0.6",
+          "exclusive": true,
+          "id": 1,
+          "name": "libjpeg-turbo-version=2.0.60",
+          "paths": {
+            "containment": "/libjpeg1/libjpeg-turbo-version=2.0.60"
+          },
+          "size": 1,
+          "type": "libjpeg-turbo-version=2.0.6",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libjpeg1",
+        "relation": "contains"
+      },
+      {
+        "source": "libjpeg1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libjpeg1",
+        "relation": "contains"
+      },
+      {
+        "source": "libjpeg1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libjpeg1",
+        "relation": "contains"
+      },
+      {
+        "source": "libjpeg1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libjpeg1",
+        "relation": "contains"
+      },
+      {
+        "source": "libjpeg1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

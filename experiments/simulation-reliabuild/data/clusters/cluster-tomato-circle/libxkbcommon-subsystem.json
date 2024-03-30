@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libxkbcommon0": {
+        "label": "libxkbcommon0",
+        "metadata": {
+          "basename": "libxkbcommon",
+          "exclusive": false,
+          "id": 0,
+          "name": "libxkbcommon0",
+          "paths": {
+            "containment": "/libxkbcommon0"
+          },
+          "size": 1,
+          "type": "libxkbcommon",
+          "uniq_id": 0
+        }
+      },
+      "libxkbcommon1": {
+        "label": "libxkbcommon1",
+        "metadata": {
+          "basename": "libxkbcommon-version=0.8.2",
+          "exclusive": true,
+          "id": 1,
+          "name": "libxkbcommon-version=0.8.20",
+          "paths": {
+            "containment": "/libxkbcommon1/libxkbcommon-version=0.8.20"
+          },
+          "size": 1,
+          "type": "libxkbcommon-version=0.8.2",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libxkbcommon1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxkbcommon1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libxkbcommon1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxkbcommon1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libxkbcommon1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxkbcommon1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libxkbcommon1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxkbcommon1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libmng0": {
+        "label": "libmng0",
+        "metadata": {
+          "basename": "libmng",
+          "exclusive": false,
+          "id": 0,
+          "name": "libmng0",
+          "paths": {
+            "containment": "/libmng0"
+          },
+          "size": 1,
+          "type": "libmng",
+          "uniq_id": 0
+        }
+      },
+      "libmng1": {
+        "label": "libmng1",
+        "metadata": {
+          "basename": "libmng-version=2.0.2",
+          "exclusive": true,
+          "id": 1,
+          "name": "libmng-version=2.0.20",
+          "paths": {
+            "containment": "/libmng1/libmng-version=2.0.20"
+          },
+          "size": 1,
+          "type": "libmng-version=2.0.2",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libmng1",
+        "relation": "contains"
+      },
+      {
+        "source": "libmng1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libmng1",
+        "relation": "contains"
+      },
+      {
+        "source": "libmng1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libmng1",
+        "relation": "contains"
+      },
+      {
+        "source": "libmng1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libmng1",
+        "relation": "contains"
+      },
+      {
+        "source": "libmng1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

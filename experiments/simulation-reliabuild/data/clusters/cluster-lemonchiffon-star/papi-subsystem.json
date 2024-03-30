@@ -1,0 +1,134 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "papi0": {
+        "label": "papi0",
+        "metadata": {
+          "basename": "papi",
+          "exclusive": false,
+          "id": 0,
+          "name": "papi0",
+          "paths": {
+            "containment": "/papi0"
+          },
+          "size": 1,
+          "type": "papi",
+          "uniq_id": 0
+        }
+      },
+      "papi1": {
+        "label": "papi1",
+        "metadata": {
+          "basename": "papi-compiler_version=9.3.1",
+          "exclusive": true,
+          "id": 1,
+          "name": "papi-compiler_version=9.3.10",
+          "paths": {
+            "containment": "/papi1/papi-compiler_version=9.3.10"
+          },
+          "size": 1,
+          "type": "papi-compiler_version=9.3.1",
+          "uniq_id": 1
+        }
+      },
+      "papi2": {
+        "label": "papi2",
+        "metadata": {
+          "basename": "papi-version=6.0.0",
+          "exclusive": true,
+          "id": 1,
+          "name": "papi-version=6.0.01",
+          "paths": {
+            "containment": "/papi2/papi-version=6.0.01"
+          },
+          "size": 1,
+          "type": "papi-version=6.0.0",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "papi1",
+        "relation": "contains"
+      },
+      {
+        "source": "papi1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "papi1",
+        "relation": "contains"
+      },
+      {
+        "source": "papi1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "papi1",
+        "relation": "contains"
+      },
+      {
+        "source": "papi1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "papi1",
+        "relation": "contains"
+      },
+      {
+        "source": "papi1",
+        "target": "6",
+        "relation": "in"
+      },
+      {
+        "source": "2",
+        "target": "papi1",
+        "relation": "contains"
+      },
+      {
+        "source": "papi1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "papi1",
+        "relation": "contains"
+      },
+      {
+        "source": "papi1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "papi1",
+        "relation": "contains"
+      },
+      {
+        "source": "papi1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "papi1",
+        "relation": "contains"
+      },
+      {
+        "source": "papi1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

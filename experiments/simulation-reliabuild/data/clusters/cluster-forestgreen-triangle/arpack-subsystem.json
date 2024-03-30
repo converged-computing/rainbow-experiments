@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "arpack0": {
+        "label": "arpack0",
+        "metadata": {
+          "basename": "arpack",
+          "exclusive": false,
+          "id": 0,
+          "name": "arpack0",
+          "paths": {
+            "containment": "/arpack0"
+          },
+          "size": 1,
+          "type": "arpack",
+          "uniq_id": 0
+        }
+      },
+      "arpack1": {
+        "label": "arpack1",
+        "metadata": {
+          "basename": "arpack-ng-version=3.6.0",
+          "exclusive": true,
+          "id": 1,
+          "name": "arpack-ng-version=3.6.00",
+          "paths": {
+            "containment": "/arpack1/arpack-ng-version=3.6.00"
+          },
+          "size": 1,
+          "type": "arpack-ng-version=3.6.0",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "arpack1",
+        "relation": "contains"
+      },
+      {
+        "source": "arpack1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "arpack1",
+        "relation": "contains"
+      },
+      {
+        "source": "arpack1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "arpack1",
+        "relation": "contains"
+      },
+      {
+        "source": "arpack1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "arpack1",
+        "relation": "contains"
+      },
+      {
+        "source": "arpack1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

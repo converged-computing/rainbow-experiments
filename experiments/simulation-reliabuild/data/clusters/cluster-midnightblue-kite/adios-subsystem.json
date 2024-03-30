@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "adios0": {
+        "label": "adios0",
+        "metadata": {
+          "basename": "adios",
+          "exclusive": false,
+          "id": 0,
+          "name": "adios0",
+          "paths": {
+            "containment": "/adios0"
+          },
+          "size": 1,
+          "type": "adios",
+          "uniq_id": 0
+        }
+      },
+      "adios1": {
+        "label": "adios1",
+        "metadata": {
+          "basename": "adios-version=1.10.0",
+          "exclusive": true,
+          "id": 1,
+          "name": "adios-version=1.10.00",
+          "paths": {
+            "containment": "/adios1/adios-version=1.10.00"
+          },
+          "size": 1,
+          "type": "adios-version=1.10.0",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "adios1",
+        "relation": "contains"
+      },
+      {
+        "source": "adios1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "adios1",
+        "relation": "contains"
+      },
+      {
+        "source": "adios1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "adios1",
+        "relation": "contains"
+      },
+      {
+        "source": "adios1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "adios1",
+        "relation": "contains"
+      },
+      {
+        "source": "adios1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

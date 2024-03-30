@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "vtk0": {
+        "label": "vtk0",
+        "metadata": {
+          "basename": "vtk",
+          "exclusive": false,
+          "id": 0,
+          "name": "vtk0",
+          "paths": {
+            "containment": "/vtk0"
+          },
+          "size": 1,
+          "type": "vtk",
+          "uniq_id": 0
+        }
+      },
+      "vtk1": {
+        "label": "vtk1",
+        "metadata": {
+          "basename": "vtk-h-version=0.6.9",
+          "exclusive": true,
+          "id": 1,
+          "name": "vtk-h-version=0.6.90",
+          "paths": {
+            "containment": "/vtk1/vtk-h-version=0.6.90"
+          },
+          "size": 1,
+          "type": "vtk-h-version=0.6.9",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "vtk1",
+        "relation": "contains"
+      },
+      {
+        "source": "vtk1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "vtk1",
+        "relation": "contains"
+      },
+      {
+        "source": "vtk1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "vtk1",
+        "relation": "contains"
+      },
+      {
+        "source": "vtk1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "vtk1",
+        "relation": "contains"
+      },
+      {
+        "source": "vtk1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

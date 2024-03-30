@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "python0": {
+        "label": "python0",
+        "metadata": {
+          "basename": "python",
+          "exclusive": false,
+          "id": 0,
+          "name": "python0",
+          "paths": {
+            "containment": "/python0"
+          },
+          "size": 1,
+          "type": "python",
+          "uniq_id": 0
+        }
+      },
+      "python1": {
+        "label": "python1",
+        "metadata": {
+          "basename": "python-version=3.7.10",
+          "exclusive": true,
+          "id": 1,
+          "name": "python-version=3.7.100",
+          "paths": {
+            "containment": "/python1/python-version=3.7.100"
+          },
+          "size": 1,
+          "type": "python-version=3.7.10",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "python1",
+        "relation": "contains"
+      },
+      {
+        "source": "python1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "python1",
+        "relation": "contains"
+      },
+      {
+        "source": "python1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "python1",
+        "relation": "contains"
+      },
+      {
+        "source": "python1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "python1",
+        "relation": "contains"
+      },
+      {
+        "source": "python1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

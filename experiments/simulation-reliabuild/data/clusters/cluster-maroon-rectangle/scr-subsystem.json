@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "scr0": {
+        "label": "scr0",
+        "metadata": {
+          "basename": "scr",
+          "exclusive": false,
+          "id": 0,
+          "name": "scr0",
+          "paths": {
+            "containment": "/scr0"
+          },
+          "size": 1,
+          "type": "scr",
+          "uniq_id": 0
+        }
+      },
+      "scr1": {
+        "label": "scr1",
+        "metadata": {
+          "basename": "scr-version=3.0rc2",
+          "exclusive": true,
+          "id": 1,
+          "name": "scr-version=3.0rc20",
+          "paths": {
+            "containment": "/scr1/scr-version=3.0rc20"
+          },
+          "size": 1,
+          "type": "scr-version=3.0rc2",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "scr1",
+        "relation": "contains"
+      },
+      {
+        "source": "scr1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "scr1",
+        "relation": "contains"
+      },
+      {
+        "source": "scr1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "scr1",
+        "relation": "contains"
+      },
+      {
+        "source": "scr1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "scr1",
+        "relation": "contains"
+      },
+      {
+        "source": "scr1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

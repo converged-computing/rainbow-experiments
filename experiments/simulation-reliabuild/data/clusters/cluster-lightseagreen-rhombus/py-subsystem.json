@@ -1,0 +1,299 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "py0": {
+        "label": "py0",
+        "metadata": {
+          "basename": "py",
+          "exclusive": false,
+          "id": 0,
+          "name": "py0",
+          "paths": {
+            "containment": "/py0"
+          },
+          "size": 1,
+          "type": "py",
+          "uniq_id": 0
+        }
+      },
+      "py1": {
+        "label": "py1",
+        "metadata": {
+          "basename": "py-petsc4py-version=3.15.2",
+          "exclusive": true,
+          "id": 1,
+          "name": "py-petsc4py-version=3.15.20",
+          "paths": {
+            "containment": "/py1/py-petsc4py-version=3.15.20"
+          },
+          "size": 1,
+          "type": "py-petsc4py-version=3.15.2",
+          "uniq_id": 1
+        }
+      },
+      "py2": {
+        "label": "py2",
+        "metadata": {
+          "basename": "py-mpi4py-version=3.1.2",
+          "exclusive": true,
+          "id": 1,
+          "name": "py-mpi4py-version=3.1.21",
+          "paths": {
+            "containment": "/py2/py-mpi4py-version=3.1.21"
+          },
+          "size": 1,
+          "type": "py-mpi4py-version=3.1.2",
+          "uniq_id": 1
+        }
+      },
+      "py3": {
+        "label": "py3",
+        "metadata": {
+          "basename": "py-numpy-version=1.21.5",
+          "exclusive": true,
+          "id": 1,
+          "name": "py-numpy-version=1.21.52",
+          "paths": {
+            "containment": "/py3/py-numpy-version=1.21.52"
+          },
+          "size": 1,
+          "type": "py-numpy-version=1.21.5",
+          "uniq_id": 1
+        }
+      },
+      "py4": {
+        "label": "py4",
+        "metadata": {
+          "basename": "py-libensemble-version=0.8.0",
+          "exclusive": true,
+          "id": 1,
+          "name": "py-libensemble-version=0.8.03",
+          "paths": {
+            "containment": "/py4/py-libensemble-version=0.8.03"
+          },
+          "size": 1,
+          "type": "py-libensemble-version=0.8.0",
+          "uniq_id": 1
+        }
+      },
+      "py5": {
+        "label": "py5",
+        "metadata": {
+          "basename": "py-psutil-version=5.8.0",
+          "exclusive": true,
+          "id": 1,
+          "name": "py-psutil-version=5.8.04",
+          "paths": {
+            "containment": "/py5/py-psutil-version=5.8.04"
+          },
+          "size": 1,
+          "type": "py-psutil-version=5.8.0",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "6",
+        "relation": "in"
+      },
+      {
+        "source": "2",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "6",
+        "relation": "in"
+      },
+      {
+        "source": "2",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "6",
+        "relation": "in"
+      },
+      {
+        "source": "2",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "6",
+        "relation": "in"
+      },
+      {
+        "source": "2",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

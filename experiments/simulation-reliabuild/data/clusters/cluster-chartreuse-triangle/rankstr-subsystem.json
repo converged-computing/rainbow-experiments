@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "rankstr0": {
+        "label": "rankstr0",
+        "metadata": {
+          "basename": "rankstr",
+          "exclusive": false,
+          "id": 0,
+          "name": "rankstr0",
+          "paths": {
+            "containment": "/rankstr0"
+          },
+          "size": 1,
+          "type": "rankstr",
+          "uniq_id": 0
+        }
+      },
+      "rankstr1": {
+        "label": "rankstr1",
+        "metadata": {
+          "basename": "rankstr-version=0.0.3",
+          "exclusive": true,
+          "id": 1,
+          "name": "rankstr-version=0.0.30",
+          "paths": {
+            "containment": "/rankstr1/rankstr-version=0.0.30"
+          },
+          "size": 1,
+          "type": "rankstr-version=0.0.3",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "rankstr1",
+        "relation": "contains"
+      },
+      {
+        "source": "rankstr1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "rankstr1",
+        "relation": "contains"
+      },
+      {
+        "source": "rankstr1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "rankstr1",
+        "relation": "contains"
+      },
+      {
+        "source": "rankstr1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "rankstr1",
+        "relation": "contains"
+      },
+      {
+        "source": "rankstr1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

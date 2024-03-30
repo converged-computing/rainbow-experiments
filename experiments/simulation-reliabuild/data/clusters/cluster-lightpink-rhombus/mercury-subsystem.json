@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "mercury0": {
+        "label": "mercury0",
+        "metadata": {
+          "basename": "mercury",
+          "exclusive": false,
+          "id": 0,
+          "name": "mercury0",
+          "paths": {
+            "containment": "/mercury0"
+          },
+          "size": 1,
+          "type": "mercury",
+          "uniq_id": 0
+        }
+      },
+      "mercury1": {
+        "label": "mercury1",
+        "metadata": {
+          "basename": "mercury-version=0.9.0",
+          "exclusive": true,
+          "id": 1,
+          "name": "mercury-version=0.9.00",
+          "paths": {
+            "containment": "/mercury1/mercury-version=0.9.00"
+          },
+          "size": 1,
+          "type": "mercury-version=0.9.0",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "mercury1",
+        "relation": "contains"
+      },
+      {
+        "source": "mercury1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "mercury1",
+        "relation": "contains"
+      },
+      {
+        "source": "mercury1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "mercury1",
+        "relation": "contains"
+      },
+      {
+        "source": "mercury1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "mercury1",
+        "relation": "contains"
+      },
+      {
+        "source": "mercury1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

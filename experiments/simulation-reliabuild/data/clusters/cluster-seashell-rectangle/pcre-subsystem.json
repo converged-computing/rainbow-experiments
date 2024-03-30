@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "pcre0": {
+        "label": "pcre0",
+        "metadata": {
+          "basename": "pcre",
+          "exclusive": false,
+          "id": 0,
+          "name": "pcre0",
+          "paths": {
+            "containment": "/pcre0"
+          },
+          "size": 1,
+          "type": "pcre",
+          "uniq_id": 0
+        }
+      },
+      "pcre1": {
+        "label": "pcre1",
+        "metadata": {
+          "basename": "pcre-version=8.44",
+          "exclusive": true,
+          "id": 1,
+          "name": "pcre-version=8.440",
+          "paths": {
+            "containment": "/pcre1/pcre-version=8.440"
+          },
+          "size": 1,
+          "type": "pcre-version=8.44",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "pcre1",
+        "relation": "contains"
+      },
+      {
+        "source": "pcre1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "pcre1",
+        "relation": "contains"
+      },
+      {
+        "source": "pcre1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "pcre1",
+        "relation": "contains"
+      },
+      {
+        "source": "pcre1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "pcre1",
+        "relation": "contains"
+      },
+      {
+        "source": "pcre1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

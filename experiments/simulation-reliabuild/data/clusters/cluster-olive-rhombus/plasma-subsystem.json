@@ -1,0 +1,79 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "plasma0": {
+        "label": "plasma0",
+        "metadata": {
+          "basename": "plasma",
+          "exclusive": false,
+          "id": 0,
+          "name": "plasma0",
+          "paths": {
+            "containment": "/plasma0"
+          },
+          "size": 1,
+          "type": "plasma",
+          "uniq_id": 0
+        }
+      },
+      "plasma1": {
+        "label": "plasma1",
+        "metadata": {
+          "basename": "plasma-version=17.1",
+          "exclusive": true,
+          "id": 1,
+          "name": "plasma-version=17.10",
+          "paths": {
+            "containment": "/plasma1/plasma-version=17.10"
+          },
+          "size": 1,
+          "type": "plasma-version=17.1",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "plasma1",
+        "relation": "contains"
+      },
+      {
+        "source": "plasma1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "plasma1",
+        "relation": "contains"
+      },
+      {
+        "source": "plasma1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "plasma1",
+        "relation": "contains"
+      },
+      {
+        "source": "plasma1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "plasma1",
+        "relation": "contains"
+      },
+      {
+        "source": "plasma1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}
