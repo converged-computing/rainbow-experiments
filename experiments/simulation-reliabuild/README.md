@@ -5,39 +5,14 @@
 - [publication](https://www.osti.gov/biblio/2223030)
 - [build spec generator](https://github.com/buildsi/spack-buildspace-exploration)
 
-We started with a base simulation in [simulation-lammps](../simulation-lammps) and this experiment aims to improve upon that by using actual data and some modeling. Specifically, what I've scoped out. We impressive dataset, about 25K spack specs. For each spack spec I have a data frame of if the build was a success, failure, and given failure, why. I'm thinking what we might want to do is:
+We started with a base simulation in [simulation-lammps](../simulation-lammps) and this experiment aims to improve upon that by using actual data and extending compatibility to the case of software version ranges. We are going to do the following:
 
-1. For each spec filter down to those that were successful. We will assume all others not in that set would fail.
-1. The package dependencies are the features
-1. Remove features that are consistent (e.g., it says in the paper they were run on the same os, so this is irrelevant)
-1. Each spack spec becomes a vector of features!
-1. Create cluster environments, akin to the first experiment, that have every combination of features (or close to that if the number is astronomically large, I think even 1K+ clusters would be OK).
-1. For each level of compatibility metadata, submit the job to rainbow, again get a cluster assignment. Each cluster is also a vector of those same features.
+1. For the real dataset (spack specs) filter down to those that were successful. We know they build.
+1. The package dependency versions are the features. This means rainbow needed an algorithm addition to match a version range.
+1. Create cluster environments that have a randomly selected version (from the set in the experiment)
+1. One level of compatibility metadata is a dependency version. Submit jobs to rainbow, first with no metadata, and then adding version *ranges* for specific packages. E.g., "Does this build environment have a version that is within this range?" 
 1. When we finish submitting all jobspecs (spack build specs) we have a set assigned to every cluster.
-1. For each cluster set, determine features needed vs. present, and for those present, calculate a difference between the found version and actual version. Newer versions are not compatible with older ones (assuming new features) but older versions we can calculate some diff to say distance to working.
-1. Calculate an overall score for each cluster (total points/total possible)
-
-High level, the above allows us to derive a probability from a model that is specific to the package (this is important I think) of success given an assigned environment. This feels similar to what we probably would eventually do, because I think the way we understand compatibility is going to vary on the app level (here that is spack package builds). It's based on real data, will be a large scale, and will be super cool!
-
-# TODO check length of jobspecs.yaml
-# we should have a scoring algorithm for a jobspec assignment:
-# if version is newer, assume not compatible (or distance?)
-# use puython version parsing to calculate distance
-# weighted features = cosine distance of two? 1 == perfect, 0 == totally wrong
-# score of assignment = (weighted features / total features needed)
-
-
-## Setup
-
-First prepare data in [data](data) (see README.md there for instructions). At the end we have:
-
-- 119 unique features (that are package metadata, there can be >1 per subsystem, e.g., `<package>-version` and `<package>-compiler-version`
-- 113 unique package subsytems
-- 1000 clusters with randomly selected compatibility features
-- Over 25K jobspecs (split into groups of 1K so the files aren't too huge)
-- 50 models for 50 packages represented in the jobspecs that we want to build
-
-Note that in parsing the data I discovered that we have variability with respect primarily to package versions (dependencies). Thus, a subsystem is actually going to be a package dependency, with typically 1-2 features for each. This also means our experiment design is going to be huge (won't need to run iterations).
+1. Calculate a score (versions that correctly overlap over total)
 
 ### Experiment
 
@@ -54,7 +29,7 @@ go mod vendor
 go run cmd/server/server.go --help
 
 # We can use all the defaults, and set a global token. Run it:
-go run cmd/server/server.go --global-token rainbow
+go run cmd/server/server.go --global-token rainbow --match-algorithm range
 ```
 ```console
 2024/03/20 00:27:55 creating 🌈️ server...
@@ -76,22 +51,21 @@ Since we have everything locally, we can actually do the entire thing in Python!
 
 For each cluster:
 
-1. register cluster
-2. register 113 subsystems
-3. run the experiment with 25K jobspecs without any subsystem metadata
-4. for each subsytem (randomly sorted, N=113):
- - submit each jobspec (25k+) with added subsystem metadata
+1. register 100 randomly generated clusters, each with varying ranges of dependency versions (subsystems)
+1. register ~113 subsystems across 100 clusters
+1. run the experiment with ~10K jobspecs without any subsystem metadata
+1. run the expemiments adding each subsystem in isolation
+1. for each subsystem (randomly sorted):
+ - submit each jobspec with added subsystem metadata, adding subsystem metadata until no match (then stopping)
  - for each cluster, get assigned jobs:
-  - use build package specific model to get P(success|features)
+  - give a point for each package build dependency version in the right range
+  - keep track of unmatched jobs, etc.
   - save scores across cluster
 
-Calculate overall scores for each subsytem group (incrementally added)
-We would want to see that as we add compatibility metadata (package dependencies), we get more matches. Since the jobspecs don't have perfect clusters, note that there might not be a perfect match. This means as we add more constraints, jobs won't even be allowed to be submit if there is not a matching cluster.
+We would want to see that as we add compatibility metadata (package dependencies), we get more matches. But I suspect with these versions, we are going to see the original set is fairly good (there aren't that many versions) and then it might go up slightly, but then go down. I hypothesize this experiment will be an example of the over fitting case, where when we ask too much from a limited set of clusters (that is not generated perfectly for our needs) we get fewer matches if we ask for too many things. 
 
-TODO add quiet mode.
+We will see!
 
 ```bash
 python run_experiments.py
 ```
-
-Note that we might try this again building a model that doesn't use categorical version features, but numerical.
