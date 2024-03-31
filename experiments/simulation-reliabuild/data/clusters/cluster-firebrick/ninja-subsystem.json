@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "ninja0": {
+        "label": "ninja0",
+        "metadata": {
+          "basename": "ninja",
+          "exclusive": false,
+          "id": 0,
+          "name": "ninja0",
+          "paths": {
+            "containment": "/ninja0"
+          },
+          "size": 1,
+          "type": "ninja",
+          "uniq_id": 0
+        }
+      },
+      "ninja1": {
+        "label": "ninja1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/ninja1/package0"
+          },
+          "size": 1,
+          "version": "1.6.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "ninja1",
+        "relation": "contains"
+      },
+      {
+        "source": "ninja1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "ninja1",
+        "relation": "contains"
+      },
+      {
+        "source": "ninja1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "ninja1",
+        "relation": "contains"
+      },
+      {
+        "source": "ninja1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "ninja1",
+        "relation": "contains"
+      },
+      {
+        "source": "ninja1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

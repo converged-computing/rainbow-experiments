@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "parmetis0": {
+        "label": "parmetis0",
+        "metadata": {
+          "basename": "parmetis",
+          "exclusive": false,
+          "id": 0,
+          "name": "parmetis0",
+          "paths": {
+            "containment": "/parmetis0"
+          },
+          "size": 1,
+          "type": "parmetis",
+          "uniq_id": 0
+        }
+      },
+      "parmetis1": {
+        "label": "parmetis1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/parmetis1/package0"
+          },
+          "size": 1,
+          "version": "4.0.3",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "parmetis1",
+        "relation": "contains"
+      },
+      {
+        "source": "parmetis1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "parmetis1",
+        "relation": "contains"
+      },
+      {
+        "source": "parmetis1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "parmetis1",
+        "relation": "contains"
+      },
+      {
+        "source": "parmetis1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "parmetis1",
+        "relation": "contains"
+      },
+      {
+        "source": "parmetis1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

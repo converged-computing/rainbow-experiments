@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "readline0": {
+        "label": "readline0",
+        "metadata": {
+          "basename": "readline",
+          "exclusive": false,
+          "id": 0,
+          "name": "readline0",
+          "paths": {
+            "containment": "/readline0"
+          },
+          "size": 1,
+          "type": "readline",
+          "uniq_id": 0
+        }
+      },
+      "readline1": {
+        "label": "readline1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/readline1/package0"
+          },
+          "size": 1,
+          "version": "8.1.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "readline1",
+        "relation": "contains"
+      },
+      {
+        "source": "readline1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "readline1",
+        "relation": "contains"
+      },
+      {
+        "source": "readline1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "readline1",
+        "relation": "contains"
+      },
+      {
+        "source": "readline1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "readline1",
+        "relation": "contains"
+      },
+      {
+        "source": "readline1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

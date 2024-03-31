@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "autoconf-archive0": {
+        "label": "autoconf-archive0",
+        "metadata": {
+          "basename": "autoconf-archive",
+          "exclusive": false,
+          "id": 0,
+          "name": "autoconf-archive0",
+          "paths": {
+            "containment": "/autoconf-archive0"
+          },
+          "size": 1,
+          "type": "autoconf-archive",
+          "uniq_id": 0
+        }
+      },
+      "autoconf-archive1": {
+        "label": "autoconf-archive1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/autoconf-archive1/package0"
+          },
+          "size": 1,
+          "version": "2019.1.6",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "autoconf-archive1",
+        "relation": "contains"
+      },
+      {
+        "source": "autoconf-archive1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "autoconf-archive1",
+        "relation": "contains"
+      },
+      {
+        "source": "autoconf-archive1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "autoconf-archive1",
+        "relation": "contains"
+      },
+      {
+        "source": "autoconf-archive1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "autoconf-archive1",
+        "relation": "contains"
+      },
+      {
+        "source": "autoconf-archive1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

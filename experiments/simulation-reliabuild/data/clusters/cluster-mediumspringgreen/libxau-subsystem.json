@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libxau0": {
+        "label": "libxau0",
+        "metadata": {
+          "basename": "libxau",
+          "exclusive": false,
+          "id": 0,
+          "name": "libxau0",
+          "paths": {
+            "containment": "/libxau0"
+          },
+          "size": 1,
+          "type": "libxau",
+          "uniq_id": 0
+        }
+      },
+      "libxau1": {
+        "label": "libxau1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/libxau1/package0"
+          },
+          "size": 1,
+          "version": "1.0.8",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libxau1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxau1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libxau1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxau1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libxau1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxau1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libxau1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxau1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

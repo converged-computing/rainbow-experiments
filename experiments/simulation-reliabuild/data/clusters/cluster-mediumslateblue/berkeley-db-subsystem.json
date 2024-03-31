@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "berkeley-db0": {
+        "label": "berkeley-db0",
+        "metadata": {
+          "basename": "berkeley-db",
+          "exclusive": false,
+          "id": 0,
+          "name": "berkeley-db0",
+          "paths": {
+            "containment": "/berkeley-db0"
+          },
+          "size": 1,
+          "type": "berkeley-db",
+          "uniq_id": 0
+        }
+      },
+      "berkeley-db1": {
+        "label": "berkeley-db1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/berkeley-db1/package0"
+          },
+          "size": 1,
+          "version": "18.1.40",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "berkeley-db1",
+        "relation": "contains"
+      },
+      {
+        "source": "berkeley-db1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "berkeley-db1",
+        "relation": "contains"
+      },
+      {
+        "source": "berkeley-db1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "berkeley-db1",
+        "relation": "contains"
+      },
+      {
+        "source": "berkeley-db1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "berkeley-db1",
+        "relation": "contains"
+      },
+      {
+        "source": "berkeley-db1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

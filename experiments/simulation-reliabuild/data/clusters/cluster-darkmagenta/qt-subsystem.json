@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "qt0": {
+        "label": "qt0",
+        "metadata": {
+          "basename": "qt",
+          "exclusive": false,
+          "id": 0,
+          "name": "qt0",
+          "paths": {
+            "containment": "/qt0"
+          },
+          "size": 1,
+          "type": "qt",
+          "uniq_id": 0
+        }
+      },
+      "qt1": {
+        "label": "qt1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/qt1/package0"
+          },
+          "size": 1,
+          "version": "5.9.9",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "qt1",
+        "relation": "contains"
+      },
+      {
+        "source": "qt1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "qt1",
+        "relation": "contains"
+      },
+      {
+        "source": "qt1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "qt1",
+        "relation": "contains"
+      },
+      {
+        "source": "qt1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "qt1",
+        "relation": "contains"
+      },
+      {
+        "source": "qt1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

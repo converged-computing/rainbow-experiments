@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "json-c0": {
+        "label": "json-c0",
+        "metadata": {
+          "basename": "json-c",
+          "exclusive": false,
+          "id": 0,
+          "name": "json-c0",
+          "paths": {
+            "containment": "/json-c0"
+          },
+          "size": 1,
+          "type": "json-c",
+          "uniq_id": 0
+        }
+      },
+      "json-c1": {
+        "label": "json-c1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/json-c1/package0"
+          },
+          "size": 1,
+          "version": "0.15.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "json-c1",
+        "relation": "contains"
+      },
+      {
+        "source": "json-c1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "json-c1",
+        "relation": "contains"
+      },
+      {
+        "source": "json-c1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "json-c1",
+        "relation": "contains"
+      },
+      {
+        "source": "json-c1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "json-c1",
+        "relation": "contains"
+      },
+      {
+        "source": "json-c1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

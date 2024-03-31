@@ -27,5 +27,5 @@ In all we have:
 - 119 unique features (that are package metadata, there can be >1 per subsystem, e.g., `<package>-version` and `<package>-compiler-version`
 - 113 unique package subsytems
 - 1000 clusters with randomly selected compatibility features
-- Over 25K jobspecs (split into groups of 1K so the files aren't too huge)
+- 16,900 Jobspecs from ~25K jobspec contenders (that we didn't generate models for all) 
 - 50 models for 50 packages represented in the jobspecs that we want to build

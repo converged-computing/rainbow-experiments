@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "py-libensemble0": {
+        "label": "py-libensemble0",
+        "metadata": {
+          "basename": "py-libensemble",
+          "exclusive": false,
+          "id": 0,
+          "name": "py-libensemble0",
+          "paths": {
+            "containment": "/py-libensemble0"
+          },
+          "size": 1,
+          "type": "py-libensemble",
+          "uniq_id": 0
+        }
+      },
+      "py-libensemble1": {
+        "label": "py-libensemble1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/py-libensemble1/package0"
+          },
+          "size": 1,
+          "version": "0.7.1",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "py-libensemble1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-libensemble1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "py-libensemble1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-libensemble1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "py-libensemble1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-libensemble1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "py-libensemble1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-libensemble1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

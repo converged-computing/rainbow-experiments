@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "snappy0": {
+        "label": "snappy0",
+        "metadata": {
+          "basename": "snappy",
+          "exclusive": false,
+          "id": 0,
+          "name": "snappy0",
+          "paths": {
+            "containment": "/snappy0"
+          },
+          "size": 1,
+          "type": "snappy",
+          "uniq_id": 0
+        }
+      },
+      "snappy1": {
+        "label": "snappy1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/snappy1/package0"
+          },
+          "size": 1,
+          "version": "1.1.8",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "snappy1",
+        "relation": "contains"
+      },
+      {
+        "source": "snappy1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "snappy1",
+        "relation": "contains"
+      },
+      {
+        "source": "snappy1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "snappy1",
+        "relation": "contains"
+      },
+      {
+        "source": "snappy1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "snappy1",
+        "relation": "contains"
+      },
+      {
+        "source": "snappy1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

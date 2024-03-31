@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "pdsh0": {
+        "label": "pdsh0",
+        "metadata": {
+          "basename": "pdsh",
+          "exclusive": false,
+          "id": 0,
+          "name": "pdsh0",
+          "paths": {
+            "containment": "/pdsh0"
+          },
+          "size": 1,
+          "type": "pdsh",
+          "uniq_id": 0
+        }
+      },
+      "pdsh1": {
+        "label": "pdsh1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/pdsh1/package0"
+          },
+          "size": 1,
+          "version": "2.31.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "pdsh1",
+        "relation": "contains"
+      },
+      {
+        "source": "pdsh1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "pdsh1",
+        "relation": "contains"
+      },
+      {
+        "source": "pdsh1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "pdsh1",
+        "relation": "contains"
+      },
+      {
+        "source": "pdsh1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "pdsh1",
+        "relation": "contains"
+      },
+      {
+        "source": "pdsh1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

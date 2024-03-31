@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "unzip0": {
+        "label": "unzip0",
+        "metadata": {
+          "basename": "unzip",
+          "exclusive": false,
+          "id": 0,
+          "name": "unzip0",
+          "paths": {
+            "containment": "/unzip0"
+          },
+          "size": 1,
+          "type": "unzip",
+          "uniq_id": 0
+        }
+      },
+      "unzip1": {
+        "label": "unzip1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/unzip1/package0"
+          },
+          "size": 1,
+          "version": "6.0.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "unzip1",
+        "relation": "contains"
+      },
+      {
+        "source": "unzip1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "unzip1",
+        "relation": "contains"
+      },
+      {
+        "source": "unzip1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "unzip1",
+        "relation": "contains"
+      },
+      {
+        "source": "unzip1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "unzip1",
+        "relation": "contains"
+      },
+      {
+        "source": "unzip1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

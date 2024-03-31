@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "gawk0": {
+        "label": "gawk0",
+        "metadata": {
+          "basename": "gawk",
+          "exclusive": false,
+          "id": 0,
+          "name": "gawk0",
+          "paths": {
+            "containment": "/gawk0"
+          },
+          "size": 1,
+          "type": "gawk",
+          "uniq_id": 0
+        }
+      },
+      "gawk1": {
+        "label": "gawk1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/gawk1/package0"
+          },
+          "size": 1,
+          "version": "5.1.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "gawk1",
+        "relation": "contains"
+      },
+      {
+        "source": "gawk1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "gawk1",
+        "relation": "contains"
+      },
+      {
+        "source": "gawk1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "gawk1",
+        "relation": "contains"
+      },
+      {
+        "source": "gawk1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "gawk1",
+        "relation": "contains"
+      },
+      {
+        "source": "gawk1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

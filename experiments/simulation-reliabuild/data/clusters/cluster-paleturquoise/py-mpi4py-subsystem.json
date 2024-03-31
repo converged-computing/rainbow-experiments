@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "py-mpi4py0": {
+        "label": "py-mpi4py0",
+        "metadata": {
+          "basename": "py-mpi4py",
+          "exclusive": false,
+          "id": 0,
+          "name": "py-mpi4py0",
+          "paths": {
+            "containment": "/py-mpi4py0"
+          },
+          "size": 1,
+          "type": "py-mpi4py",
+          "uniq_id": 0
+        }
+      },
+      "py-mpi4py1": {
+        "label": "py-mpi4py1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/py-mpi4py1/package0"
+          },
+          "size": 1,
+          "version": "3.0.3",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "py-mpi4py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-mpi4py1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "py-mpi4py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-mpi4py1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "py-mpi4py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-mpi4py1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "py-mpi4py1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-mpi4py1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

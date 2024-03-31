@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "mpich0": {
+        "label": "mpich0",
+        "metadata": {
+          "basename": "mpich",
+          "exclusive": false,
+          "id": 0,
+          "name": "mpich0",
+          "paths": {
+            "containment": "/mpich0"
+          },
+          "size": 1,
+          "type": "mpich",
+          "uniq_id": 0
+        }
+      },
+      "mpich1": {
+        "label": "mpich1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/mpich1/package0"
+          },
+          "size": 1,
+          "version": "3.1.1",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "mpich1",
+        "relation": "contains"
+      },
+      {
+        "source": "mpich1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "mpich1",
+        "relation": "contains"
+      },
+      {
+        "source": "mpich1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "mpich1",
+        "relation": "contains"
+      },
+      {
+        "source": "mpich1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "mpich1",
+        "relation": "contains"
+      },
+      {
+        "source": "mpich1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

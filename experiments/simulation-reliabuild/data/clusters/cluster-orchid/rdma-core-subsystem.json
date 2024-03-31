@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "rdma-core0": {
+        "label": "rdma-core0",
+        "metadata": {
+          "basename": "rdma-core",
+          "exclusive": false,
+          "id": 0,
+          "name": "rdma-core0",
+          "paths": {
+            "containment": "/rdma-core0"
+          },
+          "size": 1,
+          "type": "rdma-core",
+          "uniq_id": 0
+        }
+      },
+      "rdma-core1": {
+        "label": "rdma-core1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/rdma-core1/package0"
+          },
+          "size": 1,
+          "version": "34.0.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "rdma-core1",
+        "relation": "contains"
+      },
+      {
+        "source": "rdma-core1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "rdma-core1",
+        "relation": "contains"
+      },
+      {
+        "source": "rdma-core1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "rdma-core1",
+        "relation": "contains"
+      },
+      {
+        "source": "rdma-core1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "rdma-core1",
+        "relation": "contains"
+      },
+      {
+        "source": "rdma-core1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

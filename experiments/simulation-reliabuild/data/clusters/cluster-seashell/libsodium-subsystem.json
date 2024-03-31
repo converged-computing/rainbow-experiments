@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libsodium0": {
+        "label": "libsodium0",
+        "metadata": {
+          "basename": "libsodium",
+          "exclusive": false,
+          "id": 0,
+          "name": "libsodium0",
+          "paths": {
+            "containment": "/libsodium0"
+          },
+          "size": 1,
+          "type": "libsodium",
+          "uniq_id": 0
+        }
+      },
+      "libsodium1": {
+        "label": "libsodium1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/libsodium1/package0"
+          },
+          "size": 1,
+          "version": "1.0.3",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libsodium1",
+        "relation": "contains"
+      },
+      {
+        "source": "libsodium1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libsodium1",
+        "relation": "contains"
+      },
+      {
+        "source": "libsodium1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libsodium1",
+        "relation": "contains"
+      },
+      {
+        "source": "libsodium1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libsodium1",
+        "relation": "contains"
+      },
+      {
+        "source": "libsodium1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "upcxx0": {
+        "label": "upcxx0",
+        "metadata": {
+          "basename": "upcxx",
+          "exclusive": false,
+          "id": 0,
+          "name": "upcxx0",
+          "paths": {
+            "containment": "/upcxx0"
+          },
+          "size": 1,
+          "type": "upcxx",
+          "uniq_id": 0
+        }
+      },
+      "upcxx1": {
+        "label": "upcxx1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/upcxx1/package0"
+          },
+          "size": 1,
+          "version": "2021.3.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "upcxx1",
+        "relation": "contains"
+      },
+      {
+        "source": "upcxx1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "upcxx1",
+        "relation": "contains"
+      },
+      {
+        "source": "upcxx1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "upcxx1",
+        "relation": "contains"
+      },
+      {
+        "source": "upcxx1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "upcxx1",
+        "relation": "contains"
+      },
+      {
+        "source": "upcxx1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

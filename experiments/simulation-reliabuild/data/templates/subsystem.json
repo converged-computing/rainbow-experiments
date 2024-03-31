@@ -28,6 +28,7 @@
             "containment": "/{{ name }}{{ node.index }}/{{ node.type }}{{ node.type_count }}"
           },
           "size": 1,
+          "version": "{{ node.version }}",
           "type": "{{ node.type }}",
           "uniq_id": 1
         }
@@ -40,37 +41,37 @@
         "relation": "contains"
       },
       {
-        "source": "{{ name }}}{{ node.index }}",
+        "source": "{{ name }}{{ node.index }}",
         "target": "2",
         "relation": "in"
       },
       {
         "source": "14",
-        "target": "{{ name }}}{{ node.index }}",
+        "target": "{{ name }}{{ node.index }}",
         "relation": "contains"
       },
       {
-        "source": "{{ name }}}{{ node.index }}",
+        "source": "{{ name }}{{ node.index }}",
         "target": "14",
         "relation": "in"
       },
       {
         "source": "10",
-        "target": "{{ name }}}{{ node.index }}",
+        "target": "{{ name }}{{ node.index }}",
         "relation": "contains"
       },
       {
-        "source": "{{ name }}}{{ node.index }}",
+        "source": "{{ name }}{{ node.index }}",
         "target": "10",
         "relation": "in"
       },
       {
         "source": "5",
-        "target": "{{ name }}}{{ node.index }}",
+        "target": "{{ name }}{{ node.index }}",
         "relation": "contains"
       },
       {
-        "source": "{{ name }}}{{ node.index }}",
+        "source": "{{ name }}{{ node.index }}",
         "target": "6",
         "relation": "in"
       }{% if loop.last %}{% else %},{% endif %}{% endfor %}

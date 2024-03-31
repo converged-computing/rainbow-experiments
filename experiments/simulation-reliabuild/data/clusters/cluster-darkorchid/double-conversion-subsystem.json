@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "double-conversion0": {
+        "label": "double-conversion0",
+        "metadata": {
+          "basename": "double-conversion",
+          "exclusive": false,
+          "id": 0,
+          "name": "double-conversion0",
+          "paths": {
+            "containment": "/double-conversion0"
+          },
+          "size": 1,
+          "type": "double-conversion",
+          "uniq_id": 0
+        }
+      },
+      "double-conversion1": {
+        "label": "double-conversion1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/double-conversion1/package0"
+          },
+          "size": 1,
+          "version": "1.1.3",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "double-conversion1",
+        "relation": "contains"
+      },
+      {
+        "source": "double-conversion1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "double-conversion1",
+        "relation": "contains"
+      },
+      {
+        "source": "double-conversion1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "double-conversion1",
+        "relation": "contains"
+      },
+      {
+        "source": "double-conversion1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "double-conversion1",
+        "relation": "contains"
+      },
+      {
+        "source": "double-conversion1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

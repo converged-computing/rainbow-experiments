@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libzmq0": {
+        "label": "libzmq0",
+        "metadata": {
+          "basename": "libzmq",
+          "exclusive": false,
+          "id": 0,
+          "name": "libzmq0",
+          "paths": {
+            "containment": "/libzmq0"
+          },
+          "size": 1,
+          "type": "libzmq",
+          "uniq_id": 0
+        }
+      },
+      "libzmq1": {
+        "label": "libzmq1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/libzmq1/package0"
+          },
+          "size": 1,
+          "version": "4.0.6",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libzmq1",
+        "relation": "contains"
+      },
+      {
+        "source": "libzmq1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libzmq1",
+        "relation": "contains"
+      },
+      {
+        "source": "libzmq1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libzmq1",
+        "relation": "contains"
+      },
+      {
+        "source": "libzmq1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libzmq1",
+        "relation": "contains"
+      },
+      {
+        "source": "libzmq1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

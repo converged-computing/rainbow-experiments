@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "gmp0": {
+        "label": "gmp0",
+        "metadata": {
+          "basename": "gmp",
+          "exclusive": false,
+          "id": 0,
+          "name": "gmp0",
+          "paths": {
+            "containment": "/gmp0"
+          },
+          "size": 1,
+          "type": "gmp",
+          "uniq_id": 0
+        }
+      },
+      "gmp1": {
+        "label": "gmp1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/gmp1/package0"
+          },
+          "size": 1,
+          "version": "6.2.1",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "gmp1",
+        "relation": "contains"
+      },
+      {
+        "source": "gmp1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "gmp1",
+        "relation": "contains"
+      },
+      {
+        "source": "gmp1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "gmp1",
+        "relation": "contains"
+      },
+      {
+        "source": "gmp1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "gmp1",
+        "relation": "contains"
+      },
+      {
+        "source": "gmp1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

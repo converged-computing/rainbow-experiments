@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "vtk-h0": {
+        "label": "vtk-h0",
+        "metadata": {
+          "basename": "vtk-h",
+          "exclusive": false,
+          "id": 0,
+          "name": "vtk-h0",
+          "paths": {
+            "containment": "/vtk-h0"
+          },
+          "size": 1,
+          "type": "vtk-h",
+          "uniq_id": 0
+        }
+      },
+      "vtk-h1": {
+        "label": "vtk-h1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/vtk-h1/package0"
+          },
+          "size": 1,
+          "version": "0.7.1",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "vtk-h1",
+        "relation": "contains"
+      },
+      {
+        "source": "vtk-h1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "vtk-h1",
+        "relation": "contains"
+      },
+      {
+        "source": "vtk-h1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "vtk-h1",
+        "relation": "contains"
+      },
+      {
+        "source": "vtk-h1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "vtk-h1",
+        "relation": "contains"
+      },
+      {
+        "source": "vtk-h1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

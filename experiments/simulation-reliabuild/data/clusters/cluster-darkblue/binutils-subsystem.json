@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "binutils0": {
+        "label": "binutils0",
+        "metadata": {
+          "basename": "binutils",
+          "exclusive": false,
+          "id": 0,
+          "name": "binutils0",
+          "paths": {
+            "containment": "/binutils0"
+          },
+          "size": 1,
+          "type": "binutils",
+          "uniq_id": 0
+        }
+      },
+      "binutils1": {
+        "label": "binutils1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/binutils1/package0"
+          },
+          "size": 1,
+          "version": "2.37.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "binutils1",
+        "relation": "contains"
+      },
+      {
+        "source": "binutils1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "binutils1",
+        "relation": "contains"
+      },
+      {
+        "source": "binutils1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "binutils1",
+        "relation": "contains"
+      },
+      {
+        "source": "binutils1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "binutils1",
+        "relation": "contains"
+      },
+      {
+        "source": "binutils1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

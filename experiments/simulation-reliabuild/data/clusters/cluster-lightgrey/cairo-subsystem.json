@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "cairo0": {
+        "label": "cairo0",
+        "metadata": {
+          "basename": "cairo",
+          "exclusive": false,
+          "id": 0,
+          "name": "cairo0",
+          "paths": {
+            "containment": "/cairo0"
+          },
+          "size": 1,
+          "type": "cairo",
+          "uniq_id": 0
+        }
+      },
+      "cairo1": {
+        "label": "cairo1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/cairo1/package0"
+          },
+          "size": 1,
+          "version": "1.16.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "cairo1",
+        "relation": "contains"
+      },
+      {
+        "source": "cairo1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "cairo1",
+        "relation": "contains"
+      },
+      {
+        "source": "cairo1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "cairo1",
+        "relation": "contains"
+      },
+      {
+        "source": "cairo1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "cairo1",
+        "relation": "contains"
+      },
+      {
+        "source": "cairo1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

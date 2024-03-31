@@ -1,2 +1,0 @@
-,name,version,level,Status,Reason,full_hash,hash,Num Successes,Num Fails,Alloc Time,yaml_file,dependencies
-7qj7iwzz7rw46wgknmxsqcs6vbqqto3u,loki,0.1.7,0,SUCCESS,Not Scheduled,7qj7iwzz7rw46wgknmxsqcs6vbqqto3u,u2koso67c6uvs3kdinqxx4wcnyr36dnn,1,0,3600,/p/vast1/koparasy/BUILD/spack_cluster_installer/quartz/loki/specs/7qj7iwzz7rw46wgknmxsqcs6vbqqto3u.yaml,[]

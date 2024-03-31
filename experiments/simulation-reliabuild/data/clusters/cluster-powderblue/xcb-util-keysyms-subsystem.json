@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "xcb-util-keysyms0": {
+        "label": "xcb-util-keysyms0",
+        "metadata": {
+          "basename": "xcb-util-keysyms",
+          "exclusive": false,
+          "id": 0,
+          "name": "xcb-util-keysyms0",
+          "paths": {
+            "containment": "/xcb-util-keysyms0"
+          },
+          "size": 1,
+          "type": "xcb-util-keysyms",
+          "uniq_id": 0
+        }
+      },
+      "xcb-util-keysyms1": {
+        "label": "xcb-util-keysyms1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/xcb-util-keysyms1/package0"
+          },
+          "size": 1,
+          "version": "0.4.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "xcb-util-keysyms1",
+        "relation": "contains"
+      },
+      {
+        "source": "xcb-util-keysyms1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "xcb-util-keysyms1",
+        "relation": "contains"
+      },
+      {
+        "source": "xcb-util-keysyms1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "xcb-util-keysyms1",
+        "relation": "contains"
+      },
+      {
+        "source": "xcb-util-keysyms1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "xcb-util-keysyms1",
+        "relation": "contains"
+      },
+      {
+        "source": "xcb-util-keysyms1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libxdmcp0": {
+        "label": "libxdmcp0",
+        "metadata": {
+          "basename": "libxdmcp",
+          "exclusive": false,
+          "id": 0,
+          "name": "libxdmcp0",
+          "paths": {
+            "containment": "/libxdmcp0"
+          },
+          "size": 1,
+          "type": "libxdmcp",
+          "uniq_id": 0
+        }
+      },
+      "libxdmcp1": {
+        "label": "libxdmcp1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/libxdmcp1/package0"
+          },
+          "size": 1,
+          "version": "1.1.2",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libxdmcp1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxdmcp1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libxdmcp1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxdmcp1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libxdmcp1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxdmcp1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libxdmcp1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxdmcp1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

@@ -7,21 +7,25 @@
 
 We started with a base simulation in [simulation-lammps](../simulation-lammps) and this experiment aims to improve upon that by using actual data and some modeling. Specifically, what I've scoped out. We impressive dataset, about 25K spack specs. For each spack spec I have a data frame of if the build was a success, failure, and given failure, why. I'm thinking what we might want to do is:
 
-1. For each spec that failed filter down to those that have a root failure (meaning it wasn't a spack child/dependency that failed it, but something about building the core package)
-1. All successes can be included. We know they build.
-1. Decide on core features from the specs we want to model (e.g., platform, os, target, compiler and version and a subset of features, stuff from the core package). We likely can choose most of them.
+1. For each spec filter down to those that were successful. We will assume all others not in that set would fail.
+1. The package dependencies are the features
 1. Remove features that are consistent (e.g., it says in the paper they were run on the same os, so this is irrelevant)
 1. Each spack spec becomes a vector of features!
-1. Break the specs down by the package (this is a combination of the ECP / proxy app stuffs).
-1. For each package, build a bayesian model that predicts success or failure based on the actual features
-1. We then create cluster environments, akin to the first experiment, that have every combination of features (or close to that if the number is astronomically large, I think even 1K+ clusters would be OK).
+1. Create cluster environments, akin to the first experiment, that have every combination of features (or close to that if the number is astronomically large, I think even 1K+ clusters would be OK).
 1. For each level of compatibility metadata, submit the job to rainbow, again get a cluster assignment. Each cluster is also a vector of those same features.
 1. When we finish submitting all jobspecs (spack build specs) we have a set assigned to every cluster.
-For each cluster set, use the package model to calculate the probably of success given the feature vector of the cluster (P success | cluster environment)
-1. This gives us a set of probability scores for each cluster
-1. Across clusters, the simplest thing we can then do is the sum of scores / total points possible
+1. For each cluster set, determine features needed vs. present, and for those present, calculate a difference between the found version and actual version. Newer versions are not compatible with older ones (assuming new features) but older versions we can calculate some diff to say distance to working.
+1. Calculate an overall score for each cluster (total points/total possible)
 
 High level, the above allows us to derive a probability from a model that is specific to the package (this is important I think) of success given an assigned environment. This feels similar to what we probably would eventually do, because I think the way we understand compatibility is going to vary on the app level (here that is spack package builds). It's based on real data, will be a large scale, and will be super cool!
+
+# TODO check length of jobspecs.yaml
+# we should have a scoring algorithm for a jobspec assignment:
+# if version is newer, assume not compatible (or distance?)
+# use puython version parsing to calculate distance
+# weighted features = cosine distance of two? 1 == perfect, 0 == totally wrong
+# score of assignment = (weighted features / total features needed)
+
 
 ## Setup
 
@@ -83,6 +87,8 @@ For each cluster:
 
 Calculate overall scores for each subsytem group (incrementally added)
 We would want to see that as we add compatibility metadata (package dependencies), we get more matches. Since the jobspecs don't have perfect clusters, note that there might not be a perfect match. This means as we add more constraints, jobs won't even be allowed to be submit if there is not a matching cluster.
+
+TODO add quiet mode.
 
 ```bash
 python run_experiments.py

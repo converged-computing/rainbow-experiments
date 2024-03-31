@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "variorum0": {
+        "label": "variorum0",
+        "metadata": {
+          "basename": "variorum",
+          "exclusive": false,
+          "id": 0,
+          "name": "variorum0",
+          "paths": {
+            "containment": "/variorum0"
+          },
+          "size": 1,
+          "type": "variorum",
+          "uniq_id": 0
+        }
+      },
+      "variorum1": {
+        "label": "variorum1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/variorum1/package0"
+          },
+          "size": 1,
+          "version": "0.4.1",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "variorum1",
+        "relation": "contains"
+      },
+      {
+        "source": "variorum1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "variorum1",
+        "relation": "contains"
+      },
+      {
+        "source": "variorum1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "variorum1",
+        "relation": "contains"
+      },
+      {
+        "source": "variorum1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "variorum1",
+        "relation": "contains"
+      },
+      {
+        "source": "variorum1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

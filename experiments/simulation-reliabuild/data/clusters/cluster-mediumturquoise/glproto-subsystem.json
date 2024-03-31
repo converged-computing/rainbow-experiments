@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "glproto0": {
+        "label": "glproto0",
+        "metadata": {
+          "basename": "glproto",
+          "exclusive": false,
+          "id": 0,
+          "name": "glproto0",
+          "paths": {
+            "containment": "/glproto0"
+          },
+          "size": 1,
+          "type": "glproto",
+          "uniq_id": 0
+        }
+      },
+      "glproto1": {
+        "label": "glproto1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/glproto1/package0"
+          },
+          "size": 1,
+          "version": "1.4.17",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "glproto1",
+        "relation": "contains"
+      },
+      {
+        "source": "glproto1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "glproto1",
+        "relation": "contains"
+      },
+      {
+        "source": "glproto1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "glproto1",
+        "relation": "contains"
+      },
+      {
+        "source": "glproto1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "glproto1",
+        "relation": "contains"
+      },
+      {
+        "source": "glproto1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

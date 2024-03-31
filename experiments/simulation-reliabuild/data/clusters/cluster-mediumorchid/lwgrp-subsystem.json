@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "lwgrp0": {
+        "label": "lwgrp0",
+        "metadata": {
+          "basename": "lwgrp",
+          "exclusive": false,
+          "id": 0,
+          "name": "lwgrp0",
+          "paths": {
+            "containment": "/lwgrp0"
+          },
+          "size": 1,
+          "type": "lwgrp",
+          "uniq_id": 0
+        }
+      },
+      "lwgrp1": {
+        "label": "lwgrp1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/lwgrp1/package0"
+          },
+          "size": 1,
+          "version": "1.0.4",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "lwgrp1",
+        "relation": "contains"
+      },
+      {
+        "source": "lwgrp1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "lwgrp1",
+        "relation": "contains"
+      },
+      {
+        "source": "lwgrp1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "lwgrp1",
+        "relation": "contains"
+      },
+      {
+        "source": "lwgrp1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "lwgrp1",
+        "relation": "contains"
+      },
+      {
+        "source": "lwgrp1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

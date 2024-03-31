@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "lz40": {
+        "label": "lz40",
+        "metadata": {
+          "basename": "lz4",
+          "exclusive": false,
+          "id": 0,
+          "name": "lz40",
+          "paths": {
+            "containment": "/lz40"
+          },
+          "size": 1,
+          "type": "lz4",
+          "uniq_id": 0
+        }
+      },
+      "lz41": {
+        "label": "lz41",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/lz41/package0"
+          },
+          "size": 1,
+          "version": "1.9.3",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "lz41",
+        "relation": "contains"
+      },
+      {
+        "source": "lz41",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "lz41",
+        "relation": "contains"
+      },
+      {
+        "source": "lz41",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "lz41",
+        "relation": "contains"
+      },
+      {
+        "source": "lz41",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "lz41",
+        "relation": "contains"
+      },
+      {
+        "source": "lz41",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "conduit0": {
+        "label": "conduit0",
+        "metadata": {
+          "basename": "conduit",
+          "exclusive": false,
+          "id": 0,
+          "name": "conduit0",
+          "paths": {
+            "containment": "/conduit0"
+          },
+          "size": 1,
+          "type": "conduit",
+          "uniq_id": 0
+        }
+      },
+      "conduit1": {
+        "label": "conduit1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/conduit1/package0"
+          },
+          "size": 1,
+          "version": "0.7.1",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "conduit1",
+        "relation": "contains"
+      },
+      {
+        "source": "conduit1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "conduit1",
+        "relation": "contains"
+      },
+      {
+        "source": "conduit1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "conduit1",
+        "relation": "contains"
+      },
+      {
+        "source": "conduit1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "conduit1",
+        "relation": "contains"
+      },
+      {
+        "source": "conduit1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

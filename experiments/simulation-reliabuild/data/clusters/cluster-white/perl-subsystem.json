@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "perl0": {
+        "label": "perl0",
+        "metadata": {
+          "basename": "perl",
+          "exclusive": false,
+          "id": 0,
+          "name": "perl0",
+          "paths": {
+            "containment": "/perl0"
+          },
+          "size": 1,
+          "type": "perl",
+          "uniq_id": 0
+        }
+      },
+      "perl1": {
+        "label": "perl1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/perl1/package0"
+          },
+          "size": 1,
+          "version": "5.26.2",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "perl1",
+        "relation": "contains"
+      },
+      {
+        "source": "perl1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "perl1",
+        "relation": "contains"
+      },
+      {
+        "source": "perl1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "perl1",
+        "relation": "contains"
+      },
+      {
+        "source": "perl1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "perl1",
+        "relation": "contains"
+      },
+      {
+        "source": "perl1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

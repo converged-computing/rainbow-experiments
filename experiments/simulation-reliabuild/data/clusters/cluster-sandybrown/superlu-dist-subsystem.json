@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "superlu-dist0": {
+        "label": "superlu-dist0",
+        "metadata": {
+          "basename": "superlu-dist",
+          "exclusive": false,
+          "id": 0,
+          "name": "superlu-dist0",
+          "paths": {
+            "containment": "/superlu-dist0"
+          },
+          "size": 1,
+          "type": "superlu-dist",
+          "uniq_id": 0
+        }
+      },
+      "superlu-dist1": {
+        "label": "superlu-dist1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/superlu-dist1/package0"
+          },
+          "size": 1,
+          "version": "7.1.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "superlu-dist1",
+        "relation": "contains"
+      },
+      {
+        "source": "superlu-dist1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "superlu-dist1",
+        "relation": "contains"
+      },
+      {
+        "source": "superlu-dist1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "superlu-dist1",
+        "relation": "contains"
+      },
+      {
+        "source": "superlu-dist1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "superlu-dist1",
+        "relation": "contains"
+      },
+      {
+        "source": "superlu-dist1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

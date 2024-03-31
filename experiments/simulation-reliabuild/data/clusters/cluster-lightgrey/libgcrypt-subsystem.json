@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libgcrypt0": {
+        "label": "libgcrypt0",
+        "metadata": {
+          "basename": "libgcrypt",
+          "exclusive": false,
+          "id": 0,
+          "name": "libgcrypt0",
+          "paths": {
+            "containment": "/libgcrypt0"
+          },
+          "size": 1,
+          "type": "libgcrypt",
+          "uniq_id": 0
+        }
+      },
+      "libgcrypt1": {
+        "label": "libgcrypt1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/libgcrypt1/package0"
+          },
+          "size": 1,
+          "version": "1.9.3",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libgcrypt1",
+        "relation": "contains"
+      },
+      {
+        "source": "libgcrypt1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libgcrypt1",
+        "relation": "contains"
+      },
+      {
+        "source": "libgcrypt1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libgcrypt1",
+        "relation": "contains"
+      },
+      {
+        "source": "libgcrypt1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libgcrypt1",
+        "relation": "contains"
+      },
+      {
+        "source": "libgcrypt1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

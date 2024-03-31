@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "gettext0": {
+        "label": "gettext0",
+        "metadata": {
+          "basename": "gettext",
+          "exclusive": false,
+          "id": 0,
+          "name": "gettext0",
+          "paths": {
+            "containment": "/gettext0"
+          },
+          "size": 1,
+          "type": "gettext",
+          "uniq_id": 0
+        }
+      },
+      "gettext1": {
+        "label": "gettext1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/gettext1/package0"
+          },
+          "size": 1,
+          "version": "0.21.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "gettext1",
+        "relation": "contains"
+      },
+      {
+        "source": "gettext1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "gettext1",
+        "relation": "contains"
+      },
+      {
+        "source": "gettext1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "gettext1",
+        "relation": "contains"
+      },
+      {
+        "source": "gettext1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "gettext1",
+        "relation": "contains"
+      },
+      {
+        "source": "gettext1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

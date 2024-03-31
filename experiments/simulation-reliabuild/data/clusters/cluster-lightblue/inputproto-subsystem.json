@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "inputproto0": {
+        "label": "inputproto0",
+        "metadata": {
+          "basename": "inputproto",
+          "exclusive": false,
+          "id": 0,
+          "name": "inputproto0",
+          "paths": {
+            "containment": "/inputproto0"
+          },
+          "size": 1,
+          "type": "inputproto",
+          "uniq_id": 0
+        }
+      },
+      "inputproto1": {
+        "label": "inputproto1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/inputproto1/package0"
+          },
+          "size": 1,
+          "version": "2.3.2",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "inputproto1",
+        "relation": "contains"
+      },
+      {
+        "source": "inputproto1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "inputproto1",
+        "relation": "contains"
+      },
+      {
+        "source": "inputproto1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "inputproto1",
+        "relation": "contains"
+      },
+      {
+        "source": "inputproto1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "inputproto1",
+        "relation": "contains"
+      },
+      {
+        "source": "inputproto1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

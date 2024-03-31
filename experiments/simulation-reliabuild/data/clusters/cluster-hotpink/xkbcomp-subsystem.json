@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "xkbcomp0": {
+        "label": "xkbcomp0",
+        "metadata": {
+          "basename": "xkbcomp",
+          "exclusive": false,
+          "id": 0,
+          "name": "xkbcomp0",
+          "paths": {
+            "containment": "/xkbcomp0"
+          },
+          "size": 1,
+          "type": "xkbcomp",
+          "uniq_id": 0
+        }
+      },
+      "xkbcomp1": {
+        "label": "xkbcomp1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/xkbcomp1/package0"
+          },
+          "size": 1,
+          "version": "1.4.4",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "xkbcomp1",
+        "relation": "contains"
+      },
+      {
+        "source": "xkbcomp1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "xkbcomp1",
+        "relation": "contains"
+      },
+      {
+        "source": "xkbcomp1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "xkbcomp1",
+        "relation": "contains"
+      },
+      {
+        "source": "xkbcomp1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "xkbcomp1",
+        "relation": "contains"
+      },
+      {
+        "source": "xkbcomp1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "mesa0": {
+        "label": "mesa0",
+        "metadata": {
+          "basename": "mesa",
+          "exclusive": false,
+          "id": 0,
+          "name": "mesa0",
+          "paths": {
+            "containment": "/mesa0"
+          },
+          "size": 1,
+          "type": "mesa",
+          "uniq_id": 0
+        }
+      },
+      "mesa1": {
+        "label": "mesa1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/mesa1/package0"
+          },
+          "size": 1,
+          "version": "21.3.1",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "mesa1",
+        "relation": "contains"
+      },
+      {
+        "source": "mesa1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "mesa1",
+        "relation": "contains"
+      },
+      {
+        "source": "mesa1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "mesa1",
+        "relation": "contains"
+      },
+      {
+        "source": "mesa1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "mesa1",
+        "relation": "contains"
+      },
+      {
+        "source": "mesa1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

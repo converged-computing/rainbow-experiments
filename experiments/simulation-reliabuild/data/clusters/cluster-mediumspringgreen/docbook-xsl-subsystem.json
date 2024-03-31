@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "docbook-xsl0": {
+        "label": "docbook-xsl0",
+        "metadata": {
+          "basename": "docbook-xsl",
+          "exclusive": false,
+          "id": 0,
+          "name": "docbook-xsl0",
+          "paths": {
+            "containment": "/docbook-xsl0"
+          },
+          "size": 1,
+          "type": "docbook-xsl",
+          "uniq_id": 0
+        }
+      },
+      "docbook-xsl1": {
+        "label": "docbook-xsl1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/docbook-xsl1/package0"
+          },
+          "size": 1,
+          "version": "1.79.2",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "docbook-xsl1",
+        "relation": "contains"
+      },
+      {
+        "source": "docbook-xsl1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "docbook-xsl1",
+        "relation": "contains"
+      },
+      {
+        "source": "docbook-xsl1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "docbook-xsl1",
+        "relation": "contains"
+      },
+      {
+        "source": "docbook-xsl1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "docbook-xsl1",
+        "relation": "contains"
+      },
+      {
+        "source": "docbook-xsl1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}
