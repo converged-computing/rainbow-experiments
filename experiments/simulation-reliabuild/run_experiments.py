@@ -211,8 +211,7 @@ def run_expanding_subystem_experiment(subsystems, jobspec_listing):
         count += 1
         # Add subsystems, one at a time
         for s, subsystem in enumerate(subsystems):
-            included_set = subsystems[: s + 1]
-
+            
             # Don't submit if the subsystem isn't relevant for the spec
             if subsystem not in spec["resources"]:
                 continue
@@ -399,6 +398,13 @@ def run(args, clusters):
 
     # Save scores as we go
     write_json(scores, os.path.join(args.outdir, "scores.json"))
+
+    # Save on level of subsystem
+    write_json(assignments, os.path.join(args.outdir, "subsystem-assignments.json"))
+    subsys_scores = {}
+    for subsystem, assign in assignments.items():
+        subsys_scores[subsystem] = calculate_scores(assign, jobspecs, cluster_truth, stats)
+    write_json(subsys_scores, os.path.join(args.outdir, "subsystem-scores.json"))
 
     # CASE 3...N subsystems added in order
     # Note we reset assignments here
