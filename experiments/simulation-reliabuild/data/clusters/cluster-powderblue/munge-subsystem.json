@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "munge0": {
+        "label": "munge0",
+        "metadata": {
+          "basename": "munge",
+          "exclusive": false,
+          "id": 0,
+          "name": "munge0",
+          "paths": {
+            "containment": "/munge0"
+          },
+          "size": 1,
+          "type": "munge",
+          "uniq_id": 0
+        }
+      },
+      "munge1": {
+        "label": "munge1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/munge1/package0"
+          },
+          "size": 1,
+          "version": "0.5.14",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "munge1",
+        "relation": "contains"
+      },
+      {
+        "source": "munge1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "munge1",
+        "relation": "contains"
+      },
+      {
+        "source": "munge1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "munge1",
+        "relation": "contains"
+      },
+      {
+        "source": "munge1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "munge1",
+        "relation": "contains"
+      },
+      {
+        "source": "munge1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

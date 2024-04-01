@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libnl0": {
+        "label": "libnl0",
+        "metadata": {
+          "basename": "libnl",
+          "exclusive": false,
+          "id": 0,
+          "name": "libnl0",
+          "paths": {
+            "containment": "/libnl0"
+          },
+          "size": 1,
+          "type": "libnl",
+          "uniq_id": 0
+        }
+      },
+      "libnl1": {
+        "label": "libnl1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/libnl1/package0"
+          },
+          "size": 1,
+          "version": "3.3.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libnl1",
+        "relation": "contains"
+      },
+      {
+        "source": "libnl1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libnl1",
+        "relation": "contains"
+      },
+      {
+        "source": "libnl1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libnl1",
+        "relation": "contains"
+      },
+      {
+        "source": "libnl1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libnl1",
+        "relation": "contains"
+      },
+      {
+        "source": "libnl1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

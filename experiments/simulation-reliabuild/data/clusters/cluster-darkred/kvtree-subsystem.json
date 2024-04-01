@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "kvtree0": {
+        "label": "kvtree0",
+        "metadata": {
+          "basename": "kvtree",
+          "exclusive": false,
+          "id": 0,
+          "name": "kvtree0",
+          "paths": {
+            "containment": "/kvtree0"
+          },
+          "size": 1,
+          "type": "kvtree",
+          "uniq_id": 0
+        }
+      },
+      "kvtree1": {
+        "label": "kvtree1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/kvtree1/package0"
+          },
+          "size": 1,
+          "version": "1.1.1",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "kvtree1",
+        "relation": "contains"
+      },
+      {
+        "source": "kvtree1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "kvtree1",
+        "relation": "contains"
+      },
+      {
+        "source": "kvtree1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "kvtree1",
+        "relation": "contains"
+      },
+      {
+        "source": "kvtree1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "kvtree1",
+        "relation": "contains"
+      },
+      {
+        "source": "kvtree1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

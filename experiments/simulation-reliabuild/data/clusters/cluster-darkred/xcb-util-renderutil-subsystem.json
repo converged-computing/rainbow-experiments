@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "xcb-util-renderutil0": {
+        "label": "xcb-util-renderutil0",
+        "metadata": {
+          "basename": "xcb-util-renderutil",
+          "exclusive": false,
+          "id": 0,
+          "name": "xcb-util-renderutil0",
+          "paths": {
+            "containment": "/xcb-util-renderutil0"
+          },
+          "size": 1,
+          "type": "xcb-util-renderutil",
+          "uniq_id": 0
+        }
+      },
+      "xcb-util-renderutil1": {
+        "label": "xcb-util-renderutil1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/xcb-util-renderutil1/package0"
+          },
+          "size": 1,
+          "version": "0.3.9",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "xcb-util-renderutil1",
+        "relation": "contains"
+      },
+      {
+        "source": "xcb-util-renderutil1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "xcb-util-renderutil1",
+        "relation": "contains"
+      },
+      {
+        "source": "xcb-util-renderutil1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "xcb-util-renderutil1",
+        "relation": "contains"
+      },
+      {
+        "source": "xcb-util-renderutil1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "xcb-util-renderutil1",
+        "relation": "contains"
+      },
+      {
+        "source": "xcb-util-renderutil1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

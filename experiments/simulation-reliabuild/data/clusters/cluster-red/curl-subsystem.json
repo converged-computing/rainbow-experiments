@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "curl0": {
+        "label": "curl0",
+        "metadata": {
+          "basename": "curl",
+          "exclusive": false,
+          "id": 0,
+          "name": "curl0",
+          "paths": {
+            "containment": "/curl0"
+          },
+          "size": 1,
+          "type": "curl",
+          "uniq_id": 0
+        }
+      },
+      "curl1": {
+        "label": "curl1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/curl1/package0"
+          },
+          "size": 1,
+          "version": "7.80.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "curl1",
+        "relation": "contains"
+      },
+      {
+        "source": "curl1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "curl1",
+        "relation": "contains"
+      },
+      {
+        "source": "curl1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "curl1",
+        "relation": "contains"
+      },
+      {
+        "source": "curl1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "curl1",
+        "relation": "contains"
+      },
+      {
+        "source": "curl1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

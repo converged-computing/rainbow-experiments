@@ -1,0 +1,1577 @@
+{
+    "m4": {
+        "cluster-blue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-oldlace": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "lcms": {
+        "cluster-orchid": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "gdbm": {
+        "cluster-paleturquoise": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkviolet": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "fontconfig": {
+        "cluster-whitesmoke": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "zsh": {
+        "cluster-blueviolet": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-bisque": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-skyblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libnrm": {
+        "cluster-lavender": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "kokkos-kernels": {
+        "cluster-darkseagreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-azure": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-aquamarine": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "mercury": {
+        "cluster-darkkhaki": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-slategrey": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-paleturquoise": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libevent": {
+        "cluster-white": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-mediumslateblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-antiquewhite": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "py-setuptools": {
+        "cluster-olivedrab": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "swig": {
+        "cluster-darkred": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-thistle": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-chocolate": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "xkbcomp": {
+        "cluster-mintcream": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "lapackpp": {
+        "cluster-darkslategrey": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-snow": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "findutils": {
+        "cluster-grey": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "py-petsc4py": {
+        "cluster-dimgray": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-orangered": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "rocm-smi-lib": {
+        "cluster-white": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "texinfo": {
+        "cluster-goldenrod": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "xproto": {
+        "cluster-mediumvioletred": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "argobots": {
+        "cluster-indianred": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "adlbx": {
+        "cluster-darkmagenta": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-bisque": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "abyss": {
+        "cluster-ivory": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-blueviolet": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "bison": {
+        "cluster-wheat": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libxkbcommon": {
+        "cluster-azure": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "zfp": {
+        "cluster-lightsteelblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkred": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "c-blosc": {
+        "cluster-peru": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-cornsilk": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "gperf": {
+        "cluster-aliceblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "freetype": {
+        "cluster-darkslategray": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "perl": {
+        "cluster-lavender": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkslategrey": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkslateblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "rdma-core": {
+        "cluster-mediumpurple": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libpciaccess": {
+        "cluster-darksalmon": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkslategray": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "readline": {
+        "cluster-white": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "py-libensemble": {
+        "cluster-salmon": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-papayawhip": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "python": {
+        "cluster-blue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-chartreuse": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-mediumorchid": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libbsd": {
+        "cluster-slateblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "tcl": {
+        "cluster-paleturquoise": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-hotpink": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-olivedrab": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libx11": {
+        "cluster-deeppink": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-mediumblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libxcb": {
+        "cluster-springgreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "pmix": {
+        "cluster-mediumseagreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "sparsehash": {
+        "cluster-sandybrown": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "automake": {
+        "cluster-navajowhite": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-silver": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-mediumaquamarine": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "randrproto": {
+        "cluster-lightskyblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "qt": {
+        "cluster-lightgrey": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-salmon": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkgoldenrod": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "util-macros": {
+        "cluster-slateblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "openpmd-api": {
+        "cluster-navajowhite": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-antiquewhite": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "pumi": {
+        "cluster-darkred": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkslategrey": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-dimgray": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libxfont": {
+        "cluster-snow": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "py-numpy": {
+        "cluster-darkseagreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-ivory": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-ghostwhite": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "font-util": {
+        "cluster-olivedrab": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "mesa": {
+        "cluster-whitesmoke": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "py-docutils": {
+        "cluster-mediumspringgreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libxkbfile": {
+        "cluster-blue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "xcb-util": {
+        "cluster-silver": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "umpire": {
+        "cluster-darkviolet": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-honeydew": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libsm": {
+        "cluster-linen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "upcxx": {
+        "cluster-mediumslateblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-green": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-springgreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libpthread-stubs": {
+        "cluster-darkcyan": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-saddlebrown": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "xcb-util-image": {
+        "cluster-blanchedalmond": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "mkfontscale": {
+        "cluster-palegreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libquo": {
+        "cluster-lightblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-papayawhip": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "llvm": {
+        "cluster-fuchsia": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "hypre": {
+        "cluster-sandybrown": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-ivory": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-whitesmoke": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "axl": {
+        "cluster-azure": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-silver": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "icu4c": {
+        "cluster-royalblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "lwgrp": {
+        "cluster-blanchedalmond": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "ninja": {
+        "cluster-darkgrey": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-white": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-firebrick": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "papi": {
+        "cluster-honeydew": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-cornsilk": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-wheat": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "parallel-netcdf": {
+        "cluster-mediumslateblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkgoldenrod": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-mediumblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "xtrans": {
+        "cluster-dimgray": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libzmq": {
+        "cluster-cadetblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-mintcream": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-lightcoral": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libmng": {
+        "cluster-mintcream": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "gmp": {
+        "cluster-dodgerblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "papyrus": {
+        "cluster-blueviolet": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-dodgerblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "mkfontdir": {
+        "cluster-darkslategrey": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "raja": {
+        "cluster-azure": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-ghostwhite": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkseagreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "fontsproto": {
+        "cluster-peru": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "blt": {
+        "cluster-peru": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-mediumslateblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libtool": {
+        "cluster-springgreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libffi": {
+        "cluster-brown": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "flex": {
+        "cluster-deeppink": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "ncurses": {
+        "cluster-brown": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "plasma": {
+        "cluster-darkorchid": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-peru": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-azure": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "unzip": {
+        "cluster-mediumslateblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "vtk-m": {
+        "cluster-mintcream": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "metall": {
+        "cluster-mediumturquoise": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-skyblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkred": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libpng": {
+        "cluster-mediumslateblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "binutils": {
+        "cluster-royalblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "variorum": {
+        "cluster-blue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-limegreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "mpfr": {
+        "cluster-slateblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "rempi": {
+        "cluster-mistyrose": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-springgreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "conduit": {
+        "cluster-palegreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-royalblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "trilinos": {
+        "cluster-orangered": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-antiquewhite": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-mediumturquoise": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "xcb-util-wm": {
+        "cluster-azure": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "kvtree": {
+        "cluster-paleturquoise": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-hotpink": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "sqlite": {
+        "cluster-lightcoral": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkred": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-mediumspringgreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "superlu-dist": {
+        "cluster-slateblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkorange": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-blanchedalmond": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "veloc": {
+        "cluster-oldlace": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "parmetis": {
+        "cluster-steelblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "pcre": {
+        "cluster-darkmagenta": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-cornsilk": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-dimgray": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "snappy": {
+        "cluster-dodgerblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "omega-h": {
+        "cluster-dodgerblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-antiquewhite": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkslategray": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "bwa": {
+        "cluster-darksalmon": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-lightsteelblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkkhaki": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "nasm": {
+        "cluster-firebrick": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "autoconf-archive": {
+        "cluster-springgreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "knem": {
+        "cluster-indigo": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "arborx": {
+        "cluster-dimgray": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-indianred": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "cmake": {
+        "cluster-mediumslateblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-lightseagreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-dodgerblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libxrandr": {
+        "cluster-mistyrose": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "openblas": {
+        "cluster-ivory": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-aqua": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-mediumaquamarine": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "kbproto": {
+        "cluster-whitesmoke": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "superlu": {
+        "cluster-brown": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-linen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libfontenc": {
+        "cluster-aliceblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "xkbdata": {
+        "cluster-darkslategrey": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "xcb-util-renderutil": {
+        "cluster-mediumblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libgcrypt": {
+        "cluster-deeppink": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libxext": {
+        "cluster-paleturquoise": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "docbook-xml": {
+        "cluster-blueviolet": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "hdf5": {
+        "cluster-lightcoral": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-snow": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-hotpink": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "harfbuzz": {
+        "cluster-darkviolet": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-whitesmoke": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-oldlace": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "xz": {
+        "cluster-slategrey": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "pkgconf": {
+        "cluster-bisque": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "util-linux-uuid": {
+        "cluster-darkgoldenrod": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "tar": {
+        "cluster-lightskyblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "adios2": {
+        "cluster-springgreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "zstd": {
+        "cluster-ghostwhite": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-thistle": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-aquamarine": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "tasmanian": {
+        "cluster-darkblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-mediumvioletred": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-honeydew": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "munge": {
+        "cluster-blue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "boost": {
+        "cluster-goldenrod": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-dodgerblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-paleturquoise": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "slepc": {
+        "cluster-paleturquoise": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-orangered": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darksalmon": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libfabric": {
+        "cluster-mediumblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-mediumturquoise": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-silver": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "help2man": {
+        "cluster-springgreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "openmpi": {
+        "cluster-palegreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-lightgrey": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-mintcream": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "bdftopcf": {
+        "cluster-skyblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "rankstr": {
+        "cluster-mediumaquamarine": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-lightcoral": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libxt": {
+        "cluster-yellowgreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "berkeley-db": {
+        "cluster-lemonchiffon": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "py-mpi4py": {
+        "cluster-dimgray": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-mediumseagreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "mpich": {
+        "cluster-peru": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-antiquewhite": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-olivedrab": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "glib": {
+        "cluster-dimgray": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkslategray": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-slategray": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "hwloc": {
+        "cluster-skyblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-navy": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-mistyrose": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "expat": {
+        "cluster-hotpink": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "numactl": {
+        "cluster-linen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-goldenrod": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "cairo": {
+        "cluster-dodgerblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "intel-oneapi-mkl": {
+        "cluster-darkred": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "axom": {
+        "cluster-oldlace": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-indianred": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "adios": {
+        "cluster-cornsilk": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-powderblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "py-markupsafe": {
+        "cluster-skyblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "scr": {
+        "cluster-mediumseagreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-yellow": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "double-conversion": {
+        "cluster-cornsilk": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-indianred": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "curl": {
+        "cluster-silver": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "dtcmp": {
+        "cluster-navy": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-grey": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "pdt": {
+        "cluster-steelblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-fuchsia": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-aquamarine": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "lz4": {
+        "cluster-springgreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "redset": {
+        "cluster-darkslategray": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-white": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libunwind": {
+        "cluster-salmon": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkorange": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-paleturquoise": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "metis": {
+        "cluster-darkgrey": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "glproto": {
+        "cluster-honeydew": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "netlib-scalapack": {
+        "cluster-orangered": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-beige": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "gawk": {
+        "cluster-mediumslateblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "kokkos": {
+        "cluster-azure": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-ghostwhite": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-lightcoral": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "unifyfs": {
+        "cluster-royalblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libxdmcp": {
+        "cluster-orange": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "spath": {
+        "cluster-blueviolet": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-linen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "exmcutils": {
+        "cluster-darkorange": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-olivedrab": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "pcre2": {
+        "cluster-sandybrown": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-orange": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libtiff": {
+        "cluster-darkorchid": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libice": {
+        "cluster-linen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "phist": {
+        "cluster-darkorange": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-red": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-hotpink": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "slate": {
+        "cluster-brown": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-forestgreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "xcb-util-keysyms": {
+        "cluster-oldlace": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "ascent": {
+        "cluster-mediumseagreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "docbook-xsl": {
+        "cluster-indianred": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "lua": {
+        "cluster-red": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-lavender": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-yellow": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "autoconf": {
+        "cluster-green": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkviolet": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "vtk-h": {
+        "cluster-chartreuse": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-white": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "meson": {
+        "cluster-salmon": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "nlohmann-json": {
+        "cluster-antiquewhite": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-snow": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-fuchsia": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "qthreads": {
+        "cluster-whitesmoke": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-blanchedalmond": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-oldlace": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "mfem": {
+        "cluster-gray": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "renderproto": {
+        "cluster-lightcoral": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "bzip2": {
+        "cluster-darkgoldenrod": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "diffutils": {
+        "cluster-lightgrey": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "gettext": {
+        "cluster-beige": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libiconv": {
+        "cluster-thistle": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libxau": {
+        "cluster-red": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libnl": {
+        "cluster-darkcyan": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "blaspp": {
+        "cluster-aquamarine": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-steelblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "er": {
+        "cluster-yellow": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-orange": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "sz": {
+        "cluster-lightblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-lightcoral": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkred": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "pixman": {
+        "cluster-deeppink": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "mpark-variant": {
+        "cluster-royalblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-lavender": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "xcb-proto": {
+        "cluster-indigo": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libxml2": {
+        "cluster-mediumseagreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "gotcha": {
+        "cluster-lightskyblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "inputproto": {
+        "cluster-limegreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libjpeg-turbo": {
+        "cluster-white": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkseagreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkviolet": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "petsc": {
+        "cluster-darkviolet": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-grey": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-yellow": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "py-cython": {
+        "cluster-mediumvioletred": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libxrender": {
+        "cluster-mediumpurple": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libsodium": {
+        "cluster-darkslategray": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-blanchedalmond": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "py-psutil": {
+        "cluster-thistle": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkcyan": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-cornsilk": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "py-mako": {
+        "cluster-springgreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "amrex": {
+        "cluster-aqua": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-chocolate": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-dodgerblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "turbine": {
+        "cluster-darkcyan": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkseagreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "zlib": {
+        "cluster-bisque": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "mochi-margo": {
+        "cluster-palegreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-lightsteelblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-limegreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "qwt": {
+        "cluster-darkred": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "json-c": {
+        "cluster-olivedrab": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libgpg-error": {
+        "cluster-brown": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "intel-oneapi-tbb": {
+        "cluster-mediumpurple": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "arpack-ng": {
+        "cluster-mediumslateblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-thistle": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-powderblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "perl-data-dumper": {
+        "cluster-ivory": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libsigsegv": {
+        "cluster-darkseagreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "shuffile": {
+        "cluster-lightgrey": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-hotpink": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "camp": {
+        "cluster-mediumblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-dimgray": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "xrandr": {
+        "cluster-mediumaquamarine": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "xextproto": {
+        "cluster-darkseagreen": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "sundials": {
+        "cluster-ivory": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-lavender": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ],
+        "cluster-darkgoldenrod": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "pdsh": {
+        "cluster-darkslateblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    },
+    "libmd": {
+        "cluster-lightskyblue": [
+            "xsvpbmqjsmrh46ivakhknzk2decywz4b"
+        ]
+    }
+}

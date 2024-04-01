@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "rocm-smi-lib0": {
+        "label": "rocm-smi-lib0",
+        "metadata": {
+          "basename": "rocm-smi-lib",
+          "exclusive": false,
+          "id": 0,
+          "name": "rocm-smi-lib0",
+          "paths": {
+            "containment": "/rocm-smi-lib0"
+          },
+          "size": 1,
+          "type": "rocm-smi-lib",
+          "uniq_id": 0
+        }
+      },
+      "rocm-smi-lib1": {
+        "label": "rocm-smi-lib1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/rocm-smi-lib1/package0"
+          },
+          "size": 1,
+          "version": "4.3.1",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "rocm-smi-lib1",
+        "relation": "contains"
+      },
+      {
+        "source": "rocm-smi-lib1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "rocm-smi-lib1",
+        "relation": "contains"
+      },
+      {
+        "source": "rocm-smi-lib1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "rocm-smi-lib1",
+        "relation": "contains"
+      },
+      {
+        "source": "rocm-smi-lib1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "rocm-smi-lib1",
+        "relation": "contains"
+      },
+      {
+        "source": "rocm-smi-lib1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "pkgconf0": {
+        "label": "pkgconf0",
+        "metadata": {
+          "basename": "pkgconf",
+          "exclusive": false,
+          "id": 0,
+          "name": "pkgconf0",
+          "paths": {
+            "containment": "/pkgconf0"
+          },
+          "size": 1,
+          "type": "pkgconf",
+          "uniq_id": 0
+        }
+      },
+      "pkgconf1": {
+        "label": "pkgconf1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/pkgconf1/package0"
+          },
+          "size": 1,
+          "version": "1.8.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "pkgconf1",
+        "relation": "contains"
+      },
+      {
+        "source": "pkgconf1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "pkgconf1",
+        "relation": "contains"
+      },
+      {
+        "source": "pkgconf1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "pkgconf1",
+        "relation": "contains"
+      },
+      {
+        "source": "pkgconf1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "pkgconf1",
+        "relation": "contains"
+      },
+      {
+        "source": "pkgconf1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libjpeg-turbo0": {
+        "label": "libjpeg-turbo0",
+        "metadata": {
+          "basename": "libjpeg-turbo",
+          "exclusive": false,
+          "id": 0,
+          "name": "libjpeg-turbo0",
+          "paths": {
+            "containment": "/libjpeg-turbo0"
+          },
+          "size": 1,
+          "type": "libjpeg-turbo",
+          "uniq_id": 0
+        }
+      },
+      "libjpeg-turbo1": {
+        "label": "libjpeg-turbo1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/libjpeg-turbo1/package0"
+          },
+          "size": 1,
+          "version": "2.1.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libjpeg-turbo1",
+        "relation": "contains"
+      },
+      {
+        "source": "libjpeg-turbo1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libjpeg-turbo1",
+        "relation": "contains"
+      },
+      {
+        "source": "libjpeg-turbo1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libjpeg-turbo1",
+        "relation": "contains"
+      },
+      {
+        "source": "libjpeg-turbo1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libjpeg-turbo1",
+        "relation": "contains"
+      },
+      {
+        "source": "libjpeg-turbo1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

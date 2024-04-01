@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "swig0": {
+        "label": "swig0",
+        "metadata": {
+          "basename": "swig",
+          "exclusive": false,
+          "id": 0,
+          "name": "swig0",
+          "paths": {
+            "containment": "/swig0"
+          },
+          "size": 1,
+          "type": "swig",
+          "uniq_id": 0
+        }
+      },
+      "swig1": {
+        "label": "swig1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/swig1/package0"
+          },
+          "size": 1,
+          "version": "1.3.40",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "swig1",
+        "relation": "contains"
+      },
+      {
+        "source": "swig1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "swig1",
+        "relation": "contains"
+      },
+      {
+        "source": "swig1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "swig1",
+        "relation": "contains"
+      },
+      {
+        "source": "swig1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "swig1",
+        "relation": "contains"
+      },
+      {
+        "source": "swig1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

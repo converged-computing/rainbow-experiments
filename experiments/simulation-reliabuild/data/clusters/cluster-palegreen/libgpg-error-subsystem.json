@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libgpg-error0": {
+        "label": "libgpg-error0",
+        "metadata": {
+          "basename": "libgpg-error",
+          "exclusive": false,
+          "id": 0,
+          "name": "libgpg-error0",
+          "paths": {
+            "containment": "/libgpg-error0"
+          },
+          "size": 1,
+          "type": "libgpg-error",
+          "uniq_id": 0
+        }
+      },
+      "libgpg-error1": {
+        "label": "libgpg-error1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/libgpg-error1/package0"
+          },
+          "size": 1,
+          "version": "1.42.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libgpg-error1",
+        "relation": "contains"
+      },
+      {
+        "source": "libgpg-error1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libgpg-error1",
+        "relation": "contains"
+      },
+      {
+        "source": "libgpg-error1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libgpg-error1",
+        "relation": "contains"
+      },
+      {
+        "source": "libgpg-error1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libgpg-error1",
+        "relation": "contains"
+      },
+      {
+        "source": "libgpg-error1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

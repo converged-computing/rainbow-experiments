@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "adlbx0": {
+        "label": "adlbx0",
+        "metadata": {
+          "basename": "adlbx",
+          "exclusive": false,
+          "id": 0,
+          "name": "adlbx0",
+          "paths": {
+            "containment": "/adlbx0"
+          },
+          "size": 1,
+          "type": "adlbx",
+          "uniq_id": 0
+        }
+      },
+      "adlbx1": {
+        "label": "adlbx1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/adlbx1/package0"
+          },
+          "size": 1,
+          "version": "1.0.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "adlbx1",
+        "relation": "contains"
+      },
+      {
+        "source": "adlbx1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "adlbx1",
+        "relation": "contains"
+      },
+      {
+        "source": "adlbx1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "adlbx1",
+        "relation": "contains"
+      },
+      {
+        "source": "adlbx1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "adlbx1",
+        "relation": "contains"
+      },
+      {
+        "source": "adlbx1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

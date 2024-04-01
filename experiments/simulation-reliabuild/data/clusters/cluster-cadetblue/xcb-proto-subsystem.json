@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "xcb-proto0": {
+        "label": "xcb-proto0",
+        "metadata": {
+          "basename": "xcb-proto",
+          "exclusive": false,
+          "id": 0,
+          "name": "xcb-proto0",
+          "paths": {
+            "containment": "/xcb-proto0"
+          },
+          "size": 1,
+          "type": "xcb-proto",
+          "uniq_id": 0
+        }
+      },
+      "xcb-proto1": {
+        "label": "xcb-proto1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/xcb-proto1/package0"
+          },
+          "size": 1,
+          "version": "1.14.1",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "xcb-proto1",
+        "relation": "contains"
+      },
+      {
+        "source": "xcb-proto1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "xcb-proto1",
+        "relation": "contains"
+      },
+      {
+        "source": "xcb-proto1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "xcb-proto1",
+        "relation": "contains"
+      },
+      {
+        "source": "xcb-proto1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "xcb-proto1",
+        "relation": "contains"
+      },
+      {
+        "source": "xcb-proto1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

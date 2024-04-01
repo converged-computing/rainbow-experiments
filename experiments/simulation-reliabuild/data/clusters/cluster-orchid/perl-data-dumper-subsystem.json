@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "perl-data-dumper0": {
+        "label": "perl-data-dumper0",
+        "metadata": {
+          "basename": "perl-data-dumper",
+          "exclusive": false,
+          "id": 0,
+          "name": "perl-data-dumper0",
+          "paths": {
+            "containment": "/perl-data-dumper0"
+          },
+          "size": 1,
+          "type": "perl-data-dumper",
+          "uniq_id": 0
+        }
+      },
+      "perl-data-dumper1": {
+        "label": "perl-data-dumper1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/perl-data-dumper1/package0"
+          },
+          "size": 1,
+          "version": "2.173.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "perl-data-dumper1",
+        "relation": "contains"
+      },
+      {
+        "source": "perl-data-dumper1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "perl-data-dumper1",
+        "relation": "contains"
+      },
+      {
+        "source": "perl-data-dumper1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "perl-data-dumper1",
+        "relation": "contains"
+      },
+      {
+        "source": "perl-data-dumper1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "perl-data-dumper1",
+        "relation": "contains"
+      },
+      {
+        "source": "perl-data-dumper1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

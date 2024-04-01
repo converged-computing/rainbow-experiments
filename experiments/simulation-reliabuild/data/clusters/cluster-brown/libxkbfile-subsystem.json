@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libxkbfile0": {
+        "label": "libxkbfile0",
+        "metadata": {
+          "basename": "libxkbfile",
+          "exclusive": false,
+          "id": 0,
+          "name": "libxkbfile0",
+          "paths": {
+            "containment": "/libxkbfile0"
+          },
+          "size": 1,
+          "type": "libxkbfile",
+          "uniq_id": 0
+        }
+      },
+      "libxkbfile1": {
+        "label": "libxkbfile1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/libxkbfile1/package0"
+          },
+          "size": 1,
+          "version": "1.0.9",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libxkbfile1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxkbfile1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libxkbfile1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxkbfile1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libxkbfile1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxkbfile1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libxkbfile1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxkbfile1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

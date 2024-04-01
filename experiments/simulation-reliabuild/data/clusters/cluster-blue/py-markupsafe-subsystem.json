@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "py-markupsafe0": {
+        "label": "py-markupsafe0",
+        "metadata": {
+          "basename": "py-markupsafe",
+          "exclusive": false,
+          "id": 0,
+          "name": "py-markupsafe0",
+          "paths": {
+            "containment": "/py-markupsafe0"
+          },
+          "size": 1,
+          "type": "py-markupsafe",
+          "uniq_id": 0
+        }
+      },
+      "py-markupsafe1": {
+        "label": "py-markupsafe1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/py-markupsafe1/package0"
+          },
+          "size": 1,
+          "version": "2.0.1",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "py-markupsafe1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-markupsafe1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "py-markupsafe1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-markupsafe1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "py-markupsafe1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-markupsafe1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "py-markupsafe1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-markupsafe1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

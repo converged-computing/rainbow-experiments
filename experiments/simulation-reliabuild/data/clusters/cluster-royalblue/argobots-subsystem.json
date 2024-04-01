@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "argobots0": {
+        "label": "argobots0",
+        "metadata": {
+          "basename": "argobots",
+          "exclusive": false,
+          "id": 0,
+          "name": "argobots0",
+          "paths": {
+            "containment": "/argobots0"
+          },
+          "size": 1,
+          "type": "argobots",
+          "uniq_id": 0
+        }
+      },
+      "argobots1": {
+        "label": "argobots1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/argobots1/package0"
+          },
+          "size": 1,
+          "version": "1.1.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "argobots1",
+        "relation": "contains"
+      },
+      {
+        "source": "argobots1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "argobots1",
+        "relation": "contains"
+      },
+      {
+        "source": "argobots1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "argobots1",
+        "relation": "contains"
+      },
+      {
+        "source": "argobots1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "argobots1",
+        "relation": "contains"
+      },
+      {
+        "source": "argobots1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libxcb0": {
+        "label": "libxcb0",
+        "metadata": {
+          "basename": "libxcb",
+          "exclusive": false,
+          "id": 0,
+          "name": "libxcb0",
+          "paths": {
+            "containment": "/libxcb0"
+          },
+          "size": 1,
+          "type": "libxcb",
+          "uniq_id": 0
+        }
+      },
+      "libxcb1": {
+        "label": "libxcb1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/libxcb1/package0"
+          },
+          "size": 1,
+          "version": "1.14.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libxcb1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxcb1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libxcb1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxcb1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libxcb1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxcb1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libxcb1",
+        "relation": "contains"
+      },
+      {
+        "source": "libxcb1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

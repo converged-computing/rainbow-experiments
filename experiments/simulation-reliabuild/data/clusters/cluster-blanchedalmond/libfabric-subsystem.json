@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libfabric0": {
+        "label": "libfabric0",
+        "metadata": {
+          "basename": "libfabric",
+          "exclusive": false,
+          "id": 0,
+          "name": "libfabric0",
+          "paths": {
+            "containment": "/libfabric0"
+          },
+          "size": 1,
+          "type": "libfabric",
+          "uniq_id": 0
+        }
+      },
+      "libfabric1": {
+        "label": "libfabric1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/libfabric1/package0"
+          },
+          "size": 1,
+          "version": "1.13.1",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libfabric1",
+        "relation": "contains"
+      },
+      {
+        "source": "libfabric1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libfabric1",
+        "relation": "contains"
+      },
+      {
+        "source": "libfabric1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libfabric1",
+        "relation": "contains"
+      },
+      {
+        "source": "libfabric1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libfabric1",
+        "relation": "contains"
+      },
+      {
+        "source": "libfabric1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

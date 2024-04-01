@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "py-mako0": {
+        "label": "py-mako0",
+        "metadata": {
+          "basename": "py-mako",
+          "exclusive": false,
+          "id": 0,
+          "name": "py-mako0",
+          "paths": {
+            "containment": "/py-mako0"
+          },
+          "size": 1,
+          "type": "py-mako",
+          "uniq_id": 0
+        }
+      },
+      "py-mako1": {
+        "label": "py-mako1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/py-mako1/package0"
+          },
+          "size": 1,
+          "version": "1.1.5",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "py-mako1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-mako1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "py-mako1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-mako1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "py-mako1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-mako1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "py-mako1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-mako1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

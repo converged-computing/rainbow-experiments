@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "py-psutil0": {
+        "label": "py-psutil0",
+        "metadata": {
+          "basename": "py-psutil",
+          "exclusive": false,
+          "id": 0,
+          "name": "py-psutil0",
+          "paths": {
+            "containment": "/py-psutil0"
+          },
+          "size": 1,
+          "type": "py-psutil",
+          "uniq_id": 0
+        }
+      },
+      "py-psutil1": {
+        "label": "py-psutil1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/py-psutil1/package0"
+          },
+          "size": 1,
+          "version": "5.8.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "py-psutil1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-psutil1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "py-psutil1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-psutil1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "py-psutil1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-psutil1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "py-psutil1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-psutil1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

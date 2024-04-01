@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "py-cython0": {
+        "label": "py-cython0",
+        "metadata": {
+          "basename": "py-cython",
+          "exclusive": false,
+          "id": 0,
+          "name": "py-cython0",
+          "paths": {
+            "containment": "/py-cython0"
+          },
+          "size": 1,
+          "type": "py-cython",
+          "uniq_id": 0
+        }
+      },
+      "py-cython1": {
+        "label": "py-cython1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/py-cython1/package0"
+          },
+          "size": 1,
+          "version": "0.29.24",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "py-cython1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-cython1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "py-cython1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-cython1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "py-cython1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-cython1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "py-cython1",
+        "relation": "contains"
+      },
+      {
+        "source": "py-cython1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

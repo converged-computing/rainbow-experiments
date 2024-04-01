@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "boost0": {
+        "label": "boost0",
+        "metadata": {
+          "basename": "boost",
+          "exclusive": false,
+          "id": 0,
+          "name": "boost0",
+          "paths": {
+            "containment": "/boost0"
+          },
+          "size": 1,
+          "type": "boost",
+          "uniq_id": 0
+        }
+      },
+      "boost1": {
+        "label": "boost1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/boost1/package0"
+          },
+          "size": 1,
+          "version": "1.65.1",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "boost1",
+        "relation": "contains"
+      },
+      {
+        "source": "boost1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "boost1",
+        "relation": "contains"
+      },
+      {
+        "source": "boost1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "boost1",
+        "relation": "contains"
+      },
+      {
+        "source": "boost1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "boost1",
+        "relation": "contains"
+      },
+      {
+        "source": "boost1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

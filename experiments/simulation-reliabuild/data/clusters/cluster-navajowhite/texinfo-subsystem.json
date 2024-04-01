@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "texinfo0": {
+        "label": "texinfo0",
+        "metadata": {
+          "basename": "texinfo",
+          "exclusive": false,
+          "id": 0,
+          "name": "texinfo0",
+          "paths": {
+            "containment": "/texinfo0"
+          },
+          "size": 1,
+          "type": "texinfo",
+          "uniq_id": 0
+        }
+      },
+      "texinfo1": {
+        "label": "texinfo1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/texinfo1/package0"
+          },
+          "size": 1,
+          "version": "6.5.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "texinfo1",
+        "relation": "contains"
+      },
+      {
+        "source": "texinfo1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "texinfo1",
+        "relation": "contains"
+      },
+      {
+        "source": "texinfo1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "texinfo1",
+        "relation": "contains"
+      },
+      {
+        "source": "texinfo1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "texinfo1",
+        "relation": "contains"
+      },
+      {
+        "source": "texinfo1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "expat0": {
+        "label": "expat0",
+        "metadata": {
+          "basename": "expat",
+          "exclusive": false,
+          "id": 0,
+          "name": "expat0",
+          "paths": {
+            "containment": "/expat0"
+          },
+          "size": 1,
+          "type": "expat",
+          "uniq_id": 0
+        }
+      },
+      "expat1": {
+        "label": "expat1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/expat1/package0"
+          },
+          "size": 1,
+          "version": "2.4.1",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "expat1",
+        "relation": "contains"
+      },
+      {
+        "source": "expat1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "expat1",
+        "relation": "contains"
+      },
+      {
+        "source": "expat1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "expat1",
+        "relation": "contains"
+      },
+      {
+        "source": "expat1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "expat1",
+        "relation": "contains"
+      },
+      {
+        "source": "expat1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

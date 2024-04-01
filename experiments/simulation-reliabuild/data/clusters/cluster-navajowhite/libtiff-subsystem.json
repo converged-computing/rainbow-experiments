@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libtiff0": {
+        "label": "libtiff0",
+        "metadata": {
+          "basename": "libtiff",
+          "exclusive": false,
+          "id": 0,
+          "name": "libtiff0",
+          "paths": {
+            "containment": "/libtiff0"
+          },
+          "size": 1,
+          "type": "libtiff",
+          "uniq_id": 0
+        }
+      },
+      "libtiff1": {
+        "label": "libtiff1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/libtiff1/package0"
+          },
+          "size": 1,
+          "version": "4.3.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libtiff1",
+        "relation": "contains"
+      },
+      {
+        "source": "libtiff1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libtiff1",
+        "relation": "contains"
+      },
+      {
+        "source": "libtiff1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libtiff1",
+        "relation": "contains"
+      },
+      {
+        "source": "libtiff1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libtiff1",
+        "relation": "contains"
+      },
+      {
+        "source": "libtiff1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "docbook-xml0": {
+        "label": "docbook-xml0",
+        "metadata": {
+          "basename": "docbook-xml",
+          "exclusive": false,
+          "id": 0,
+          "name": "docbook-xml0",
+          "paths": {
+            "containment": "/docbook-xml0"
+          },
+          "size": 1,
+          "type": "docbook-xml",
+          "uniq_id": 0
+        }
+      },
+      "docbook-xml1": {
+        "label": "docbook-xml1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/docbook-xml1/package0"
+          },
+          "size": 1,
+          "version": "4.5.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "docbook-xml1",
+        "relation": "contains"
+      },
+      {
+        "source": "docbook-xml1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "docbook-xml1",
+        "relation": "contains"
+      },
+      {
+        "source": "docbook-xml1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "docbook-xml1",
+        "relation": "contains"
+      },
+      {
+        "source": "docbook-xml1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "docbook-xml1",
+        "relation": "contains"
+      },
+      {
+        "source": "docbook-xml1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

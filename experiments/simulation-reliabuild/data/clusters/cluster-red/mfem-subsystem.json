@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "mfem0": {
+        "label": "mfem0",
+        "metadata": {
+          "basename": "mfem",
+          "exclusive": false,
+          "id": 0,
+          "name": "mfem0",
+          "paths": {
+            "containment": "/mfem0"
+          },
+          "size": 1,
+          "type": "mfem",
+          "uniq_id": 0
+        }
+      },
+      "mfem1": {
+        "label": "mfem1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/mfem1/package0"
+          },
+          "size": 1,
+          "version": "4.3.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "mfem1",
+        "relation": "contains"
+      },
+      {
+        "source": "mfem1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "mfem1",
+        "relation": "contains"
+      },
+      {
+        "source": "mfem1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "mfem1",
+        "relation": "contains"
+      },
+      {
+        "source": "mfem1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "mfem1",
+        "relation": "contains"
+      },
+      {
+        "source": "mfem1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

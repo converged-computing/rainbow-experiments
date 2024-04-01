@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "amrex0": {
+        "label": "amrex0",
+        "metadata": {
+          "basename": "amrex",
+          "exclusive": false,
+          "id": 0,
+          "name": "amrex0",
+          "paths": {
+            "containment": "/amrex0"
+          },
+          "size": 1,
+          "type": "amrex",
+          "uniq_id": 0
+        }
+      },
+      "amrex1": {
+        "label": "amrex1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/amrex1/package0"
+          },
+          "size": 1,
+          "version": "18.9.1",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "amrex1",
+        "relation": "contains"
+      },
+      {
+        "source": "amrex1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "amrex1",
+        "relation": "contains"
+      },
+      {
+        "source": "amrex1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "amrex1",
+        "relation": "contains"
+      },
+      {
+        "source": "amrex1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "amrex1",
+        "relation": "contains"
+      },
+      {
+        "source": "amrex1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

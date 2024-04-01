@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "redset0": {
+        "label": "redset0",
+        "metadata": {
+          "basename": "redset",
+          "exclusive": false,
+          "id": 0,
+          "name": "redset0",
+          "paths": {
+            "containment": "/redset0"
+          },
+          "size": 1,
+          "type": "redset",
+          "uniq_id": 0
+        }
+      },
+      "redset1": {
+        "label": "redset1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/redset1/package0"
+          },
+          "size": 1,
+          "version": "0.1.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "redset1",
+        "relation": "contains"
+      },
+      {
+        "source": "redset1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "redset1",
+        "relation": "contains"
+      },
+      {
+        "source": "redset1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "redset1",
+        "relation": "contains"
+      },
+      {
+        "source": "redset1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "redset1",
+        "relation": "contains"
+      },
+      {
+        "source": "redset1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

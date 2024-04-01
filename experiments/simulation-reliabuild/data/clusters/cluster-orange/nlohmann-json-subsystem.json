@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "nlohmann-json0": {
+        "label": "nlohmann-json0",
+        "metadata": {
+          "basename": "nlohmann-json",
+          "exclusive": false,
+          "id": 0,
+          "name": "nlohmann-json0",
+          "paths": {
+            "containment": "/nlohmann-json0"
+          },
+          "size": 1,
+          "type": "nlohmann-json",
+          "uniq_id": 0
+        }
+      },
+      "nlohmann-json1": {
+        "label": "nlohmann-json1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/nlohmann-json1/package0"
+          },
+          "size": 1,
+          "version": "3.10.4",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "nlohmann-json1",
+        "relation": "contains"
+      },
+      {
+        "source": "nlohmann-json1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "nlohmann-json1",
+        "relation": "contains"
+      },
+      {
+        "source": "nlohmann-json1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "nlohmann-json1",
+        "relation": "contains"
+      },
+      {
+        "source": "nlohmann-json1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "nlohmann-json1",
+        "relation": "contains"
+      },
+      {
+        "source": "nlohmann-json1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

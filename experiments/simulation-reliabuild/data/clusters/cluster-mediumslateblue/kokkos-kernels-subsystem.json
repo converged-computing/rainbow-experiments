@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "kokkos-kernels0": {
+        "label": "kokkos-kernels0",
+        "metadata": {
+          "basename": "kokkos-kernels",
+          "exclusive": false,
+          "id": 0,
+          "name": "kokkos-kernels0",
+          "paths": {
+            "containment": "/kokkos-kernels0"
+          },
+          "size": 1,
+          "type": "kokkos-kernels",
+          "uniq_id": 0
+        }
+      },
+      "kokkos-kernels1": {
+        "label": "kokkos-kernels1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/kokkos-kernels1/package0"
+          },
+          "size": 1,
+          "version": "3.4.1",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "kokkos-kernels1",
+        "relation": "contains"
+      },
+      {
+        "source": "kokkos-kernels1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "kokkos-kernels1",
+        "relation": "contains"
+      },
+      {
+        "source": "kokkos-kernels1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "kokkos-kernels1",
+        "relation": "contains"
+      },
+      {
+        "source": "kokkos-kernels1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "kokkos-kernels1",
+        "relation": "contains"
+      },
+      {
+        "source": "kokkos-kernels1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

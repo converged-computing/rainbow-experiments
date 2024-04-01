@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libsigsegv0": {
+        "label": "libsigsegv0",
+        "metadata": {
+          "basename": "libsigsegv",
+          "exclusive": false,
+          "id": 0,
+          "name": "libsigsegv0",
+          "paths": {
+            "containment": "/libsigsegv0"
+          },
+          "size": 1,
+          "type": "libsigsegv",
+          "uniq_id": 0
+        }
+      },
+      "libsigsegv1": {
+        "label": "libsigsegv1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/libsigsegv1/package0"
+          },
+          "size": 1,
+          "version": "2.13.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libsigsegv1",
+        "relation": "contains"
+      },
+      {
+        "source": "libsigsegv1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libsigsegv1",
+        "relation": "contains"
+      },
+      {
+        "source": "libsigsegv1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libsigsegv1",
+        "relation": "contains"
+      },
+      {
+        "source": "libsigsegv1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libsigsegv1",
+        "relation": "contains"
+      },
+      {
+        "source": "libsigsegv1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

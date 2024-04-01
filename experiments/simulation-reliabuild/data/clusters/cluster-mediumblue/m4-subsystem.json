@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "m40": {
+        "label": "m40",
+        "metadata": {
+          "basename": "m4",
+          "exclusive": false,
+          "id": 0,
+          "name": "m40",
+          "paths": {
+            "containment": "/m40"
+          },
+          "size": 1,
+          "type": "m4",
+          "uniq_id": 0
+        }
+      },
+      "m41": {
+        "label": "m41",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/m41/package0"
+          },
+          "size": 1,
+          "version": "1.4.19",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "m41",
+        "relation": "contains"
+      },
+      {
+        "source": "m41",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "m41",
+        "relation": "contains"
+      },
+      {
+        "source": "m41",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "m41",
+        "relation": "contains"
+      },
+      {
+        "source": "m41",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "m41",
+        "relation": "contains"
+      },
+      {
+        "source": "m41",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

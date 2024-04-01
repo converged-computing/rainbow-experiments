@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libbsd0": {
+        "label": "libbsd0",
+        "metadata": {
+          "basename": "libbsd",
+          "exclusive": false,
+          "id": 0,
+          "name": "libbsd0",
+          "paths": {
+            "containment": "/libbsd0"
+          },
+          "size": 1,
+          "type": "libbsd",
+          "uniq_id": 0
+        }
+      },
+      "libbsd1": {
+        "label": "libbsd1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/libbsd1/package0"
+          },
+          "size": 1,
+          "version": "0.11.3",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libbsd1",
+        "relation": "contains"
+      },
+      {
+        "source": "libbsd1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libbsd1",
+        "relation": "contains"
+      },
+      {
+        "source": "libbsd1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libbsd1",
+        "relation": "contains"
+      },
+      {
+        "source": "libbsd1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libbsd1",
+        "relation": "contains"
+      },
+      {
+        "source": "libbsd1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

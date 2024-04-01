@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libffi0": {
+        "label": "libffi0",
+        "metadata": {
+          "basename": "libffi",
+          "exclusive": false,
+          "id": 0,
+          "name": "libffi0",
+          "paths": {
+            "containment": "/libffi0"
+          },
+          "size": 1,
+          "type": "libffi",
+          "uniq_id": 0
+        }
+      },
+      "libffi1": {
+        "label": "libffi1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/libffi1/package0"
+          },
+          "size": 1,
+          "version": "3.3.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libffi1",
+        "relation": "contains"
+      },
+      {
+        "source": "libffi1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libffi1",
+        "relation": "contains"
+      },
+      {
+        "source": "libffi1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libffi1",
+        "relation": "contains"
+      },
+      {
+        "source": "libffi1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libffi1",
+        "relation": "contains"
+      },
+      {
+        "source": "libffi1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

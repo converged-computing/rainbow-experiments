@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libxml20": {
+        "label": "libxml20",
+        "metadata": {
+          "basename": "libxml2",
+          "exclusive": false,
+          "id": 0,
+          "name": "libxml20",
+          "paths": {
+            "containment": "/libxml20"
+          },
+          "size": 1,
+          "type": "libxml2",
+          "uniq_id": 0
+        }
+      },
+      "libxml21": {
+        "label": "libxml21",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/libxml21/package0"
+          },
+          "size": 1,
+          "version": "2.9.12",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libxml21",
+        "relation": "contains"
+      },
+      {
+        "source": "libxml21",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libxml21",
+        "relation": "contains"
+      },
+      {
+        "source": "libxml21",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libxml21",
+        "relation": "contains"
+      },
+      {
+        "source": "libxml21",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libxml21",
+        "relation": "contains"
+      },
+      {
+        "source": "libxml21",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

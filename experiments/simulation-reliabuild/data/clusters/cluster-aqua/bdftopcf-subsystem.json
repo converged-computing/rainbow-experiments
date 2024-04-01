@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "bdftopcf0": {
+        "label": "bdftopcf0",
+        "metadata": {
+          "basename": "bdftopcf",
+          "exclusive": false,
+          "id": 0,
+          "name": "bdftopcf0",
+          "paths": {
+            "containment": "/bdftopcf0"
+          },
+          "size": 1,
+          "type": "bdftopcf",
+          "uniq_id": 0
+        }
+      },
+      "bdftopcf1": {
+        "label": "bdftopcf1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/bdftopcf1/package0"
+          },
+          "size": 1,
+          "version": "1.0.5",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "bdftopcf1",
+        "relation": "contains"
+      },
+      {
+        "source": "bdftopcf1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "bdftopcf1",
+        "relation": "contains"
+      },
+      {
+        "source": "bdftopcf1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "bdftopcf1",
+        "relation": "contains"
+      },
+      {
+        "source": "bdftopcf1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "bdftopcf1",
+        "relation": "contains"
+      },
+      {
+        "source": "bdftopcf1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

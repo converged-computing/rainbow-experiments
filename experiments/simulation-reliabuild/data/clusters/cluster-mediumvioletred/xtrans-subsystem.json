@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "xtrans0": {
+        "label": "xtrans0",
+        "metadata": {
+          "basename": "xtrans",
+          "exclusive": false,
+          "id": 0,
+          "name": "xtrans0",
+          "paths": {
+            "containment": "/xtrans0"
+          },
+          "size": 1,
+          "type": "xtrans",
+          "uniq_id": 0
+        }
+      },
+      "xtrans1": {
+        "label": "xtrans1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/xtrans1/package0"
+          },
+          "size": 1,
+          "version": "1.3.5",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "xtrans1",
+        "relation": "contains"
+      },
+      {
+        "source": "xtrans1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "xtrans1",
+        "relation": "contains"
+      },
+      {
+        "source": "xtrans1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "xtrans1",
+        "relation": "contains"
+      },
+      {
+        "source": "xtrans1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "xtrans1",
+        "relation": "contains"
+      },
+      {
+        "source": "xtrans1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

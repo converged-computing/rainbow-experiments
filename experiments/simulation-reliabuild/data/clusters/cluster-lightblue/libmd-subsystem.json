@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "libmd0": {
+        "label": "libmd0",
+        "metadata": {
+          "basename": "libmd",
+          "exclusive": false,
+          "id": 0,
+          "name": "libmd0",
+          "paths": {
+            "containment": "/libmd0"
+          },
+          "size": 1,
+          "type": "libmd",
+          "uniq_id": 0
+        }
+      },
+      "libmd1": {
+        "label": "libmd1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/libmd1/package0"
+          },
+          "size": 1,
+          "version": "1.0.3",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "libmd1",
+        "relation": "contains"
+      },
+      {
+        "source": "libmd1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "libmd1",
+        "relation": "contains"
+      },
+      {
+        "source": "libmd1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "libmd1",
+        "relation": "contains"
+      },
+      {
+        "source": "libmd1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "libmd1",
+        "relation": "contains"
+      },
+      {
+        "source": "libmd1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

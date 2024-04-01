@@ -1,0 +1,124 @@
+{
+    "none": {
+        "total_jobs": {
+            "value": 1602,
+            "description": "total number of jobs run for group"
+        },
+        "unmatched_percent": {
+            "value": 0.0,
+            "description": "total unmatched divided by total count"
+        },
+        "unmatched": {
+            "value": 0,
+            "description": "number of unmatched jobs that could not be assigned a cluster by rainbow"
+        },
+        "build_success": {
+            "mean": 0.004993757802746567,
+            "std": 0.07048985874403549,
+            "description": "reflects if the package had exactly what it needed for a successful build"
+        },
+        "marginal_score": {
+            "mean": 0.7314283192392665,
+            "std": 0.09887721111716347,
+            "description": "if partial points were given for getting some dependency versions right"
+        },
+        "versions_in_range": {
+            "total_correct": 31537,
+            "total_possible": 43021,
+            "description": "total points earned vs. total points possible, where 1 point means a correct version in a range"
+        },
+        "matched_clusters_per_job": {
+            "mean": 100.0,
+            "std": 0.0,
+            "description": "number of clusters rainbow deemed a match based on version ranges and compatibility metadata provided"
+        },
+        "mismatched_clusters_per_job": {
+            "mean": 0.0,
+            "std": 0.0,
+            "description": "number of clusters rainbow deemed a mismatch based on version ranges and compatibility metadata provided"
+        }
+    },
+    "single-subsystem": {
+        "total_jobs": {
+            "value": 379,
+            "description": "total number of jobs run for group"
+        },
+        "unmatched_percent": {
+            "value": 0.0,
+            "description": "total unmatched divided by total count"
+        },
+        "unmatched": {
+            "value": 0,
+            "description": "number of unmatched jobs that could not be assigned a cluster by rainbow"
+        },
+        "build_success": {
+            "mean": 0.06068601583113457,
+            "std": 0.2387534781184933,
+            "description": "reflects if the package had exactly what it needed for a successful build"
+        },
+        "marginal_score": {
+            "mean": 0.8073878627968339,
+            "std": 0.09233100730446023,
+            "description": "if partial points were given for getting some dependency versions right"
+        },
+        "versions_in_range": {
+            "total_correct": 3672,
+            "total_possible": 4548,
+            "description": "total points earned vs. total points possible, where 1 point means a correct version in a range"
+        },
+        "matched_clusters_per_job": {
+            "mean": 100.0,
+            "std": 0.0,
+            "description": "number of clusters rainbow deemed a match based on version ranges and compatibility metadata provided"
+        },
+        "mismatched_clusters_per_job": {
+            "mean": 0.0,
+            "std": 0.0,
+            "description": "number of clusters rainbow deemed a mismatch based on version ranges and compatibility metadata provided"
+        }
+    },
+    "expanded-subsystems": {
+        "total_jobs": {
+            "value": 4834,
+            "description": "total number of jobs run for group"
+        },
+        "unmatched_percent": {
+            "value": 0.2674803475382706,
+            "description": "total unmatched divided by total count"
+        },
+        "unmatched": {
+            "value": 1293,
+            "description": "number of unmatched jobs that could not be assigned a cluster by rainbow"
+        },
+        "build_success": {
+            "mean": 0.1335780852866422,
+            "std": 0.34019844270336796,
+            "description": "reflects if the package had exactly what it needed for a successful build"
+        },
+        "marginal_score": {
+            "mean": 0.9034922204444812,
+            "std": 0.07238546187634992,
+            "description": "if partial points were given for getting some dependency versions right"
+        },
+        "versions_in_range": {
+            "total_correct": 73346,
+            "total_possible": 82028,
+            "description": "total points earned vs. total points possible, where 1 point means a correct version in a range"
+        },
+        "matched_clusters_per_job": {
+            "mean": 2.5459247000413736,
+            "std": 5.629586434635241,
+            "description": "number of clusters rainbow deemed a match based on version ranges and compatibility metadata provided"
+        },
+        "mismatched_clusters_per_job": {
+            "mean": 97.45407529995863,
+            "std": 5.629586434635241,
+            "description": "number of clusters rainbow deemed a mismatch based on version ranges and compatibility metadata provided"
+        }
+    },
+    "unmatched_at": {
+        "mean": 13.890177880897138,
+        "std": 4.628036325625887,
+        "description": "The number of subsystem metadata attributes (package dependency version ranges) that were added when rainbow rejected entirely (no match)"
+    }
+}

@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "diffutils0": {
+        "label": "diffutils0",
+        "metadata": {
+          "basename": "diffutils",
+          "exclusive": false,
+          "id": 0,
+          "name": "diffutils0",
+          "paths": {
+            "containment": "/diffutils0"
+          },
+          "size": 1,
+          "type": "diffutils",
+          "uniq_id": 0
+        }
+      },
+      "diffutils1": {
+        "label": "diffutils1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/diffutils1/package0"
+          },
+          "size": 1,
+          "version": "3.8.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "diffutils1",
+        "relation": "contains"
+      },
+      {
+        "source": "diffutils1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "diffutils1",
+        "relation": "contains"
+      },
+      {
+        "source": "diffutils1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "diffutils1",
+        "relation": "contains"
+      },
+      {
+        "source": "diffutils1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "diffutils1",
+        "relation": "contains"
+      },
+      {
+        "source": "diffutils1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "mochi-margo0": {
+        "label": "mochi-margo0",
+        "metadata": {
+          "basename": "mochi-margo",
+          "exclusive": false,
+          "id": 0,
+          "name": "mochi-margo0",
+          "paths": {
+            "containment": "/mochi-margo0"
+          },
+          "size": 1,
+          "type": "mochi-margo",
+          "uniq_id": 0
+        }
+      },
+      "mochi-margo1": {
+        "label": "mochi-margo1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/mochi-margo1/package0"
+          },
+          "size": 1,
+          "version": "0.4.5",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "mochi-margo1",
+        "relation": "contains"
+      },
+      {
+        "source": "mochi-margo1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "mochi-margo1",
+        "relation": "contains"
+      },
+      {
+        "source": "mochi-margo1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "mochi-margo1",
+        "relation": "contains"
+      },
+      {
+        "source": "mochi-margo1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "mochi-margo1",
+        "relation": "contains"
+      },
+      {
+        "source": "mochi-margo1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

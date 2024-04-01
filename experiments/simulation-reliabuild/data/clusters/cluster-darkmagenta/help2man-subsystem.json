@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "help2man0": {
+        "label": "help2man0",
+        "metadata": {
+          "basename": "help2man",
+          "exclusive": false,
+          "id": 0,
+          "name": "help2man0",
+          "paths": {
+            "containment": "/help2man0"
+          },
+          "size": 1,
+          "type": "help2man",
+          "uniq_id": 0
+        }
+      },
+      "help2man1": {
+        "label": "help2man1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/help2man1/package0"
+          },
+          "size": 1,
+          "version": "1.47.16",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "help2man1",
+        "relation": "contains"
+      },
+      {
+        "source": "help2man1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "help2man1",
+        "relation": "contains"
+      },
+      {
+        "source": "help2man1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "help2man1",
+        "relation": "contains"
+      },
+      {
+        "source": "help2man1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "help2man1",
+        "relation": "contains"
+      },
+      {
+        "source": "help2man1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

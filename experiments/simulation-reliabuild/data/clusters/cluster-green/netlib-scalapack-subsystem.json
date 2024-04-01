@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "netlib-scalapack0": {
+        "label": "netlib-scalapack0",
+        "metadata": {
+          "basename": "netlib-scalapack",
+          "exclusive": false,
+          "id": 0,
+          "name": "netlib-scalapack0",
+          "paths": {
+            "containment": "/netlib-scalapack0"
+          },
+          "size": 1,
+          "type": "netlib-scalapack",
+          "uniq_id": 0
+        }
+      },
+      "netlib-scalapack1": {
+        "label": "netlib-scalapack1",
+        "metadata": {
+          "basename": "package",
+          "exclusive": true,
+          "id": 1,
+          "name": "package0",
+          "paths": {
+            "containment": "/netlib-scalapack1/package0"
+          },
+          "size": 1,
+          "version": "2.1.0",
+          "type": "package",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "netlib-scalapack1",
+        "relation": "contains"
+      },
+      {
+        "source": "netlib-scalapack1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "netlib-scalapack1",
+        "relation": "contains"
+      },
+      {
+        "source": "netlib-scalapack1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "netlib-scalapack1",
+        "relation": "contains"
+      },
+      {
+        "source": "netlib-scalapack1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "netlib-scalapack1",
+        "relation": "contains"
+      },
+      {
+        "source": "netlib-scalapack1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}
