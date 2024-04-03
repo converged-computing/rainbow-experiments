@@ -1,0 +1,1883 @@
+{
+    "llvm": {
+        "mem_mean": {
+            "standardized_mse": 0.19108649834203686
+        },
+        "mem_max": {
+            "standardized_mse": 0.1676581293888114
+        },
+        "mem_min": {
+            "standardized_mse": 0.25096332817644296
+        }
+    },
+    "flux-core": {
+        "mem_mean": {
+            "standardized_mse": 0.39585301552290764
+        },
+        "mem_max": {
+            "standardized_mse": 0.39219173463522317
+        },
+        "mem_min": {
+            "standardized_mse": 0.38876472700305204
+        }
+    },
+    "camp": {
+        "mem_mean": {
+            "standardized_mse": 0.6388574159376493
+        },
+        "mem_max": {
+            "standardized_mse": 0.642086321584348
+        },
+        "mem_min": {
+            "standardized_mse": 0.6560219082633849
+        }
+    },
+    "py-tensorflow": {
+        "mem_mean": {
+            "standardized_mse": 0.23162805987552504
+        },
+        "mem_max": {
+            "standardized_mse": 0.27379658837699167
+        },
+        "mem_min": {
+            "standardized_mse": 0.31671313550564284
+        }
+    },
+    "paraview": {
+        "mem_mean": {
+            "standardized_mse": 0.2910055879912567
+        },
+        "mem_max": {
+            "standardized_mse": 0.28514911219109745
+        },
+        "mem_min": {
+            "standardized_mse": 0.3105724615534324
+        }
+    },
+    "py-pandas": {
+        "mem_mean": {
+            "standardized_mse": 0.3149972222706056
+        },
+        "mem_max": {
+            "standardized_mse": 0.2969226681087927
+        },
+        "mem_min": {
+            "standardized_mse": 0.3417254094117752
+        }
+    },
+    "mesa": {
+        "mem_mean": {
+            "standardized_mse": 0.37523509677442235
+        },
+        "mem_max": {
+            "standardized_mse": 0.3267990434265045
+        },
+        "mem_min": {
+            "standardized_mse": 0.4233160227198443
+        }
+    },
+    "gromacs": {
+        "mem_mean": {
+            "standardized_mse": 0.6601388058723842
+        },
+        "mem_max": {
+            "standardized_mse": 0.6685467466876451
+        },
+        "mem_min": {
+            "standardized_mse": 0.6609207610522185
+        }
+    },
+    "intel-tbb": {
+        "mem_mean": {
+            "standardized_mse": 0.44774967060762566
+        },
+        "mem_max": {
+            "standardized_mse": 0.41540578472236783
+        },
+        "mem_min": {
+            "standardized_mse": 0.4441225317612546
+        }
+    },
+    "openpmd-api": {
+        "mem_mean": {
+            "standardized_mse": 0.324422179543278
+        },
+        "mem_max": {
+            "standardized_mse": 0.32200926021895376
+        },
+        "mem_min": {
+            "standardized_mse": 0.32465291112515504
+        }
+    },
+    "py-numexpr": {
+        "mem_mean": {
+            "standardized_mse": 0.43246234023457897
+        },
+        "mem_max": {
+            "standardized_mse": 0.4240402013225202
+        },
+        "mem_min": {
+            "standardized_mse": 0.42360823919037816
+        }
+    },
+    "py-pytz": {
+        "mem_mean": {
+            "standardized_mse": 0.48075503248489687
+        },
+        "mem_max": {
+            "standardized_mse": 0.4742719077100049
+        },
+        "mem_min": {
+            "standardized_mse": 0.47198009288001447
+        }
+    },
+    "py-wheel": {
+        "mem_mean": {
+            "standardized_mse": 0.5348850616842852
+        },
+        "mem_max": {
+            "standardized_mse": 0.5275773760621599
+        },
+        "mem_min": {
+            "standardized_mse": 0.5250736805061968
+        }
+    },
+    "libxrender": {
+        "mem_mean": {
+            "standardized_mse": 0.4530064763635792
+        },
+        "mem_max": {
+            "standardized_mse": 0.43810678671672154
+        },
+        "mem_min": {
+            "standardized_mse": 0.4510214276413257
+        }
+    },
+    "meson": {
+        "mem_mean": {
+            "standardized_mse": 0.5222828450904574
+        },
+        "mem_max": {
+            "standardized_mse": 0.5057923592440484
+        },
+        "mem_min": {
+            "standardized_mse": 0.5224506077411242
+        }
+    },
+    "py-mpi4py": {
+        "mem_mean": {
+            "standardized_mse": 0.52787777357836
+        },
+        "mem_max": {
+            "standardized_mse": 0.5088629839507937
+        },
+        "mem_min": {
+            "standardized_mse": 0.5142807024572039
+        }
+    },
+    "py-numpy": {
+        "mem_mean": {
+            "standardized_mse": 0.538736625566246
+        },
+        "mem_max": {
+            "standardized_mse": 0.5385758992356711
+        },
+        "mem_min": {
+            "standardized_mse": 0.5317793415390529
+        }
+    },
+    "py-flit-core": {
+        "mem_mean": {
+            "standardized_mse": 0.4840812245211418
+        },
+        "mem_max": {
+            "standardized_mse": 0.4573271761824955
+        },
+        "mem_min": {
+            "standardized_mse": 0.47662289880066216
+        }
+    },
+    "py-markupsafe": {
+        "mem_mean": {
+            "standardized_mse": 0.5283361994874493
+        },
+        "mem_max": {
+            "standardized_mse": 0.5050280626364413
+        },
+        "mem_min": {
+            "standardized_mse": 0.5186657316170368
+        }
+    },
+    "conduit": {
+        "mem_mean": {
+            "standardized_mse": 0.3116061692805682
+        },
+        "mem_max": {
+            "standardized_mse": 0.3007710222772076
+        },
+        "mem_min": {
+            "standardized_mse": 0.30624142564596957
+        }
+    },
+    "py-tomli": {
+        "mem_mean": {
+            "standardized_mse": 0.49612524698958727
+        },
+        "mem_max": {
+            "standardized_mse": 0.4932399483062096
+        },
+        "mem_min": {
+            "standardized_mse": 0.4906056232091176
+        }
+    },
+    "py-cycler": {
+        "mem_mean": {
+            "standardized_mse": 0.6499642936694008
+        },
+        "mem_max": {
+            "standardized_mse": 0.6338409690050958
+        },
+        "mem_min": {
+            "standardized_mse": 0.6484624950889326
+        }
+    },
+    "boost": {
+        "mem_mean": {
+            "standardized_mse": 0.2645642763012156
+        },
+        "mem_max": {
+            "standardized_mse": 0.2578825115865879
+        },
+        "mem_min": {
+            "standardized_mse": 0.2918581681295688
+        }
+    },
+    "libx11": {
+        "mem_mean": {
+            "standardized_mse": 0.4939931025197352
+        },
+        "mem_max": {
+            "standardized_mse": 0.4912581584064791
+        },
+        "mem_min": {
+            "standardized_mse": 0.493908626234064
+        }
+    },
+    "py-versioneer": {
+        "mem_mean": {
+            "standardized_mse": 0.48308402551792984
+        },
+        "mem_max": {
+            "standardized_mse": 0.4952083533817914
+        },
+        "mem_min": {
+            "standardized_mse": 0.4909920664781098
+        }
+    },
+    "py-setuptools": {
+        "mem_mean": {
+            "standardized_mse": 0.5610073917524203
+        },
+        "mem_max": {
+            "standardized_mse": 0.5591179622010217
+        },
+        "mem_min": {
+            "standardized_mse": 0.5540998655147854
+        }
+    },
+    "ninja": {
+        "mem_mean": {
+            "standardized_mse": 0.6366757599477492
+        },
+        "mem_max": {
+            "standardized_mse": 0.6251269936138182
+        },
+        "mem_min": {
+            "standardized_mse": 0.627127479495727
+        }
+    },
+    "py-mako": {
+        "mem_mean": {
+            "standardized_mse": 0.4905336251585
+        },
+        "mem_max": {
+            "standardized_mse": 0.49392857769615456
+        },
+        "mem_min": {
+            "standardized_mse": 0.4834427727507904
+        }
+    },
+    "libxcb": {
+        "mem_mean": {
+            "standardized_mse": 0.603481982701117
+        },
+        "mem_max": {
+            "standardized_mse": 0.5959295787922921
+        },
+        "mem_min": {
+            "standardized_mse": 0.5899719172811754
+        }
+    },
+    "ascent": {
+        "mem_mean": {
+            "standardized_mse": 0.27211693743805565
+        },
+        "mem_max": {
+            "standardized_mse": 0.2675854999733315
+        },
+        "mem_min": {
+            "standardized_mse": 0.27103778242691984
+        }
+    },
+    "py-pyproject-metadata": {
+        "mem_mean": {
+            "standardized_mse": 0.509817950616015
+        },
+        "mem_max": {
+            "standardized_mse": 0.504961812324688
+        },
+        "mem_min": {
+            "standardized_mse": 0.5039585165805527
+        }
+    },
+    "py-bottleneck": {
+        "mem_mean": {
+            "standardized_mse": 0.45307330231150716
+        },
+        "mem_max": {
+            "standardized_mse": 0.459151048948162
+        },
+        "mem_min": {
+            "standardized_mse": 0.4454264840915479
+        }
+    },
+    "mpich": {
+        "mem_mean": {
+            "standardized_mse": 0.2508282603381518
+        },
+        "mem_max": {
+            "standardized_mse": 0.2498833588410337
+        },
+        "mem_min": {
+            "standardized_mse": 0.2511818731924825
+        }
+    },
+    "py-contourpy": {
+        "mem_mean": {
+            "standardized_mse": 0.49250434558845213
+        },
+        "mem_max": {
+            "standardized_mse": 0.4669624351451424
+        },
+        "mem_min": {
+            "standardized_mse": 0.486376841323654
+        }
+    },
+    "py-setuptools-scm": {
+        "mem_mean": {
+            "standardized_mse": 0.5203809236180881
+        },
+        "mem_max": {
+            "standardized_mse": 0.5170416189338831
+        },
+        "mem_min": {
+            "standardized_mse": 0.5241879686549813
+        }
+    },
+    "py-cppy": {
+        "mem_mean": {
+            "standardized_mse": 0.4871200155996161
+        },
+        "mem_max": {
+            "standardized_mse": 0.4777536173112746
+        },
+        "mem_min": {
+            "standardized_mse": 0.48619379202913254
+        }
+    },
+    "libxext": {
+        "mem_mean": {
+            "standardized_mse": 0.4553296225195279
+        },
+        "mem_max": {
+            "standardized_mse": 0.43891005874097855
+        },
+        "mem_min": {
+            "standardized_mse": 0.4412007906643615
+        }
+    },
+    "py-cython": {
+        "mem_mean": {
+            "standardized_mse": 0.40840730291095734
+        },
+        "mem_max": {
+            "standardized_mse": 0.3962421641743135
+        },
+        "mem_min": {
+            "standardized_mse": 0.4207699346246341
+        }
+    },
+    "netcdf-c": {
+        "mem_mean": {
+            "standardized_mse": 0.5625347759644499
+        },
+        "mem_max": {
+            "standardized_mse": 0.5666153298043964
+        },
+        "mem_min": {
+            "standardized_mse": 0.5483151418228865
+        }
+    },
+    "py-kiwisolver": {
+        "mem_mean": {
+            "standardized_mse": 0.496875969261189
+        },
+        "mem_max": {
+            "standardized_mse": 0.4984375767130168
+        },
+        "mem_min": {
+            "standardized_mse": 0.4994641934010434
+        }
+    },
+    "py-packaging": {
+        "mem_mean": {
+            "standardized_mse": 0.4950267907939821
+        },
+        "mem_max": {
+            "standardized_mse": 0.5274191086109161
+        },
+        "mem_min": {
+            "standardized_mse": 0.5103126588800944
+        }
+    },
+    "hdf5": {
+        "mem_mean": {
+            "standardized_mse": 0.39297910911892636
+        },
+        "mem_max": {
+            "standardized_mse": 0.3952761832510916
+        },
+        "mem_min": {
+            "standardized_mse": 0.3945301514051003
+        }
+    },
+    "py-certifi": {
+        "mem_mean": {
+            "standardized_mse": 0.5155389442439567
+        },
+        "mem_max": {
+            "standardized_mse": 0.5004011873940357
+        },
+        "mem_min": {
+            "standardized_mse": 0.501428619665785
+        }
+    },
+    "py-matplotlib": {
+        "mem_mean": {
+            "standardized_mse": 0.5243866949813908
+        },
+        "mem_max": {
+            "standardized_mse": 0.5237828019649933
+        },
+        "mem_min": {
+            "standardized_mse": 0.5175336244859703
+        }
+    },
+    "sz": {
+        "mem_mean": {
+            "standardized_mse": 0.5415984666299813
+        },
+        "mem_max": {
+            "standardized_mse": 0.5551292219813514
+        },
+        "mem_min": {
+            "standardized_mse": 0.5465097496574525
+        }
+    },
+    "adios2": {
+        "mem_mean": {
+            "standardized_mse": 0.3463389004056523
+        },
+        "mem_max": {
+            "standardized_mse": 0.31791015523896654
+        },
+        "mem_min": {
+            "standardized_mse": 0.36846373736579724
+        }
+    },
+    "libxt": {
+        "mem_mean": {
+            "standardized_mse": 0.4560754742128306
+        },
+        "mem_max": {
+            "standardized_mse": 0.4475031402558297
+        },
+        "mem_min": {
+            "standardized_mse": 0.45060191182241016
+        }
+    },
+    "openmpi": {
+        "mem_mean": {
+            "standardized_mse": 0.3132029598585116
+        },
+        "mem_max": {
+            "standardized_mse": 0.3126665062718049
+        },
+        "mem_min": {
+            "standardized_mse": 0.31354957845549203
+        }
+    },
+    "yaksa": {
+        "mem_mean": {
+            "standardized_mse": 0.6456853023063168
+        },
+        "mem_max": {
+            "standardized_mse": 0.5955727716634811
+        },
+        "mem_min": {
+            "standardized_mse": 0.6361556402443237
+        }
+    },
+    "py-six": {
+        "mem_mean": {
+            "standardized_mse": 0.47890673476407153
+        },
+        "mem_max": {
+            "standardized_mse": 0.46514397538481483
+        },
+        "mem_min": {
+            "standardized_mse": 0.4724433735184441
+        }
+    },
+    "rdma-core": {
+        "mem_mean": {
+            "standardized_mse": 0.5473894705995845
+        },
+        "mem_max": {
+            "standardized_mse": 0.6062279151453509
+        },
+        "mem_min": {
+            "standardized_mse": 0.5899764445219605
+        }
+    },
+    "py-pip": {
+        "mem_mean": {
+            "standardized_mse": 0.48869310484462375
+        },
+        "mem_max": {
+            "standardized_mse": 0.4862057377597639
+        },
+        "mem_min": {
+            "standardized_mse": 0.47536028765279065
+        }
+    },
+    "xcb-proto": {
+        "mem_mean": {
+            "standardized_mse": 0.5817241074061554
+        },
+        "mem_max": {
+            "standardized_mse": 0.5761832213715314
+        },
+        "mem_min": {
+            "standardized_mse": 0.573236730194848
+        }
+    },
+    "libcatalyst": {
+        "mem_mean": {
+            "standardized_mse": 0.5842731703188248
+        },
+        "mem_max": {
+            "standardized_mse": 0.614632773271364
+        },
+        "mem_min": {
+            "standardized_mse": 0.6174331122962781
+        }
+    },
+    "python": {
+        "mem_mean": {
+            "standardized_mse": 0.5910127910263376
+        },
+        "mem_max": {
+            "standardized_mse": 0.5775883030884044
+        },
+        "mem_min": {
+            "standardized_mse": 0.582474139855366
+        }
+    },
+    "py-pillow": {
+        "mem_mean": {
+            "standardized_mse": 0.5470381851527344
+        },
+        "mem_max": {
+            "standardized_mse": 0.5310472751840651
+        },
+        "mem_min": {
+            "standardized_mse": 0.5448069995373366
+        }
+    },
+    "py-python-dateutil": {
+        "mem_mean": {
+            "standardized_mse": 0.5024509921538314
+        },
+        "mem_max": {
+            "standardized_mse": 0.49100649131373025
+        },
+        "mem_min": {
+            "standardized_mse": 0.4960128171768271
+        }
+    },
+    "py-pyparsing": {
+        "mem_mean": {
+            "standardized_mse": 0.4329513462419315
+        },
+        "mem_max": {
+            "standardized_mse": 0.4298343118809887
+        },
+        "mem_min": {
+            "standardized_mse": 0.4339176916115336
+        }
+    },
+    "openssh": {
+        "mem_mean": {
+            "standardized_mse": 0.5221202456347646
+        },
+        "mem_max": {
+            "standardized_mse": 0.5201123031574673
+        },
+        "mem_min": {
+            "standardized_mse": 0.5223777479446343
+        }
+    },
+    "py-typing-extensions": {
+        "mem_mean": {
+            "standardized_mse": 0.4944091714201224
+        },
+        "mem_max": {
+            "standardized_mse": 0.4985060829317463
+        },
+        "mem_min": {
+            "standardized_mse": 0.4946416728163234
+        }
+    },
+    "py-pybind11": {
+        "mem_mean": {
+            "standardized_mse": 0.4971531410707688
+        },
+        "mem_max": {
+            "standardized_mse": 0.477530692970391
+        },
+        "mem_min": {
+            "standardized_mse": 0.4933011256310685
+        }
+    },
+    "mgard": {
+        "mem_mean": {
+            "standardized_mse": 0.5965471991979366
+        },
+        "mem_max": {
+            "standardized_mse": 0.6259581576199458
+        },
+        "mem_min": {
+            "standardized_mse": 0.6519169045023021
+        }
+    },
+    "py-fonttools": {
+        "mem_mean": {
+            "standardized_mse": 0.49300284462720023
+        },
+        "mem_max": {
+            "standardized_mse": 0.4723619158169423
+        },
+        "mem_min": {
+            "standardized_mse": 0.4896540062290391
+        }
+    },
+    "git": {
+        "mem_mean": {
+            "standardized_mse": 0.5873993489952642
+        },
+        "mem_max": {
+            "standardized_mse": 0.5754339918359124
+        },
+        "mem_min": {
+            "standardized_mse": 0.5934458606585955
+        }
+    },
+    "py-torch": {
+        "mem_mean": {
+            "standardized_mse": 0.2702980459453906
+        },
+        "mem_max": {
+            "standardized_mse": 0.2918553337129956
+        },
+        "mem_min": {
+            "standardized_mse": 0.37008229889875066
+        }
+    },
+    "cmake": {
+        "mem_mean": {
+            "standardized_mse": 0.4238431218507721
+        },
+        "mem_max": {
+            "standardized_mse": 0.4635127209435718
+        },
+        "mem_min": {
+            "standardized_mse": 0.4877999323689334
+        }
+    },
+    "kvtree": {
+        "mem_mean": {
+            "standardized_mse": 0.6010031719357197
+        },
+        "mem_max": {
+            "standardized_mse": 0.6182048272783266
+        },
+        "mem_min": {
+            "standardized_mse": 0.6125636826625047
+        }
+    },
+    "py-h5py": {
+        "mem_mean": {
+            "standardized_mse": 0.34011845387823214
+        },
+        "mem_max": {
+            "standardized_mse": 0.3343398021153802
+        },
+        "mem_min": {
+            "standardized_mse": 0.3387261012368646
+        }
+    },
+    "hypre": {
+        "mem_mean": {
+            "standardized_mse": 0.5877337846850191
+        },
+        "mem_max": {
+            "standardized_mse": 0.6073256130951267
+        },
+        "mem_min": {
+            "standardized_mse": 0.7391070258731085
+        }
+    },
+    "mfem": {
+        "mem_mean": {
+            "standardized_mse": 0.4228334817293702
+        },
+        "mem_max": {
+            "standardized_mse": 0.43574711331573757
+        },
+        "mem_min": {
+            "standardized_mse": 0.44878173293884216
+        }
+    },
+    "netlib-scalapack": {
+        "mem_mean": {
+            "standardized_mse": 0.44975897657163105
+        },
+        "mem_max": {
+            "standardized_mse": 0.48625162799722893
+        },
+        "mem_min": {
+            "standardized_mse": 0.48274195968835865
+        }
+    },
+    "fftw": {
+        "mem_mean": {
+            "standardized_mse": 0.46497629209691854
+        },
+        "mem_max": {
+            "standardized_mse": 0.4643670227025188
+        },
+        "mem_min": {
+            "standardized_mse": 0.4583950200035721
+        }
+    },
+    "parallel-netcdf": {
+        "mem_mean": {
+            "standardized_mse": 0.6269877415741544
+        },
+        "mem_max": {
+            "standardized_mse": 0.6580216212217677
+        },
+        "mem_min": {
+            "standardized_mse": 0.6593861424655736
+        }
+    },
+    "py-jupyterlab": {
+        "mem_mean": {
+            "standardized_mse": 0.3559824371191871
+        },
+        "mem_max": {
+            "standardized_mse": 0.353511283599556
+        },
+        "mem_min": {
+            "standardized_mse": 0.3515651956389843
+        }
+    },
+    "zfp": {
+        "mem_mean": {
+            "standardized_mse": 0.6501613040333493
+        },
+        "mem_max": {
+            "standardized_mse": 0.648346406152635
+        },
+        "mem_min": {
+            "standardized_mse": 0.6496241773115171
+        }
+    },
+    "py-jinja2": {
+        "mem_mean": {
+            "standardized_mse": 0.45362138419330433
+        },
+        "mem_max": {
+            "standardized_mse": 0.43686764594171673
+        },
+        "mem_min": {
+            "standardized_mse": 0.4389494821618595
+        }
+    },
+    "py-idna": {
+        "mem_mean": {
+            "standardized_mse": 0.5526373079349192
+        },
+        "mem_max": {
+            "standardized_mse": 0.5018875789768041
+        },
+        "mem_min": {
+            "standardized_mse": 0.5545008713954497
+        }
+    },
+    "py-pycparser": {
+        "mem_mean": {
+            "standardized_mse": 0.6330973935824592
+        },
+        "mem_max": {
+            "standardized_mse": 0.6191090874000054
+        },
+        "mem_min": {
+            "standardized_mse": 0.6108854547463597
+        }
+    },
+    "py-decorator": {
+        "mem_mean": {
+            "standardized_mse": 0.49604249005871326
+        },
+        "mem_max": {
+            "standardized_mse": 0.48127195387949345
+        },
+        "mem_min": {
+            "standardized_mse": 0.4867814216786232
+        }
+    },
+    "protobuf": {
+        "mem_mean": {
+            "standardized_mse": 0.5188274033447929
+        },
+        "mem_max": {
+            "standardized_mse": 0.5197106299881451
+        },
+        "mem_min": {
+            "standardized_mse": 0.5201736930063692
+        }
+    },
+    "libjpeg-turbo": {
+        "mem_mean": {
+            "standardized_mse": 0.46336533412840025
+        },
+        "mem_max": {
+            "standardized_mse": 0.46341312480242525
+        },
+        "mem_min": {
+            "standardized_mse": 0.4598887485891995
+        }
+    },
+    "py-ply": {
+        "mem_mean": {
+            "standardized_mse": 0.49342031185265867
+        },
+        "mem_max": {
+            "standardized_mse": 0.47121439194855863
+        },
+        "mem_min": {
+            "standardized_mse": 0.48286251328688556
+        }
+    },
+    "rust": {
+        "mem_mean": {
+            "standardized_mse": 0.28571555549985905
+        },
+        "mem_max": {
+            "standardized_mse": 0.2852221925240088
+        },
+        "mem_min": {
+            "standardized_mse": 0.28370549997626743
+        }
+    },
+    "umpire": {
+        "mem_mean": {
+            "standardized_mse": 0.4569328184583147
+        },
+        "mem_max": {
+            "standardized_mse": 0.4339510607302661
+        },
+        "mem_min": {
+            "standardized_mse": 0.45017588385202867
+        }
+    },
+    "py-oauthlib": {
+        "mem_mean": {
+            "standardized_mse": 0.5476380444225967
+        },
+        "mem_max": {
+            "standardized_mse": 0.5144810254672109
+        },
+        "mem_min": {
+            "standardized_mse": 0.5368236171946024
+        }
+    },
+    "py-pathspec": {
+        "mem_mean": {
+            "standardized_mse": 0.49773458553398886
+        },
+        "mem_max": {
+            "standardized_mse": 0.4802760980985779
+        },
+        "mem_min": {
+            "standardized_mse": 0.4903738287530031
+        }
+    },
+    "py-meson-python": {
+        "mem_mean": {
+            "standardized_mse": 0.5093927755085259
+        },
+        "mem_max": {
+            "standardized_mse": 0.5124042998345726
+        },
+        "mem_min": {
+            "standardized_mse": 0.5003037475120357
+        }
+    },
+    "libpng": {
+        "mem_mean": {
+            "standardized_mse": 0.599619743090251
+        },
+        "mem_max": {
+            "standardized_mse": 0.6307620685591346
+        },
+        "mem_min": {
+            "standardized_mse": 0.6238531479311301
+        }
+    },
+    "py-gast": {
+        "mem_mean": {
+            "standardized_mse": 0.4821164668109992
+        },
+        "mem_max": {
+            "standardized_mse": 0.45632908051104215
+        },
+        "mem_min": {
+            "standardized_mse": 0.4730553196926577
+        }
+    },
+    "metis": {
+        "mem_mean": {
+            "standardized_mse": 0.5200676344474848
+        },
+        "mem_max": {
+            "standardized_mse": 0.5252408954387985
+        },
+        "mem_min": {
+            "standardized_mse": 0.5197720273063
+        }
+    },
+    "raja": {
+        "mem_mean": {
+            "standardized_mse": 0.4218179345266972
+        },
+        "mem_max": {
+            "standardized_mse": 0.43957108506955705
+        },
+        "mem_min": {
+            "standardized_mse": 0.4690589905343343
+        }
+    },
+    "py-cffi": {
+        "mem_mean": {
+            "standardized_mse": 0.4907577256797457
+        },
+        "mem_max": {
+            "standardized_mse": 0.4639754484918035
+        },
+        "mem_min": {
+            "standardized_mse": 0.4824758019999052
+        }
+    },
+    "py-pygments": {
+        "mem_mean": {
+            "standardized_mse": 0.4806225976007555
+        },
+        "mem_max": {
+            "standardized_mse": 0.466379009956203
+        },
+        "mem_min": {
+            "standardized_mse": 0.47343401534739554
+        }
+    },
+    "py-editables": {
+        "mem_mean": {
+            "standardized_mse": 0.4727990419939114
+        },
+        "mem_max": {
+            "standardized_mse": 0.45291274614320354
+        },
+        "mem_min": {
+            "standardized_mse": 0.4566129938052887
+        }
+    },
+    "kokkos": {
+        "mem_mean": {
+            "standardized_mse": 0.41448962307991327
+        },
+        "mem_max": {
+            "standardized_mse": 0.4105848181851
+        },
+        "mem_min": {
+            "standardized_mse": 0.42532747049959774
+        }
+    },
+    "py-psutil": {
+        "mem_mean": {
+            "standardized_mse": 0.47360063141428216
+        },
+        "mem_max": {
+            "standardized_mse": 0.453421181229143
+        },
+        "mem_min": {
+            "standardized_mse": 0.46211849054546833
+        }
+    },
+    "py-charset-normalizer": {
+        "mem_mean": {
+            "standardized_mse": 0.4734360191800631
+        },
+        "mem_max": {
+            "standardized_mse": 0.4560963158645592
+        },
+        "mem_min": {
+            "standardized_mse": 0.46680876738736427
+        }
+    },
+    "py-zope-interface": {
+        "mem_mean": {
+            "standardized_mse": 0.49758884661579594
+        },
+        "mem_max": {
+            "standardized_mse": 0.48015556489479577
+        },
+        "mem_min": {
+            "standardized_mse": 0.4890754214450581
+        }
+    },
+    "py-networkx": {
+        "mem_mean": {
+            "standardized_mse": 0.5409772685386697
+        },
+        "mem_max": {
+            "standardized_mse": 0.5359446511850903
+        },
+        "mem_min": {
+            "standardized_mse": 0.5326917124685189
+        }
+    },
+    "py-pyyaml": {
+        "mem_mean": {
+            "standardized_mse": 0.49667192882709477
+        },
+        "mem_max": {
+            "standardized_mse": 0.494980653751937
+        },
+        "mem_min": {
+            "standardized_mse": 0.49260147220587713
+        }
+    },
+    "py-sniffio": {
+        "mem_mean": {
+            "standardized_mse": 0.5223725355893437
+        },
+        "mem_max": {
+            "standardized_mse": 0.5217348336526715
+        },
+        "mem_min": {
+            "standardized_mse": 0.524408606571648
+        }
+    },
+    "py-cloudpickle": {
+        "mem_mean": {
+            "standardized_mse": 0.518798557447743
+        },
+        "mem_max": {
+            "standardized_mse": 0.4984742580894888
+        },
+        "mem_min": {
+            "standardized_mse": 0.49939232280964124
+        }
+    },
+    "py-tornado": {
+        "mem_mean": {
+            "standardized_mse": 0.5090962938701082
+        },
+        "mem_max": {
+            "standardized_mse": 0.5013680205907234
+        },
+        "mem_min": {
+            "standardized_mse": 0.49381483800994636
+        }
+    },
+    "py-send2trash": {
+        "mem_mean": {
+            "standardized_mse": 0.45498154137840374
+        },
+        "mem_max": {
+            "standardized_mse": 0.4498139858020236
+        },
+        "mem_min": {
+            "standardized_mse": 0.44277257452482705
+        }
+    },
+    "py-beniget": {
+        "mem_mean": {
+            "standardized_mse": 0.4642426858827508
+        },
+        "mem_max": {
+            "standardized_mse": 0.4940670830981683
+        },
+        "mem_min": {
+            "standardized_mse": 0.4720696709484888
+        }
+    },
+    "py-websocket-client": {
+        "mem_mean": {
+            "standardized_mse": 0.5398697006955867
+        },
+        "mem_max": {
+            "standardized_mse": 0.525088386105875
+        },
+        "mem_min": {
+            "standardized_mse": 0.5463743229637719
+        }
+    },
+    "py-trove-classifiers": {
+        "mem_mean": {
+            "standardized_mse": 0.5267427576495911
+        },
+        "mem_max": {
+            "standardized_mse": 0.5006538084321422
+        },
+        "mem_min": {
+            "standardized_mse": 0.5219076007707883
+        }
+    },
+    "py-hatchling": {
+        "mem_mean": {
+            "standardized_mse": 0.4585136985654154
+        },
+        "mem_max": {
+            "standardized_mse": 0.4631684879336665
+        },
+        "mem_min": {
+            "standardized_mse": 0.4528633307527366
+        }
+    },
+    "py-pluggy": {
+        "mem_mean": {
+            "standardized_mse": 0.5805272133685068
+        },
+        "mem_max": {
+            "standardized_mse": 0.5666896256654129
+        },
+        "mem_min": {
+            "standardized_mse": 0.5782659749051425
+        }
+    },
+    "py-wcwidth": {
+        "mem_mean": {
+            "standardized_mse": 0.4597264579030059
+        },
+        "mem_max": {
+            "standardized_mse": 0.45422169704979315
+        },
+        "mem_min": {
+            "standardized_mse": 0.4554083158119601
+        }
+    },
+    "py-scipy": {
+        "mem_mean": {
+            "standardized_mse": 0.2193998223256495
+        },
+        "mem_max": {
+            "standardized_mse": 0.23326816613086643
+        },
+        "mem_min": {
+            "standardized_mse": 0.2298349838549957
+        }
+    },
+    "py-poetry-core": {
+        "mem_mean": {
+            "standardized_mse": 0.4931465366104567
+        },
+        "mem_max": {
+            "standardized_mse": 0.46465543893405786
+        },
+        "mem_min": {
+            "standardized_mse": 0.4732074200518512
+        }
+    },
+    "py-fastjsonschema": {
+        "mem_mean": {
+            "standardized_mse": 0.4611436890236219
+        },
+        "mem_max": {
+            "standardized_mse": 0.42789339247720504
+        },
+        "mem_min": {
+            "standardized_mse": 0.4533109647767571
+        }
+    },
+    "py-calver": {
+        "mem_mean": {
+            "standardized_mse": 0.519792258716379
+        },
+        "mem_max": {
+            "standardized_mse": 0.4844057484630315
+        },
+        "mem_min": {
+            "standardized_mse": 0.5196000662563647
+        }
+    },
+    "py-webencodings": {
+        "mem_mean": {
+            "standardized_mse": 0.4511411760313787
+        },
+        "mem_max": {
+            "standardized_mse": 0.4355471357372903
+        },
+        "mem_min": {
+            "standardized_mse": 0.43704962150873894
+        }
+    },
+    "py-joblib": {
+        "mem_mean": {
+            "standardized_mse": 0.4588695032211342
+        },
+        "mem_max": {
+            "standardized_mse": 0.4492585020329798
+        },
+        "mem_min": {
+            "standardized_mse": 0.45408139677166237
+        }
+    },
+    "py-markdown": {
+        "mem_mean": {
+            "standardized_mse": 0.5170400077218935
+        },
+        "mem_max": {
+            "standardized_mse": 0.49375992561952864
+        },
+        "mem_min": {
+            "standardized_mse": 0.4900438599770119
+        }
+    },
+    "py-mistune": {
+        "mem_mean": {
+            "standardized_mse": 0.49796301260348713
+        },
+        "mem_max": {
+            "standardized_mse": 0.4926390460031729
+        },
+        "mem_min": {
+            "standardized_mse": 0.5004704679353554
+        }
+    },
+    "py-zope-event": {
+        "mem_mean": {
+            "standardized_mse": 0.5229648196871495
+        },
+        "mem_max": {
+            "standardized_mse": 0.5130785903771223
+        },
+        "mem_min": {
+            "standardized_mse": 0.521442124591965
+        }
+    },
+    "curl": {
+        "mem_mean": {
+            "standardized_mse": 0.6548801585607241
+        },
+        "mem_max": {
+            "standardized_mse": 0.6623762125701339
+        },
+        "mem_min": {
+            "standardized_mse": 0.6500185477191698
+        }
+    },
+    "snappy": {
+        "mem_mean": {
+            "standardized_mse": 0.5516684931004276
+        },
+        "mem_max": {
+            "standardized_mse": 0.5589735039958961
+        },
+        "mem_min": {
+            "standardized_mse": 0.5549611214633704
+        }
+    },
+    "py-pythran": {
+        "mem_mean": {
+            "standardized_mse": 0.39938288586383847
+        },
+        "mem_max": {
+            "standardized_mse": 0.39403885624133733
+        },
+        "mem_min": {
+            "standardized_mse": 0.39002826847522
+        }
+    },
+    "py-pandocfilters": {
+        "mem_mean": {
+            "standardized_mse": 0.5657143366450482
+        },
+        "mem_max": {
+            "standardized_mse": 0.5516712397369522
+        },
+        "mem_min": {
+            "standardized_mse": 0.5503582506700304
+        }
+    },
+    "py-pickleshare": {
+        "mem_mean": {
+            "standardized_mse": 0.45986214567571715
+        },
+        "mem_max": {
+            "standardized_mse": 0.44866477108122377
+        },
+        "mem_min": {
+            "standardized_mse": 0.44065830858174404
+        }
+    },
+    "py-parso": {
+        "mem_mean": {
+            "standardized_mse": 0.45874993036970874
+        },
+        "mem_max": {
+            "standardized_mse": 0.44573233764521514
+        },
+        "mem_min": {
+            "standardized_mse": 0.4567212697471377
+        }
+    },
+    "py-greenlet": {
+        "mem_mean": {
+            "standardized_mse": 0.4690509994712049
+        },
+        "mem_max": {
+            "standardized_mse": 0.4484562344759908
+        },
+        "mem_min": {
+            "standardized_mse": 0.46229307305665956
+        }
+    },
+    "py-pyrsistent": {
+        "mem_mean": {
+            "standardized_mse": 0.6698799850587438
+        },
+        "mem_max": {
+            "standardized_mse": 0.658146738906554
+        },
+        "mem_min": {
+            "standardized_mse": 0.6561807150821348
+        }
+    },
+    "py-prometheus-client": {
+        "mem_mean": {
+            "standardized_mse": 0.4793180293896726
+        },
+        "mem_max": {
+            "standardized_mse": 0.4562409844675072
+        },
+        "mem_min": {
+            "standardized_mse": 0.47332324240606005
+        }
+    },
+    "py-protobuf": {
+        "mem_mean": {
+            "standardized_mse": 0.534778227925
+        },
+        "mem_max": {
+            "standardized_mse": 0.5227054658136091
+        },
+        "mem_min": {
+            "standardized_mse": 0.515604240928995
+        }
+    },
+    "vtk-m": {
+        "mem_mean": {
+            "standardized_mse": 0.43516438812117847
+        },
+        "mem_max": {
+            "standardized_mse": 0.3726665253073321
+        },
+        "mem_min": {
+            "standardized_mse": 0.6249099735085675
+        }
+    },
+    "py-defusedxml": {
+        "mem_mean": {
+            "standardized_mse": 0.45550117429432574
+        },
+        "mem_max": {
+            "standardized_mse": 0.44287762650300777
+        },
+        "mem_min": {
+            "standardized_mse": 0.43550981595825927
+        }
+    },
+    "py-json5": {
+        "mem_mean": {
+            "standardized_mse": 0.46260901329094367
+        },
+        "mem_max": {
+            "standardized_mse": 0.453512491549234
+        },
+        "mem_min": {
+            "standardized_mse": 0.45726274913951825
+        }
+    },
+    "trilinos": {
+        "mem_mean": {
+            "standardized_mse": 0.25473732207944405
+        },
+        "mem_max": {
+            "standardized_mse": 0.273070340379606
+        },
+        "mem_min": {
+            "standardized_mse": 0.2882952060822269
+        }
+    },
+    "py-fsspec": {
+        "mem_mean": {
+            "standardized_mse": 0.5343372396126953
+        },
+        "mem_max": {
+            "standardized_mse": 0.507972630433964
+        },
+        "mem_min": {
+            "standardized_mse": 0.5352798900980146
+        }
+    },
+    "py-nbformat": {
+        "mem_mean": {
+            "standardized_mse": 0.4886627452008481
+        },
+        "mem_max": {
+            "standardized_mse": 0.48438967858375703
+        },
+        "mem_min": {
+            "standardized_mse": 0.48799021787397406
+        }
+    },
+    "petsc": {
+        "mem_mean": {
+            "standardized_mse": 0.34692505592952055
+        },
+        "mem_max": {
+            "standardized_mse": 0.35457599512705856
+        },
+        "mem_min": {
+            "standardized_mse": 0.36513779006568803
+        }
+    },
+    "slate": {
+        "mem_mean": {
+            "standardized_mse": 0.47272644782108186
+        },
+        "mem_max": {
+            "standardized_mse": 0.45701609473387456
+        },
+        "mem_min": {
+            "standardized_mse": 0.4969376834938598
+        }
+    },
+    "ginkgo": {
+        "mem_mean": {
+            "standardized_mse": 0.3508816467457438
+        },
+        "mem_max": {
+            "standardized_mse": 0.3717941182008478
+        },
+        "mem_min": {
+            "standardized_mse": 0.37079310171178814
+        }
+    },
+    "py-hatch-vcs": {
+        "mem_mean": {
+            "standardized_mse": 0.5221582650136614
+        },
+        "mem_max": {
+            "standardized_mse": 0.5170338139358787
+        },
+        "mem_min": {
+            "standardized_mse": 0.5097336633738861
+        }
+    },
+    "py-traitlets": {
+        "mem_mean": {
+            "standardized_mse": 0.4439571927931895
+        },
+        "mem_max": {
+            "standardized_mse": 0.4391101376712155
+        },
+        "mem_min": {
+            "standardized_mse": 0.44163942190716904
+        }
+    },
+    "py-requests": {
+        "mem_mean": {
+            "standardized_mse": 0.512457960409361
+        },
+        "mem_max": {
+            "standardized_mse": 0.5145701502628126
+        },
+        "mem_min": {
+            "standardized_mse": 0.5121837577576005
+        }
+    },
+    "py-platformdirs": {
+        "mem_mean": {
+            "standardized_mse": 0.5204316411252994
+        },
+        "mem_max": {
+            "standardized_mse": 0.5133233944669754
+        },
+        "mem_min": {
+            "standardized_mse": 0.5217379248929839
+        }
+    },
+    "py-hatch-fancy-pypi-readme": {
+        "mem_mean": {
+            "standardized_mse": 0.4767278616451054
+        },
+        "mem_max": {
+            "standardized_mse": 0.476844877381032
+        },
+        "mem_min": {
+            "standardized_mse": 0.4697575826797121
+        }
+    },
+    "py-urllib3": {
+        "mem_mean": {
+            "standardized_mse": 0.5041635975883577
+        },
+        "mem_max": {
+            "standardized_mse": 0.4994200921225365
+        },
+        "mem_min": {
+            "standardized_mse": 0.49963925493816774
+        }
+    },
+    "py-hatch-nodejs-version": {
+        "mem_mean": {
+            "standardized_mse": 0.5175808191743271
+        },
+        "mem_max": {
+            "standardized_mse": 0.5108556181800084
+        },
+        "mem_min": {
+            "standardized_mse": 0.5094787317482765
+        }
+    },
+    "superlu-dist": {
+        "mem_mean": {
+            "standardized_mse": 0.6451886691473898
+        },
+        "mem_max": {
+            "standardized_mse": 0.6151444844229853
+        },
+        "mem_min": {
+            "standardized_mse": 0.6432263805982587
+        }
+    },
+    "parmetis": {
+        "mem_mean": {
+            "standardized_mse": 0.5990403877166176
+        },
+        "mem_max": {
+            "standardized_mse": 0.6442138629630735
+        },
+        "mem_min": {
+            "standardized_mse": 0.6329143845876856
+        }
+    },
+    "cabana": {
+        "mem_mean": {
+            "standardized_mse": 0.575624096099652
+        },
+        "mem_max": {
+            "standardized_mse": 0.5484098116044736
+        },
+        "mem_min": {
+            "standardized_mse": 0.6245863806852268
+        }
+    },
+    "tasmanian": {
+        "mem_mean": {
+            "standardized_mse": 0.5201726236339898
+        },
+        "mem_max": {
+            "standardized_mse": 0.4799764322126465
+        },
+        "mem_min": {
+            "standardized_mse": 0.5316688149726381
+        }
+    },
+    "py-pure-eval": {
+        "mem_mean": {
+            "standardized_mse": 0.42800673840221043
+        },
+        "mem_max": {
+            "standardized_mse": 0.4189202067323684
+        },
+        "mem_min": {
+            "standardized_mse": 0.42933543897829873
+        }
+    },
+    "rankstr": {
+        "mem_mean": {
+            "standardized_mse": 0.5625992554861965
+        },
+        "mem_max": {
+            "standardized_mse": 0.571923507999434
+        },
+        "mem_min": {
+            "standardized_mse": 0.5703997737395232
+        }
+    },
+    "arborx": {
+        "mem_mean": {
+            "standardized_mse": 0.6332531288589145
+        },
+        "mem_max": {
+            "standardized_mse": 0.6477966415422066
+        },
+        "mem_min": {
+            "standardized_mse": 0.7522536715426678
+        }
+    },
+    "py-jsonschema": {
+        "mem_mean": {
+            "standardized_mse": 0.5168647238348958
+        },
+        "mem_max": {
+            "standardized_mse": 0.5142440193062637
+        },
+        "mem_min": {
+            "standardized_mse": 0.5123332837451968
+        }
+    },
+    "py-pytest-runner": {
+        "mem_mean": {
+            "standardized_mse": 0.6948151411759742
+        },
+        "mem_max": {
+            "standardized_mse": 0.673704672789261
+        },
+        "mem_min": {
+            "standardized_mse": 0.677125538390745
+        }
+    },
+    "heffte": {
+        "mem_mean": {
+            "standardized_mse": 0.5269395513873452
+        },
+        "mem_max": {
+            "standardized_mse": 0.48147068748890537
+        },
+        "mem_min": {
+            "standardized_mse": 0.5554692545936929
+        }
+    },
+    "parsec": {
+        "mem_mean": {
+            "standardized_mse": 0.48734433574070324
+        },
+        "mem_max": {
+            "standardized_mse": 0.5007664109561815
+        },
+        "mem_min": {
+            "standardized_mse": 0.5102675328786047
+        }
+    },
+    "hpx": {
+        "mem_mean": {
+            "standardized_mse": 0.3814259645297904
+        },
+        "mem_max": {
+            "standardized_mse": 0.39754725039755745
+        },
+        "mem_min": {
+            "standardized_mse": 0.3999773933755804
+        }
+    },
+    "py-gevent": {
+        "mem_mean": {
+            "standardized_mse": 0.4598368853645756
+        },
+        "mem_max": {
+            "standardized_mse": 0.44916841487222575
+        },
+        "mem_min": {
+            "standardized_mse": 0.4419538661976248
+        }
+    },
+    "redset": {
+        "mem_mean": {
+            "standardized_mse": 0.5460544162139737
+        },
+        "mem_max": {
+            "standardized_mse": 0.5531932438779056
+        },
+        "mem_min": {
+            "standardized_mse": 0.5629882941761096
+        }
+    },
+    "py-attrs": {
+        "mem_mean": {
+            "standardized_mse": 0.46870866004728234
+        },
+        "mem_max": {
+            "standardized_mse": 0.46310576069721077
+        },
+        "mem_min": {
+            "standardized_mse": 0.46490763767847904
+        }
+    },
+    "amrex": {
+        "mem_mean": {
+            "standardized_mse": 0.3428275009195226
+        },
+        "mem_max": {
+            "standardized_mse": 0.3768927707645549
+        },
+        "mem_min": {
+            "standardized_mse": 0.3877834677621133
+        }
+    },
+    "py-jaxlib": {
+        "mem_mean": {
+            "standardized_mse": 0.2677973825016424
+        },
+        "mem_max": {
+            "standardized_mse": 0.2746251216133713
+        },
+        "mem_min": {
+            "standardized_mse": 0.32001010053599677
+        }
+    },
+    "py-ipykernel": {
+        "mem_mean": {
+            "standardized_mse": 0.42313845944275325
+        },
+        "mem_max": {
+            "standardized_mse": 0.422194436862312
+        },
+        "mem_min": {
+            "standardized_mse": 0.41456565861738087
+        }
+    },
+    "py-ipython": {
+        "mem_mean": {
+            "standardized_mse": 0.3643723051028941
+        },
+        "mem_max": {
+            "standardized_mse": 0.3591397469882305
+        },
+        "mem_min": {
+            "standardized_mse": 0.3483795229197537
+        }
+    },
+    "sundials": {
+        "mem_mean": {
+            "standardized_mse": 0.6275686146626936
+        },
+        "mem_max": {
+            "standardized_mse": 0.5846264865756232
+        },
+        "mem_min": {
+            "standardized_mse": 0.6670581986365511
+        }
+    },
+    "strumpack": {
+        "mem_mean": {
+            "standardized_mse": 0.47601719552175464
+        },
+        "mem_max": {
+            "standardized_mse": 0.47793918877963837
+        },
+        "mem_min": {
+            "standardized_mse": 0.4751295968624328
+        }
+    },
+    "py-filelock": {
+        "mem_mean": {
+            "standardized_mse": 0.4837555883585113
+        },
+        "mem_max": {
+            "standardized_mse": 0.4764395217070514
+        },
+        "mem_min": {
+            "standardized_mse": 0.47433047851247917
+        }
+    },
+    "py-matplotlib-inline": {
+        "mem_mean": {
+            "standardized_mse": 0.4508920059525568
+        },
+        "mem_max": {
+            "standardized_mse": 0.4650145872640541
+        },
+        "mem_min": {
+            "standardized_mse": 0.4669771195233761
+        }
+    },
+    "tau": {
+        "mem_mean": {
+            "standardized_mse": 0.5670959485973585
+        },
+        "mem_max": {
+            "standardized_mse": 0.5539031506410267
+        },
+        "mem_min": {
+            "standardized_mse": 0.559778903499001
+        }
+    },
+    "caliper": {
+        "mem_mean": {
+            "standardized_mse": 0.5291643277319743
+        },
+        "mem_max": {
+            "standardized_mse": 0.49111146165580016
+        },
+        "mem_min": {
+            "standardized_mse": 0.5097469313435707
+        }
+    },
+    "py-tensorboard": {
+        "mem_mean": {
+            "standardized_mse": 0.45019886494343797
+        },
+        "mem_max": {
+            "standardized_mse": 0.44677523267276864
+        },
+        "mem_min": {
+            "standardized_mse": 0.44394527101115716
+        }
+    }
+}
