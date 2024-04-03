@@ -1,0 +1,686 @@
+{
+    "llvm": {
+        "standardized_mse": 0.15822769393340574,
+        "corr": 0.7033098671019044
+    },
+    "flux-core": {
+        "standardized_mse": 0.24010249337489112,
+        "corr": 0.7111219252191416
+    },
+    "camp": {
+        "standardized_mse": 0.36856022189998655,
+        "corr": 0.7101604219339298
+    },
+    "py-tensorflow": {
+        "standardized_mse": 0.21525279443412668,
+        "corr": 0.5728695088370955
+    },
+    "paraview": {
+        "standardized_mse": 0.20224483945153665,
+        "corr": 0.5966562118830935
+    },
+    "py-pandas": {
+        "standardized_mse": 0.22341534435548863,
+        "corr": 0.7592243311088552
+    },
+    "mesa": {
+        "standardized_mse": 0.2755829043021043,
+        "corr": 0.6319956843812901
+    },
+    "gromacs": {
+        "standardized_mse": 0.5061046262983975,
+        "corr": 0.8540449508849173
+    },
+    "intel-tbb": {
+        "standardized_mse": 0.3166959911704027,
+        "corr": 0.5903410673575477
+    },
+    "openpmd-api": {
+        "standardized_mse": 0.272019731579724,
+        "corr": 0.44509767484939605
+    },
+    "py-numexpr": {
+        "standardized_mse": 0.29429660244016004,
+        "corr": 0.5974224267556982
+    },
+    "py-pytz": {
+        "standardized_mse": 0.346932281469209,
+        "corr": 0.5923456813101526
+    },
+    "py-wheel": {
+        "standardized_mse": 0.40604116076590624,
+        "corr": 0.5117108336094823
+    },
+    "libxrender": {
+        "standardized_mse": 0.28670373015594475,
+        "corr": 0.6635166364198533
+    },
+    "meson": {
+        "standardized_mse": 0.3414695246562603,
+        "corr": 0.6423084140889853
+    },
+    "py-mpi4py": {
+        "standardized_mse": 0.3433177717297247,
+        "corr": 0.6858796381523543
+    },
+    "py-numpy": {
+        "standardized_mse": 0.3587261736038987,
+        "corr": 0.7426057583866749
+    },
+    "py-flit-core": {
+        "standardized_mse": 0.3455587320522298,
+        "corr": 0.6138397318650579
+    },
+    "py-markupsafe": {
+        "standardized_mse": 0.3390404133469612,
+        "corr": 0.6737731411482365
+    },
+    "conduit": {
+        "standardized_mse": 0.20417530189849764,
+        "corr": 0.6414499108055486
+    },
+    "py-tomli": {
+        "standardized_mse": 0.37565297238844636,
+        "corr": 0.5762077172897099
+    },
+    "py-cycler": {
+        "standardized_mse": 0.5158377181070262,
+        "corr": 0.6962981469878047
+    },
+    "boost": {
+        "standardized_mse": 0.19790615258247993,
+        "corr": 0.5712784843592811
+    },
+    "libx11": {
+        "standardized_mse": 0.2837417896023576,
+        "corr": 0.7505456445483718
+    },
+    "py-versioneer": {
+        "standardized_mse": 0.3348441091740776,
+        "corr": 0.6560540834973406
+    },
+    "py-setuptools": {
+        "standardized_mse": 0.3986298296587274,
+        "corr": 0.5743333527954966
+    },
+    "ninja": {
+        "standardized_mse": 0.44813409365694246,
+        "corr": 0.6847663075135765
+    },
+    "py-mako": {
+        "standardized_mse": 0.3634183622625147,
+        "corr": 0.6034505999256555
+    },
+    "libxcb": {
+        "standardized_mse": 0.4195902870777725,
+        "corr": 0.7034362839911451
+    },
+    "ascent": {
+        "standardized_mse": 0.14897046745785827,
+        "corr": 0.7223724534654228
+    },
+    "py-pyproject-metadata": {
+        "standardized_mse": 0.3547627449541966,
+        "corr": 0.6491387837389706
+    },
+    "py-bottleneck": {
+        "standardized_mse": 0.33169150122025226,
+        "corr": 0.5496698113173688
+    },
+    "mpich": {
+        "standardized_mse": 0.17471021251577434,
+        "corr": 0.6003844225744357
+    },
+    "py-contourpy": {
+        "standardized_mse": 0.3286988494219366,
+        "corr": 0.6371439619030186
+    },
+    "py-setuptools-scm": {
+        "standardized_mse": 0.3620785808613007,
+        "corr": 0.6061391776070305
+    },
+    "py-cppy": {
+        "standardized_mse": 0.28191305547188095,
+        "corr": 0.7606001770167072
+    },
+    "libxext": {
+        "standardized_mse": 0.3031021525920218,
+        "corr": 0.6946916377077814
+    },
+    "py-cython": {
+        "standardized_mse": 0.2515302094818536,
+        "corr": 0.6659545054491448
+    },
+    "netcdf-c": {
+        "standardized_mse": 0.3753951988681816,
+        "corr": 0.6473995679997531
+    },
+    "py-kiwisolver": {
+        "standardized_mse": 0.3403521862865974,
+        "corr": 0.6748124747799791
+    },
+    "py-packaging": {
+        "standardized_mse": 0.3728088858294477,
+        "corr": 0.589807711570222
+    },
+    "hdf5": {
+        "standardized_mse": 0.2374382423393188,
+        "corr": 0.6562404485391747
+    },
+    "py-certifi": {
+        "standardized_mse": 0.38096711070750705,
+        "corr": 0.6082244607117527
+    },
+    "py-matplotlib": {
+        "standardized_mse": 0.3401473061531572,
+        "corr": 0.685274364633362
+    },
+    "sz": {
+        "standardized_mse": 0.3882809356679144,
+        "corr": 0.6267802946326094
+    },
+    "adios2": {
+        "standardized_mse": 0.23839772865413758,
+        "corr": 0.6594840575838798
+    },
+    "libxt": {
+        "standardized_mse": 0.3026578902642955,
+        "corr": 0.6704626026951699
+    },
+    "openmpi": {
+        "standardized_mse": 0.21019114613733925,
+        "corr": 0.6605248254564552
+    },
+    "yaksa": {
+        "standardized_mse": 0.3660734814387996,
+        "corr": 0.8483529827033046
+    },
+    "py-six": {
+        "standardized_mse": 0.3380976863350215,
+        "corr": 0.590881752245671
+    },
+    "rdma-core": {
+        "standardized_mse": 0.379799991275375,
+        "corr": 0.787381253575655
+    },
+    "py-pip": {
+        "standardized_mse": 0.34882838972573593,
+        "corr": 0.5345011390594115
+    },
+    "xcb-proto": {
+        "standardized_mse": 0.38553572229658634,
+        "corr": 0.7020057051873003
+    },
+    "libcatalyst": {
+        "standardized_mse": 0.346916015816499,
+        "corr": 0.798989811620781
+    },
+    "python": {
+        "standardized_mse": 0.35727468084288144,
+        "corr": 0.7537975733845185
+    },
+    "py-pillow": {
+        "standardized_mse": 0.38595749071393565,
+        "corr": 0.6669233011318204
+    },
+    "py-python-dateutil": {
+        "standardized_mse": 0.33666723784092917,
+        "corr": 0.6421331002842641
+    },
+    "py-pyparsing": {
+        "standardized_mse": 0.29298526800032,
+        "corr": 0.683078665715255
+    },
+    "openssh": {
+        "standardized_mse": 0.3128824882798186,
+        "corr": 0.71071369129503
+    },
+    "py-typing-extensions": {
+        "standardized_mse": 0.3382676565784877,
+        "corr": 0.6208475635082573
+    },
+    "py-pybind11": {
+        "standardized_mse": 0.3402144422176809,
+        "corr": 0.6347259859254776
+    },
+    "mgard": {
+        "standardized_mse": 0.4486342786534242,
+        "corr": 0.6170552549150331
+    },
+    "py-fonttools": {
+        "standardized_mse": 0.34037595114446656,
+        "corr": 0.647273946883131
+    },
+    "git": {
+        "standardized_mse": 0.31678462420857795,
+        "corr": 0.823604527406229
+    },
+    "py-torch": {
+        "standardized_mse": 0.2743420524730954,
+        "corr": 0.6378878291699714
+    },
+    "cmake": {
+        "standardized_mse": 0.30992883340433725,
+        "corr": 0.6473675324696034
+    },
+    "kvtree": {
+        "standardized_mse": 0.3627057165386978,
+        "corr": 0.7436395196634028
+    },
+    "py-h5py": {
+        "standardized_mse": 0.23064877827766503,
+        "corr": 0.6262324583242175
+    },
+    "hypre": {
+        "standardized_mse": 0.4409844911467291,
+        "corr": 0.48134186950953867
+    },
+    "mfem": {
+        "standardized_mse": 0.29477557492571077,
+        "corr": 0.597812132644236
+    },
+    "netlib-scalapack": {
+        "standardized_mse": 0.30553244871036134,
+        "corr": 0.7005000992528344
+    },
+    "fftw": {
+        "standardized_mse": 0.2348889732057488,
+        "corr": 0.8165575266721378
+    },
+    "parallel-netcdf": {
+        "standardized_mse": 0.433073788155362,
+        "corr": 0.8667376455846538
+    },
+    "py-jupyterlab": {
+        "standardized_mse": 0.2108603202749102,
+        "corr": 0.9043632026092409
+    },
+    "zfp": {
+        "standardized_mse": 0.4238640760692052,
+        "corr": 0.7156066760052204
+    },
+    "py-jinja2": {
+        "standardized_mse": 0.36345010711954756,
+        "corr": 0.5566198030764901
+    },
+    "py-idna": {
+        "standardized_mse": 0.322089978696118,
+        "corr": 0.7612743423206065
+    },
+    "py-pycparser": {
+        "standardized_mse": 0.4427699576099471,
+        "corr": 0.6607064412864185
+    },
+    "py-decorator": {
+        "standardized_mse": 0.31729674415731324,
+        "corr": 0.7555921718163571
+    },
+    "protobuf": {
+        "standardized_mse": 0.374201448576386,
+        "corr": 0.6074613092132167
+    },
+    "libjpeg-turbo": {
+        "standardized_mse": 0.3225766196705591,
+        "corr": 0.6349600625905816
+    },
+    "py-ply": {
+        "standardized_mse": 0.30104515252712194,
+        "corr": 0.7193571805704138
+    },
+    "rust": {
+        "standardized_mse": 0.1585269157036747,
+        "corr": 0.7471423442904166
+    },
+    "umpire": {
+        "standardized_mse": 0.3392406300077163,
+        "corr": 0.49356438825979143
+    },
+    "py-oauthlib": {
+        "standardized_mse": 0.3259493965554921,
+        "corr": 0.7360540100558823
+    },
+    "py-pathspec": {
+        "standardized_mse": 0.3733653743840787,
+        "corr": 0.6258068006399853
+    },
+    "py-meson-python": {
+        "standardized_mse": 0.35948238923708503,
+        "corr": 0.5812722008208184
+    },
+    "libpng": {
+        "standardized_mse": 0.4900696188254934,
+        "corr": 0.6262623457446224
+    },
+    "py-gast": {
+        "standardized_mse": 0.32071794141360804,
+        "corr": 0.6144805928033095
+    },
+    "metis": {
+        "standardized_mse": 0.34055236697147556,
+        "corr": 0.7058375773419874
+    },
+    "raja": {
+        "standardized_mse": 0.3320305699419292,
+        "corr": 0.5896209000725849
+    },
+    "py-cffi": {
+        "standardized_mse": 0.3086022186065039,
+        "corr": 0.7127524857771864
+    },
+    "py-pygments": {
+        "standardized_mse": 0.34076993397417044,
+        "corr": 0.6383490898872113
+    },
+    "py-editables": {
+        "standardized_mse": 0.31569471496940416,
+        "corr": 0.6440279523566667
+    },
+    "kokkos": {
+        "standardized_mse": 0.29383431652592845,
+        "corr": 0.5239044898277455
+    },
+    "py-psutil": {
+        "standardized_mse": 0.2977396591669137,
+        "corr": 0.6909379289067996
+    },
+    "py-charset-normalizer": {
+        "standardized_mse": 0.3159976225946214,
+        "corr": 0.6853857138936255
+    },
+    "py-zope-interface": {
+        "standardized_mse": 0.2920191127393849,
+        "corr": 0.7703616202156065
+    },
+    "py-networkx": {
+        "standardized_mse": 0.3681583405720013,
+        "corr": 0.6860626590268866
+    },
+    "py-pyyaml": {
+        "standardized_mse": 0.33135742780311844,
+        "corr": 0.6767937912338272
+    },
+    "py-sniffio": {
+        "standardized_mse": 0.3517676740151013,
+        "corr": 0.6672295062558029
+    },
+    "py-cloudpickle": {
+        "standardized_mse": 0.3496998137772431,
+        "corr": 0.7363473251287473
+    },
+    "py-tornado": {
+        "standardized_mse": 0.33170719611878763,
+        "corr": 0.6873231491680574
+    },
+    "py-send2trash": {
+        "standardized_mse": 0.2807542475347502,
+        "corr": 0.7067782105313916
+    },
+    "py-beniget": {
+        "standardized_mse": 0.32971380246236903,
+        "corr": 0.6374120773709653
+    },
+    "py-websocket-client": {
+        "standardized_mse": 0.3336857940893606,
+        "corr": 0.6933423193702225
+    },
+    "py-trove-classifiers": {
+        "standardized_mse": 0.3577944025656525,
+        "corr": 0.6681781266981048
+    },
+    "py-hatchling": {
+        "standardized_mse": 0.31507815679241563,
+        "corr": 0.6386235347526349
+    },
+    "py-pluggy": {
+        "standardized_mse": 0.4593389174021077,
+        "corr": 0.5847989005107812
+    },
+    "py-wcwidth": {
+        "standardized_mse": 0.32744814145786455,
+        "corr": 0.608719083881329
+    },
+    "py-scipy": {
+        "standardized_mse": 0.16454016354111672,
+        "corr": 0.5368487603838114
+    },
+    "py-poetry-core": {
+        "standardized_mse": 0.3427970644083991,
+        "corr": 0.6941460147369085
+    },
+    "py-fastjsonschema": {
+        "standardized_mse": 0.2820564253768553,
+        "corr": 0.6013170156455834
+    },
+    "py-calver": {
+        "standardized_mse": 0.3482918401817469,
+        "corr": 0.7292683032237233
+    },
+    "py-webencodings": {
+        "standardized_mse": 0.2520054307259717,
+        "corr": 0.7437074445461647
+    },
+    "py-joblib": {
+        "standardized_mse": 0.3323012623946361,
+        "corr": 0.5993039380379843
+    },
+    "py-markdown": {
+        "standardized_mse": 0.34346780244361164,
+        "corr": 0.7230470326310355
+    },
+    "py-mistune": {
+        "standardized_mse": 0.33899044955613944,
+        "corr": 0.6958563611623897
+    },
+    "py-zope-event": {
+        "standardized_mse": 0.2907147996859146,
+        "corr": 0.7201062697403187
+    },
+    "curl": {
+        "standardized_mse": 0.4866661722475738,
+        "corr": 0.6914123186586395
+    },
+    "snappy": {
+        "standardized_mse": 0.3720309830382888,
+        "corr": 0.6776844935205586
+    },
+    "py-pythran": {
+        "standardized_mse": 0.26827032771920917,
+        "corr": 0.5998617721110311
+    },
+    "py-pandocfilters": {
+        "standardized_mse": 0.4639575275905922,
+        "corr": 0.6240638227317523
+    },
+    "py-pickleshare": {
+        "standardized_mse": 0.2758758792825741,
+        "corr": 0.7165485217735038
+    },
+    "py-parso": {
+        "standardized_mse": 0.27611874179039786,
+        "corr": 0.7572885829601852
+    },
+    "py-greenlet": {
+        "standardized_mse": 0.2696398826401654,
+        "corr": 0.7908773443234232
+    },
+    "py-pyrsistent": {
+        "standardized_mse": 0.5316033533296748,
+        "corr": 0.6757339398740241
+    },
+    "py-prometheus-client": {
+        "standardized_mse": 0.2811045120960186,
+        "corr": 0.7033410344593033
+    },
+    "py-protobuf": {
+        "standardized_mse": 0.3572298378950903,
+        "corr": 0.6778515276174236
+    },
+    "vtk-m": {
+        "standardized_mse": 0.27892318800897875,
+        "corr": 0.7214749623716283
+    },
+    "py-defusedxml": {
+        "standardized_mse": 0.2858807763505543,
+        "corr": 0.6528458710178515
+    },
+    "py-json5": {
+        "standardized_mse": 0.2921983636801287,
+        "corr": 0.7419194279831025
+    },
+    "trilinos": {
+        "standardized_mse": 0.14530166552156437,
+        "corr": 0.6970800101832741
+    },
+    "py-fsspec": {
+        "standardized_mse": 0.30592373253040533,
+        "corr": 0.6791678257953233
+    },
+    "py-nbformat": {
+        "standardized_mse": 0.38797130312973865,
+        "corr": 0.4618018492093468
+    },
+    "petsc": {
+        "standardized_mse": 0.23414277963184782,
+        "corr": 0.6755539307982783
+    },
+    "slate": {
+        "standardized_mse": 0.2840264989404529,
+        "corr": 0.6912116304564034
+    },
+    "ginkgo": {
+        "standardized_mse": 0.29577132306788856,
+        "corr": 0.3834146042390928
+    },
+    "py-hatch-vcs": {
+        "standardized_mse": 0.364625570757822,
+        "corr": 0.6515510308916737
+    },
+    "py-traitlets": {
+        "standardized_mse": 0.26783179035223015,
+        "corr": 0.7116330096292456
+    },
+    "py-requests": {
+        "standardized_mse": 0.3947715058512497,
+        "corr": 0.5448172137285555
+    },
+    "py-platformdirs": {
+        "standardized_mse": 0.35061931516673567,
+        "corr": 0.6773588810628332
+    },
+    "py-hatch-fancy-pypi-readme": {
+        "standardized_mse": 0.31758283854931885,
+        "corr": 0.6987087949997081
+    },
+    "py-urllib3": {
+        "standardized_mse": 0.38183859724683217,
+        "corr": 0.566704587958981
+    },
+    "py-hatch-nodejs-version": {
+        "standardized_mse": 0.3277664671831789,
+        "corr": 0.6918476015468291
+    },
+    "superlu-dist": {
+        "standardized_mse": 0.4311855724110423,
+        "corr": 0.7166787639411629
+    },
+    "parmetis": {
+        "standardized_mse": 0.3746746372451483,
+        "corr": 0.702613394607676
+    },
+    "cabana": {
+        "standardized_mse": 0.42472555780426685,
+        "corr": 0.5603169637480698
+    },
+    "tasmanian": {
+        "standardized_mse": 0.34535583637858375,
+        "corr": 0.6742373393434582
+    },
+    "py-pure-eval": {
+        "standardized_mse": 0.2222281536536389,
+        "corr": 0.767511049757895
+    },
+    "rankstr": {
+        "standardized_mse": 0.33301720202959834,
+        "corr": 0.7119036722962924
+    },
+    "arborx": {
+        "standardized_mse": 0.550025614389558,
+        "corr": 0.5417142673389622
+    },
+    "py-jsonschema": {
+        "standardized_mse": 0.2552924772360111,
+        "corr": 0.7751383858957969
+    },
+    "py-pytest-runner": {
+        "standardized_mse": 0.5963260166542287,
+        "corr": 0.7202162671500231
+    },
+    "heffte": {
+        "standardized_mse": 0.2857057697363761,
+        "corr": 0.676522775204818
+    },
+    "parsec": {
+        "standardized_mse": 0.27151206622355645,
+        "corr": 0.7941850946750864
+    },
+    "hpx": {
+        "standardized_mse": 0.29115063416932435,
+        "corr": 0.6263834233165224
+    },
+    "py-gevent": {
+        "standardized_mse": 0.31165378705971064,
+        "corr": 0.7390840266705003
+    },
+    "redset": {
+        "standardized_mse": 0.31471053998252013,
+        "corr": 0.7128274491358422
+    },
+    "py-attrs": {
+        "standardized_mse": 0.29932221260272435,
+        "corr": 0.7048150910576094
+    },
+    "amrex": {
+        "standardized_mse": 0.29345385694944215,
+        "corr": 0.46430276913889784
+    },
+    "py-jaxlib": {
+        "standardized_mse": 0.22980628478825726,
+        "corr": 0.5899566552752292
+    },
+    "py-ipykernel": {
+        "standardized_mse": 0.3466421768646085,
+        "corr": 0.7019873880867727
+    },
+    "py-ipython": {
+        "standardized_mse": 0.2752232164182897,
+        "corr": 0.6422628388076611
+    },
+    "sundials": {
+        "standardized_mse": 0.3402978041783123,
+        "corr": 0.723534316289934
+    },
+    "strumpack": {
+        "standardized_mse": 0.3090427394712288,
+        "corr": 0.7750675176452922
+    },
+    "py-filelock": {
+        "standardized_mse": 0.3137634597317398,
+        "corr": 0.7303682128341048
+    },
+    "py-matplotlib-inline": {
+        "standardized_mse": 0.2976245049755267,
+        "corr": 0.7179894322023596
+    },
+    "tau": {
+        "standardized_mse": 0.4009459255380198,
+        "corr": 0.6716467793664775
+    },
+    "caliper": {
+        "standardized_mse": 0.31940129659212324,
+        "corr": 0.6872718346051012
+    },
+    "py-tensorboard": {
+        "standardized_mse": 0.3271027189710501,
+        "corr": 0.5181527419259395
+    }
+}
