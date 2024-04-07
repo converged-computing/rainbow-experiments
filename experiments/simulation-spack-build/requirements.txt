@@ -1,0 +1,7 @@
+rainbow-scheduler
+Jinja2
+pandas
+joblib
+scikit-learn==1.3.0
+semantic-version
+seaborn

@@ -1,0 +1,702 @@
+{
+    "blueviolet": {
+        "memory": 45717849080,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-ubuntu20.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "7.5.0"
+    },
+    "coral": {
+        "memory": 46258933800,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-ubuntu20.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.1.0"
+    },
+    "gray": {
+        "memory": 23796994456,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu22.04-neoverse_v1",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "lightcyan": {
+        "memory": 18336168054,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu20.04-neoverse_v1",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "purple": {
+        "memory": 40293539098,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-ubuntu20.04-neoverse_v1",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "deepskyblue": {
+        "memory": 10514745440,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-ubuntu22.04-neoverse_v1",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "orangered": {
+        "memory": 1545252585,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-amzn2-neoverse_n1",
+        "compiler": "gcc",
+        "compiler_version": "11.4.0"
+    },
+    "lightslategrey": {
+        "memory": 4292409585,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-amzn2-aarch64",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "mistyrose": {
+        "memory": 41259011730,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-amzn2-neoverse_n1",
+        "compiler": "gcc",
+        "compiler_version": "11.4.0"
+    },
+    "lightgreen": {
+        "memory": 18335580335,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu20.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "7.3.1"
+    },
+    "dodgerblue": {
+        "memory": 25835461730,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-amzn2-aarch64",
+        "compiler": "gcc",
+        "compiler_version": "7.5.0"
+    },
+    "lightpink": {
+        "memory": 16553714762,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu22.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "7.3.1"
+    },
+    "ivory": {
+        "memory": 17066802965,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu22.04-neoverse_v1",
+        "compiler": "gcc",
+        "compiler_version": "12.3.0"
+    },
+    "teal": {
+        "memory": 5665943051,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-ubuntu20.04-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "cyan": {
+        "memory": 8441328859,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-ubuntu22.04-neoverse_v1",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "sandybrown": {
+        "memory": 7438679768,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-ubuntu18.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.4.0"
+    },
+    "beige": {
+        "memory": 14865772660,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-amzn2-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "springgreen": {
+        "memory": 47292799823,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-ubuntu18.04-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "burlywood": {
+        "memory": 40375746161,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-ubuntu22.04-neoverse_v1",
+        "compiler": "gcc",
+        "compiler_version": "11.1.0"
+    },
+    "darkorchid": {
+        "memory": 20171919122,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu22.04-neoverse_v1",
+        "compiler": "gcc",
+        "compiler_version": "11.1.0"
+    },
+    "mediumvioletred": {
+        "memory": 2770230475,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-ubuntu18.04-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "lightblue": {
+        "memory": 33655437225,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-amzn2-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.3.0"
+    },
+    "black": {
+        "memory": 24094135234,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu18.04-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "magenta": {
+        "memory": 16882410846,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu20.04-neoverse_v1",
+        "compiler": "gcc",
+        "compiler_version": "7.3.1"
+    },
+    "palegreen": {
+        "memory": 34303757473,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-ubuntu18.04-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "honeydew": {
+        "memory": 43432759313,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-ubuntu22.04-neoverse_v1",
+        "compiler": "gcc",
+        "compiler_version": "7.5.0"
+    },
+    "slateblue": {
+        "memory": 18991738577,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu20.04-neoverse_v1",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "chartreuse": {
+        "memory": 31793636705,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-ubuntu22.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "7.5.0"
+    },
+    "indianred": {
+        "memory": 7282229283,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-ubuntu20.04-neoverse_v1",
+        "compiler": "gcc",
+        "compiler_version": "11.1.0"
+    },
+    "linen": {
+        "memory": 37736757574,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-amzn2-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "12.3.0"
+    },
+    "limegreen": {
+        "memory": 32810013940,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-ubuntu18.04-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "floralwhite": {
+        "memory": 22852022496,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu18.04-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "aqua": {
+        "memory": 14745817829,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-amzn2-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "12.3.0"
+    },
+    "olivedrab": {
+        "memory": 43123937807,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-ubuntu18.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.1.0"
+    },
+    "darksalmon": {
+        "memory": 37111323084,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-ubuntu22.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.3.0"
+    },
+    "greenyellow": {
+        "memory": 27329607288,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-ubuntu20.04-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "lavender": {
+        "memory": 5023436503,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-ubuntu20.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.4.0"
+    },
+    "darkolivegreen": {
+        "memory": 486457482,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-ubuntu18.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "7.3.1"
+    },
+    "lightyellow": {
+        "memory": 41032396689,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-ubuntu22.04-neoverse_v1",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "rosybrown": {
+        "memory": 13490735476,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu22.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.4.0"
+    },
+    "mintcream": {
+        "memory": 11280789054,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-amzn2-neoverse_n1",
+        "compiler": "gcc",
+        "compiler_version": "12.3.0"
+    },
+    "dimgrey": {
+        "memory": 48152682651,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-ubuntu20.04-neoverse_v1",
+        "compiler": "gcc",
+        "compiler_version": "11.1.0"
+    },
+    "orange": {
+        "memory": 16496065969,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-amzn2-aarch64",
+        "compiler": "gcc",
+        "compiler_version": "7.3.1"
+    },
+    "darkblue": {
+        "memory": 11787587355,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-amzn2-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "7.3.1"
+    },
+    "cornsilk": {
+        "memory": 40334457678,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-ubuntu20.04-neoverse_v1",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "darkgreen": {
+        "memory": 21589349899,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-amzn2-neoverse_n1",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "wheat": {
+        "memory": 40461159107,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-ubuntu18.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.3.0"
+    },
+    "cornflowerblue": {
+        "memory": 3445883145,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-ubuntu22.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "12.3.0"
+    },
+    "lawngreen": {
+        "memory": 48122677318,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-amzn2-neoverse_n1",
+        "compiler": "gcc",
+        "compiler_version": "11.4.0"
+    },
+    "darkred": {
+        "memory": 18042307958,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu22.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.3.0"
+    },
+    "moccasin": {
+        "memory": 26171381163,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-ubuntu22.04-neoverse_v1",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "crimson": {
+        "memory": 16660980237,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu22.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.3.0"
+    },
+    "rebeccapurple": {
+        "memory": 42911425160,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-ubuntu22.04-neoverse_v1",
+        "compiler": "gcc",
+        "compiler_version": "11.1.0"
+    },
+    "peru": {
+        "memory": 20935334455,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-amzn2-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "powderblue": {
+        "memory": 43711017783,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-ubuntu20.04-neoverse_v1",
+        "compiler": "gcc",
+        "compiler_version": "7.3.1"
+    },
+    "peachpuff": {
+        "memory": 16880533961,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu22.04-neoverse_v1",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "whitesmoke": {
+        "memory": 37771730318,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-amzn2-aarch64",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "darkslategrey": {
+        "memory": 35369576187,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-ubuntu22.04-neoverse_v1",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "bisque": {
+        "memory": 14429388821,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-amzn2-neoverse_n1",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "darkgoldenrod": {
+        "memory": 13748170425,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-amzn2-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "7.5.0"
+    },
+    "orchid": {
+        "memory": 3536641098,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-ubuntu22.04-neoverse_v1",
+        "compiler": "gcc",
+        "compiler_version": "7.5.0"
+    },
+    "deeppink": {
+        "memory": 13350985962,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu22.04-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "darkslateblue": {
+        "memory": 24588761512,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-amzn2-neoverse_n1",
+        "compiler": "gcc",
+        "compiler_version": "7.3.1"
+    },
+    "mediumaquamarine": {
+        "memory": 38683468052,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-amzn2-neoverse_n1",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "khaki": {
+        "memory": 21298816989,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu18.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.1.0"
+    },
+    "mediumturquoise": {
+        "memory": 18580623252,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu18.04-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "dimgray": {
+        "memory": 36861080987,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-amzn2-neoverse_n1",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "grey": {
+        "memory": 3051483074,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-ubuntu22.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "12.3.0"
+    },
+    "lavenderblush": {
+        "memory": 29292313287,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-amzn2-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "pink": {
+        "memory": 5189301504,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-amzn2-aarch64",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "darkgray": {
+        "memory": 13466338639,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu20.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.3.0"
+    },
+    "chocolate": {
+        "memory": 40359362428,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-ubuntu22.04-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "snow": {
+        "memory": 45965441222,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-ubuntu20.04-neoverse_v1",
+        "compiler": "gcc",
+        "compiler_version": "7.5.0"
+    },
+    "darkkhaki": {
+        "memory": 14761411000,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu20.04-neoverse_v1",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "yellowgreen": {
+        "memory": 6238234862,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-amzn2-neoverse_n1",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "darkviolet": {
+        "memory": 30972044999,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-ubuntu20.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.4.0"
+    },
+    "steelblue": {
+        "memory": 38157322439,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-amzn2-aarch64",
+        "compiler": "gcc",
+        "compiler_version": "11.4.0"
+    },
+    "aquamarine": {
+        "memory": 30543337567,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-ubuntu20.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "7.3.1"
+    },
+    "darkorange": {
+        "memory": 18408950367,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu22.04-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "fuchsia": {
+        "memory": 13155511671,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu22.04-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "turquoise": {
+        "memory": 3311633945,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-ubuntu20.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.3.0"
+    },
+    "navajowhite": {
+        "memory": 35818321882,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-ubuntu22.04-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "royalblue": {
+        "memory": 30779034247,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-ubuntu22.04-neoverse_v1",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "salmon": {
+        "memory": 18527725903,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu22.04-neoverse_v1",
+        "compiler": "gcc",
+        "compiler_version": "11.1.0"
+    },
+    "lightcoral": {
+        "memory": 20265131924,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-amzn2-neoverse_n1",
+        "compiler": "oneapi",
+        "compiler_version": "2024.0.0"
+    },
+    "darkturquoise": {
+        "memory": 26739183796,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-amzn2-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "brown": {
+        "memory": 9667986605,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-amzn2-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.1.0"
+    },
+    "saddlebrown": {
+        "memory": 4765242983,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-ubuntu18.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.4.0"
+    },
+    "oldlace": {
+        "memory": 20958071771,
+        "cost_per_node_hour": 1.6,
+        "arch": "linux-ubuntu22.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.3.0"
+    },
+    "lightsteelblue": {
+        "memory": 36256950794,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-amzn2-neoverse_n1",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "palevioletred": {
+        "memory": 45818292572,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-ubuntu18.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "12.3.0"
+    },
+    "darkgrey": {
+        "memory": 35506621427,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-ubuntu22.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.3.0"
+    },
+    "darkseagreen": {
+        "memory": 11787858311,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-amzn2-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "mediumslateblue": {
+        "memory": 11952810394,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-amzn2-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "palegoldenrod": {
+        "memory": 31980247369,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-ubuntu20.04-neoverse_v1",
+        "compiler": "gcc",
+        "compiler_version": "11.3.0"
+    },
+    "lightgray": {
+        "memory": 35073777818,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-ubuntu22.04-neoverse_v1",
+        "compiler": "gcc",
+        "compiler_version": "11.1.0"
+    },
+    "ghostwhite": {
+        "memory": 6925294317,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-amzn2-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.3.0"
+    },
+    "mediumspringgreen": {
+        "memory": 35882597607,
+        "cost_per_node_hour": 3.2,
+        "arch": "linux-amzn2-neoverse_n1",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "antiquewhite": {
+        "memory": 8912645823,
+        "cost_per_node_hour": 0.8,
+        "arch": "linux-ubuntu18.04-x86_64_v3",
+        "compiler": "oneapi",
+        "compiler_version": "2023.2.0"
+    },
+    "lightslategray": {
+        "memory": 41396207005,
+        "cost_per_node_hour": 4.2,
+        "arch": "linux-ubuntu22.04-x86_64_v3",
+        "compiler": "gcc",
+        "compiler_version": "11.1.0"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "compiler": [
+        "gcc",
+        "oneapi"
+    ],
+    "compiler_versions": {
+        "gcc": [
+            "11.4.0",
+            "11.1.0",
+            "7.5.0",
+            "7.3.1",
+            "12.3.0",
+            "11.3.0"
+        ],
+        "oneapi": [
+            "2024.0.0",
+            "2023.2.0"
+        ]
+    },
+    "arch": [
+        "linux-ubuntu22.04-x86_64_v3",
+        "linux-ubuntu20.04-x86_64_v3",
+        "linux-ubuntu18.04-x86_64_v3",
+        "linux-ubuntu20.04-neoverse_v1",
+        "linux-amzn2-neoverse_n1",
+        "linux-amzn2-aarch64",
+        "linux-amzn2-x86_64_v3",
+        "linux-ubuntu22.04-neoverse_v1"
+    ],
+    "min_memory": 331776.0,
+    "max_memory": 48264462336.0
+}

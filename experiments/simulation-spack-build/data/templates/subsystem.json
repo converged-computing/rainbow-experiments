@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "{{ name }}0": {
+        "label": "{{ name }}0",
+        "metadata": {
+          "basename": "{{ name }}",
+          "exclusive": false,
+          "id": 0,
+          "name": "{{ name }}0",
+          "paths": {
+            "containment": "/{{ name }}0"
+          },
+          "size": 1,
+          "type": "{{ name }}",
+          "uniq_id": 0
+        }
+      },{% for node in nodes %}
+      "{{ name }}{{ node.index }}": {
+        "label": "{{ name }}{{ node.index }}",
+        "metadata": {
+          "basename": "{{ node.type }}",
+          "exclusive": true,
+          "id": 1,
+          "name": "{{ node.type }}{{ node.type_count }}",
+          "paths": {
+            "containment": "/{{ name }}0/{{ node.type }}{{ node.type_count }}"
+          },
+          "size": 1,
+          "value": "{{ node.value }}",
+          "type": "{{ node.type }}",
+          "uniq_id": 1
+        }
+      }{% if loop.last %}{% else %},{% endif %}{% endfor %}
+    },
+    "edges": [{% for node in nodes %}
+      {
+        "source": "2",
+        "target": "{{ name }}{{ node.index }}",
+        "relation": "contains"
+      },
+      {
+        "source": "{{ name }}{{ node.index }}",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "{{ name }}{{ node.index }}",
+        "relation": "contains"
+      },
+      {
+        "source": "{{ name }}{{ node.index }}",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "{{ name }}{{ node.index }}",
+        "relation": "contains"
+      },
+      {
+        "source": "{{ name }}{{ node.index }}",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "{{ name }}{{ node.index }}",
+        "relation": "contains"
+      },
+      {
+        "source": "{{ name }}{{ node.index }}",
+        "target": "6",
+        "relation": "in"
+      }{% if loop.last %}{% else %},{% endif %}{% endfor %}
+    ]
+  }
+}
