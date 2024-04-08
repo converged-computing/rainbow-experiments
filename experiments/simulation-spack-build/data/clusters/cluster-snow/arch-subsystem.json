@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "arch0": {
+        "label": "arch0",
+        "metadata": {
+          "basename": "arch",
+          "exclusive": false,
+          "id": 0,
+          "name": "arch0",
+          "paths": {
+            "containment": "/arch0"
+          },
+          "size": 1,
+          "type": "arch",
+          "uniq_id": 0
+        }
+      },
+      "arch1": {
+        "label": "arch1",
+        "metadata": {
+          "basename": "arch",
+          "exclusive": true,
+          "id": 1,
+          "name": "arch0",
+          "paths": {
+            "containment": "/arch0/arch0"
+          },
+          "size": 1,
+          "value": "linux-ubuntu20.04-neoverse_v1",
+          "type": "arch",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "arch1",
+        "relation": "contains"
+      },
+      {
+        "source": "arch1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "arch1",
+        "relation": "contains"
+      },
+      {
+        "source": "arch1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "arch1",
+        "relation": "contains"
+      },
+      {
+        "source": "arch1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "arch1",
+        "relation": "contains"
+      },
+      {
+        "source": "arch1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}

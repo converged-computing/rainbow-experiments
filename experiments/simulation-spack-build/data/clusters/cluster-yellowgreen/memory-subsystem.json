@@ -1,0 +1,80 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "memory0": {
+        "label": "memory0",
+        "metadata": {
+          "basename": "memory",
+          "exclusive": false,
+          "id": 0,
+          "name": "memory0",
+          "paths": {
+            "containment": "/memory0"
+          },
+          "size": 1,
+          "type": "memory",
+          "uniq_id": 0
+        }
+      },
+      "memory1": {
+        "label": "memory1",
+        "metadata": {
+          "basename": "memory",
+          "exclusive": true,
+          "id": 1,
+          "name": "memory0",
+          "paths": {
+            "containment": "/memory0/memory0"
+          },
+          "size": 1,
+          "value": "6238234862",
+          "type": "memory",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "memory1",
+        "relation": "contains"
+      },
+      {
+        "source": "memory1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "memory1",
+        "relation": "contains"
+      },
+      {
+        "source": "memory1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "memory1",
+        "relation": "contains"
+      },
+      {
+        "source": "memory1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "memory1",
+        "relation": "contains"
+      },
+      {
+        "source": "memory1",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}
