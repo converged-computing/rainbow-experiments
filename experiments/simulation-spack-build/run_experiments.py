@@ -662,9 +662,39 @@ def run(args):
     IPython.embed()
     sys.exit()
 
+    # Save ideal cost per experiment, if it ran at optimal time
+    ideal_costs = calculate_ideal_costs(jobspecs)
+
     print("\n\n === CONSTRAINT EXPERIMENTS FINISHED ===\n\n")
     print(f"🧪️ Experiments are finished. See output in {args.outdir}")
     write_json(scores, os.path.join(args.outdir, "scores.json"))
+    write_json(
+        ideal_costs, os.path.join(args.outdir, "cluster-package-ideal-costs.json")
+    )
+
+
+def calculate_ideal_costs(jobspecs):
+    """
+    Calculate ideal (optimal) costs per experiment
+    """
+    costs = {}
+    for jobid, spec in jobspecs.items():
+        package = spec["package"]
+        if package in costs:
+            continue
+        cluster_costs = {}
+        optimal_memory = spec["attributes"]["memory_global_best_runtime"]
+        shaped = numpy.array(optimal_memory).reshape(-1, 1)
+        optimal_duration = models[package].predict(shaped)[0]
+        # Calculate optimal cost per cluster
+        for cluster_name, cluster_meta in clusters.items():
+            cluster_name = cluster_name.replace("cluster-", "")
+            cluster_features = cluster_truth[cluster_name]
+            cluster_costs[cluster_name] = (
+                optimal_duration * cluster_features["cost_per_node_hour"]
+            )
+        costs[package] = cluster_costs
+    return costs
 
 
 def calculate_unmatched_scoring(unmatched_at):
@@ -840,8 +870,8 @@ def calculate_scores(assignment, jobspecs, cluster_truth, stats):
     # Calculate the overall score - the sum / total number
     return {
         "additional_runtime": {
-            "total_additional_cost": total_additional_runtime,
-            "additional_costs": runtimes,
+            "total_additional_runtime": total_additional_runtime,
+            "additional_runtimes": runtimes,
             "description": "Additional runtime calculated as difference between actual and optimal runimes, where actual is based on KNN prediction of runtime with cluster memory and optimal runtime is the actual, optimal value",
         },
         "additional_costs": {

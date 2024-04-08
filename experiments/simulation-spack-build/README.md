@@ -99,3 +99,5 @@ Parse the results (currently running for 31K+ jobspecs, coming soon)
 ```bash
 python plot-results.py
 ```
+
+For experiment results, you can see them in [img](img) and I wrote them up [here](here).
