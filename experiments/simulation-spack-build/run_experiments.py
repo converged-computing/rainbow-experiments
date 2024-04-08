@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
 
-# Warning: this code is really janky. I thought I had a good idea at the beginning,
-# but I don't like it now. Room for improvement I guess.
-
 import argparse
+import math
 import json
 import os
-import random
 import sys
 import re
 import yaml
@@ -24,12 +21,31 @@ from jinja2 import Template
 
 here = os.path.dirname(os.path.abspath(__file__))
 
+# Nodes per simulated job
+nodes_per_job = 2
+
+# Rainbow config with constraint select algorithm
 config_file = os.path.join(here, "rainbow-config.yaml")
 if not os.path.exists(config_file):
     sys.exit("Rainbow config {config_file} does not exist")
 
+# Make cluster truth global because we are lazy
+clusters = {}
+cluster_truth_file = os.path.join(here, "data", "cluster-features.json")
+if not os.path.exists(cluster_truth_file):
+    sys.exit(f"{cluster_truth_file} does not exist.")
+
 # Load models
 models = {}
+
+# Select algorithm options - we now we just filter down by nodes free
+# and the script here handles calculating the build cost via knn
+priorities = """- priority: 1 
+  steps:
+  - filter: "nodes_free > 0"
+"""
+
+select_options = {"priorities": priorities}
 
 
 def load_models():
@@ -50,10 +66,11 @@ load_models()
 
 # Resources will be added programatically here
 # Note that this is the format I'm prototyping.
-jobspec_template = """
+jobspec_template = (
+    """
 version: 1
 resources:
-- count: 2
+- count: %s
   type: node
   with:
   - count: 4
@@ -69,6 +86,8 @@ task:
 attributes:
   parameter: {}
 """
+    % nodes_per_job
+)
 
 # Create a jinja2 template to render this (add the name
 template = Template(jobspec_template)
@@ -77,6 +96,10 @@ template = Template(jobspec_template)
 register_success = [
     rainbow_pb2.RegisterResponse.ResultType.REGISTER_EXISTS,
     rainbow_pb2.RegisterResponse.ResultType.REGISTER_SUCCESS,
+]
+
+update_state_success = [
+    rainbow_pb2.UpdateStateResponse.ResultType.UPDATE_STATE_SUCCESS,
 ]
 
 # share client across functions
@@ -126,6 +149,9 @@ def load_yaml(filename):
     return content
 
 
+cluster_truth = read_json(cluster_truth_file)
+
+
 def recursive_find(base, pattern="^(compspec[.]json)$"):
     """
     Recursively find lammps output files.
@@ -142,6 +168,9 @@ def run_base_experiment(jobspecs):
     It's basically just random selection. This is the base case
     with no compatibility metadata and we run it once, so
     obviously there is repeated-ness here.
+
+    If rainbow is running with constraints we take cluster state
+    into account.
     """
     assignments = {}
     stats = []
@@ -149,7 +178,7 @@ def run_base_experiment(jobspecs):
         render = template.render(package=spec["package"])
         loaded = yaml.load(render, Loader=yaml.SafeLoader)
         response, assigned_to = submit_job(
-            loaded, assignments, spec, select_algo="random"
+            loaded, assignments, spec, select_algo="random", with_constraints=False
         )
         stats.append(
             {
@@ -161,20 +190,40 @@ def run_base_experiment(jobspecs):
     return assignments, stats
 
 
-def submit_job(loaded, assignments, spec, match_algo=None, select_algo=None):
+def submit_job(
+    loaded, assignments, spec, match_algo=None, select_algo=None, with_constraints=False
+):
     """
     Submit a job, update assignments given.
+
+    If with constraints is True, we update a cluster to indicate it has fewer
+    available cores to run further jobs. This will better distribute jobs.
     """
+    global clusters
+
     # Load into a rainbow jobspec object (validates, etc)
     jobspec = js.Jobspec(loaded)
-    response = cli.submit_jobspec(jobspec, match_algo=None, select_algo=None)
+
+    # If we are adding constraints, we want a satisfy only, which will return a list of clusters
+    response = cli.submit_jobspec(
+        jobspec, match_algo=None, select_algo=None, satisfy_only=with_constraints
+    )
+
+    # with constraints (satisfy only) returns list of all clusters
     try:
-        assigned_to = response.cluster
+        if with_constraints:
+            assigned_to = response.clusters
+        else:
+            assigned_to = response.cluster
     except:
         assigned_to = "unmatched"
-    if assigned_to not in assignments:
-        assignments[assigned_to] = []
-    assignments[assigned_to].append(spec["name"])
+
+    # Only add to assigned to if we have an actual assignment!
+    if not with_constraints:
+        if assigned_to not in assignments:
+            assignments[assigned_to] = []
+        assignments[assigned_to].append(spec["name"])
+
     # Return this so we can stop at unmatched
     return response, assigned_to
 
@@ -183,33 +232,45 @@ def run_single_subsystem_experiment(subsystem, jobspecs):
     """
     A single subsystem experiment adds subsystem metadata to resource.
 
-    This is assessing the value of a single subsystem.
+    This is assessing the value of a single subsystem. If with constraints is
+    True, we add constraint metadata needed for the selection algorithm.
     """
-    # First assemble unique jobs for subsystem
-    uniques = {}
+    assignments = {}
+    count = 1
     stats = []
+    total = len(jobspecs)
     for jobid, spec in jobspecs.items():
         render = template.render(package=spec["package"])
         loaded = yaml.load(render, Loader=yaml.SafeLoader)
 
-        # Don't submit if the subsystem isn't relevant for the spec
-        if subsystem not in spec["resources"]:
-            continue
+        # We represent all of these resources as value = <X>
+        # resources:
+        #  io:
+        #     match:
+        #     - field: type
+        #       value: shm
+        match = []
+        ranges = []
+        field = "value"
+        if subsystem == "compiler-version":
+            for _, v in spec["resources"]["compiler"].items():
+                match.append({"field": field, "value": v})
+            loaded["task"]["resources"]["compiler"] = {"match": match}
+            print(f"{subsystem} ===>  {count}/{total}: {loaded}")
 
-        # {"max": x, "min": x}
-        ranges = spec["resources"][subsystem]
-        ranges["field"] = "version"
-        loaded["task"]["resources"][subsystem] = {"range": [ranges]}
-        uniques[jobid] = loaded
+        # Memory must be provided in a range (with min value)
+        elif subsystem == "memory":
+            value = list(spec["resources"][subsystem].values())[0]
+            ranges.append({"field": field, "min": str(int(value))})
+            loaded["task"]["resources"][subsystem] = {"range": ranges}
+            print(f"{subsystem} ===>  {count}/{total}: {loaded}")
 
-    jobspec_set, _ = get_unique_jobspecs(uniques)
+        else:
+            value = list(spec["resources"][subsystem].values())[0]
+            match.append({"field": field, "value": value})
+            loaded["task"]["resources"][subsystem] = {"match": match}
+            print(f"{subsystem} ===>  {count}/{total}: {loaded}")
 
-    # First submission, 20x, without any subsystem metadata
-    assignments = {}
-    count = 1
-    total = len(jobspec_set)
-    for jobid, loaded in jobspec_set.items():
-        print(f"{subsystem} ===>  {count}/{total}: {loaded}")
         response, assigned_to = submit_job(loaded, assignments, spec)
         stats.append(
             {
@@ -222,44 +283,57 @@ def run_single_subsystem_experiment(subsystem, jobspecs):
     return assignments, stats
 
 
-def run_expanding_subystem_experiment(subsystems, jobspec_listing):
+def run_expanding_subystem_experiment(subsystems, jobspecs):
     """
     Run expanding subsystem experiment
     """
-    # Generate a lookup key for each order
     unmatched_at = {}
-    seen = set()
     count = 0
-    total = len(jobspec_listing)
-    stats = []
+    total = len(jobspecs)
+    stats = {}
     assignments = {}
 
-    for jobid, spec in jobspec_listing.items():
+    for jobid, spec in jobspecs.items():
         render = template.render(package=spec["package"])
         loaded = yaml.load(render, Loader=yaml.SafeLoader)
-        count += 1
+
         # Add subsystems, one at a time
+        uid = ""
         for s, subsystem in enumerate(subsystems):
-            # Don't submit if the subsystem isn't relevant for the spec
-            if subsystem not in spec["resources"]:
-                continue
+            if uid == "":
+                uid = subsystem
+            else:
+                uid = f"{uid}-{subsystem}"
+            match = []
+            ranges = []
+            field = "value"
+            if subsystem == "compiler-version":
+                for _, v in spec["resources"]["compiler"].items():
+                    match.append({"field": field, "value": v})
+                loaded["task"]["resources"]["compiler"] = {"match": match}
+                print(f"{subsystem} ===>  {count}/{total}: {loaded}")
 
-            # {"max": x, "min": x}
-            ranges = spec["resources"][subsystem]
-            ranges["field"] = "version"
-            loaded["task"]["resources"][subsystem] = {"range": [ranges]}
+            elif subsystem == "memory":
+                value = list(spec["resources"][subsystem].values())[0]
+                ranges.append({"field": field, "min": str(int(value))})
+                loaded["task"]["resources"][subsystem] = {"range": ranges}
+                print(f"{subsystem} ===>  {count}/{total}: {loaded}")
 
-            uid = get_content_hash(loaded["task"]["resources"])
-            if uid in seen:
-                continue
-            seen.add(uid)
+            else:
+                value = list(spec["resources"][subsystem].values())[0]
+                match.append({"field": field, "value": value})
+                loaded["task"]["resources"][subsystem] = {"match": match}
+                print(f"{subsystem} ===>  {count}/{total}: {loaded}")
 
             # A key for the combined subsystems
-            if s not in assignments:
-                assignments[s] = {}
+            if uid not in assignments:
+                assignments[uid] = {}
+            if uid not in stats:
+                stats[uid] = []
+
             print(f"{count}/{total}:      {loaded}")
-            response, assigned_to = submit_job(loaded, assignments[s], spec)
-            stats.append(
+            response, assigned_to = submit_job(loaded, assignments[uid], spec)
+            stats[uid].append(
                 {
                     "total_clusters": response.total_clusters,
                     "total_matches": response.total_matches,
@@ -271,6 +345,93 @@ def run_expanding_subystem_experiment(subsystems, jobspec_listing):
                 # This is the number of subsystems where we failed
                 unmatched_at[jobid] = len(loaded["task"]["resources"])
                 break
+        count += 1
+
+    return assignments, unmatched_at, stats
+
+
+def run_constraint_experiment(subsystems, jobspecs, with_replacement=True):
+    """
+    Run constraint experiment, with and without replacement.
+    """
+    count = 0
+    total = len(jobspecs)
+    stats = []
+    assignments = {}
+    unmatched_at = {}
+
+    # For the constraint experiment, we add all the attributes at the getgo
+    for jobid, spec in jobspecs.items():
+        render = template.render(package=spec["package"])
+        loaded = yaml.load(render, Loader=yaml.SafeLoader)
+
+        # Add subsystems, one at a time
+        for s, subsystem in enumerate(subsystems):
+            match = []
+            ranges = []
+            field = "value"
+            if subsystem == "compiler-version":
+                for _, v in spec["resources"]["compiler"].items():
+                    match.append({"field": field, "value": v})
+                loaded["task"]["resources"]["compiler"] = {"match": match}
+                print(f"{subsystem} ===>  {count}/{total}: {loaded}")
+
+            elif subsystem == "memory":
+                value = list(spec["resources"][subsystem].values())[0]
+                ranges.append({"field": field, "min": str(int(value))})
+                loaded["task"]["resources"][subsystem] = {"range": ranges}
+                print(f"{subsystem} ===>  {count}/{total}: {loaded}")
+
+            else:
+                value = list(spec["resources"][subsystem].values())[0]
+                match.append({"field": field, "value": value})
+                loaded["task"]["resources"][subsystem] = {"match": match}
+                print(f"{subsystem} ===>  {count}/{total}: {loaded}")
+
+        print(f"{count}/{total}:      {loaded}")
+        # Here we need to submit the job and get back ALL the clusters that work
+        # We need to do this because we are running our ML model locally
+        response, assigned_to = submit_job(
+            loaded, assignments, spec, with_constraints=True
+        )
+        stats.append(
+            {
+                "total_clusters": response.total_clusters,
+                "total_matches": response.total_matches,
+                "total_mismatches": response.total_mismatches,
+            }
+        )
+
+        # If we only have one cluster (string), it is added to assignments in submit func
+        if len(assigned_to) == 1:
+            assigned_to = assigned_to[0]
+
+        # This does the final selection taking into account the cost, so we use the package
+        # specific model and the memory that produced the best runtime for the package
+        elif len(assigned_to) > 1:
+            assigned_to = do_final_selection(
+                assigned_to,
+                spec["package"],
+                spec["attributes"]["memory_global_best_runtime"],
+            )
+
+        # Either way, we set the assignment because submit_job does not
+        if assigned_to not in assignments:
+            assignments[assigned_to] = []
+        assignments[assigned_to].append(jobid)
+
+        # Mimic final selection here, we have to choose a cluster based on the model
+        # and then update its metadata to have one less slot
+        if not with_replacement and "unmatched" not in assigned_to:
+            nodes_free = clusters[assigned_to]["nodes_free"]
+            clusters[assigned_to]["nodes_free"] = max(0, nodes_free - nodes_per_job)
+            update_cluster_state(assigned_to, metadata={"nodes_free": nodes_free})
+
+        if "unmatched" in assigned_to:
+            print("Stopping adding metadata, no cluster match.")
+            # This is the number of subsystems where we failed
+            unmatched_at[jobid] = len(loaded["task"]["resources"])
+            break
         count += 1
 
     return assignments, unmatched_at, stats
@@ -343,10 +504,12 @@ def combine_assignments(assignments):
     return combined_assignments
 
 
-def run(args, clusters):
+def run(args):
     """
     Run the experiments.
     """
+    global clusters
+
     # Make a config that allows authenticating to each cluster
     # This is the hostname, cluster name (defaults to rainbow) and register secret
     cfg = config.RainbowConfig(config_file)
@@ -358,7 +521,9 @@ def run(args, clusters):
     # Just manually set the config on the client, being lazy
     cli.cfg = cfg
 
-    # Set selection to be random for basic case
+    # Set selection to be random for basic case for first set of experiments
+    # we won't add constraints until we get an optimal scoring, then we will
+    # try to optimize cost/memory
     cli.cfg.set_selection_algorithm("random")
 
     # Read in jobspec files and save based on name
@@ -367,21 +532,35 @@ def run(args, clusters):
     # Remove repeated ones.
     jobspecs, repeated = get_unique_jobspecs_from_file(jobspec_files)
     subset = {}
-    count = 0
-    for key, rest in jobspecs.items():
-        if count >= 1000:
-            break
-        subset[key] = rest
-        count += 1
-    jobspecs = subset
+
+    # Testing mode
+    if args.testing:
+        count = 0
+        for key, rest in jobspecs.items():
+            if count >= 100:
+                break
+            subset[key] = rest
+            count += 1
+        jobspecs = subset
+
+    # Now that we know the number of jobspecs, we can calculate the
+    # number of nodes free per cluster (jobspecs / clusters) * job size
+    nodes_free = math.ceil(len(jobspecs) / len(clusters) * nodes_per_job)
+
+    # Set the cluster starting state. This would mimic a response
+    # that a cluster sends back to rainbow after accepting jobs
+    for cluster_name, cluster_meta in clusters.items():
+        # Keep state synced here to update, simulating the cluster
+        clusters[cluster_name]["nodes_free"] = nodes_free
+        update_cluster_state(
+            cluster_name, metadata={"nodes_free": nodes_free}, init=True
+        )
 
     print(f"Total jobspecs: {len(jobspecs)}")
     print(f"Repeated jobspecs: {repeated}")
     metadata = {"jobspecs": jobspecs, "removed_repeated": repeated}
     write_json(metadata, os.path.join(args.outdir, "jobspecs.json"))
-
-    # Read in compatibility files and clusters
-    cluster_truth = read_json(os.path.join(here, "data", "cluster-features.json"))
+    scores = {}
 
     # CASE 1: no subsystem knowledge
     print("\n\n === BASE EXPERIMENTS START ===\n\n")
@@ -389,21 +568,12 @@ def run(args, clusters):
     print("\n\n === BASE EXPERIMENTS DONE ===\n\n")
 
     # See how well we did! A score of 0 means it wouldn't be compatible
-    scores = {}
-
-    import IPython
-
-    IPython.embed()
-    sys.exit()
     scores["none"] = calculate_scores(assignments, jobspecs, cluster_truth, stats)
 
     # Save data as we go
     write_json(scores, os.path.join(args.outdir, "scores.json"))
 
-    # We will randomize how we add subsystems (package dependencies)
-    order = []
-
-    # Add all subsystems at once - every cluster has the same set
+    # Register all subsystems at once - every cluster has the same set
     for subsystem_file in os.listdir(os.path.join(args.clusters, cluster)):
         if "-subsystem.json" not in subsystem_file:
             continue
@@ -417,9 +587,6 @@ def run(args, clusters):
             # This is the cluster-specific subsystem to register
             subsystem_nodes = os.path.join(args.clusters, cluster, subsystem_file)
             register_subsystem(cluster, subsystem, subsystem_nodes, meta["secret"])
-            order.append(subsystem)
-
-    random.shuffle(order)
 
     # Reset assignments
     assignments = {}
@@ -428,42 +595,33 @@ def run(args, clusters):
     # Note that if this gets too large, we can retrieve the job assignments
     # from rainbow and that clears them up in the remote database.
     print("\n\n === SINGLE SUBSYSTEM EXPERIMENTS START ===\n\n")
+
+    # compiler-version is the same subsytem as compiler, but we add more metadata
+    # Note that memory won't function well without a range setting.
+    order = ["arch", "compiler", "compiler-version", "memory"]
     for subsystem in order:
         new_assignments, stats = run_single_subsystem_experiment(subsystem, jobspecs)
         assignments[subsystem] = new_assignments
-    print("\n\n === SINGLE SUBSYSTEM EXPERIMENTS DONE ===\n\n")
+        scores[f"{subsystem}-subsystem"] = calculate_scores(
+            assignments[subsystem], jobspecs, cluster_truth, stats
+        )
 
-    # Combine assignments into one lookup
-    # I'm doing this because we only have a few runs per subsystem
-    combined_assignments = combine_assignments(assignments)
-    scores["single-subsystem"] = calculate_scores(
-        combined_assignments, jobspecs, cluster_truth, stats
-    )
+    # print("\n\n === SINGLE SUBSYSTEM EXPERIMENTS DONE ===\n\n")
+    write_json(assignments, os.path.join(args.outdir, "subsystem-assignments.json"))
 
     # Save scores as we go
     write_json(scores, os.path.join(args.outdir, "scores.json"))
 
-    # Save on level of subsystem
-    write_json(assignments, os.path.join(args.outdir, "subsystem-assignments.json"))
-    subsys_scores = {}
-    for subsystem, assign in assignments.items():
-        subsys_scores[subsystem] = calculate_scores(
-            assign, jobspecs, cluster_truth, stats
-        )
-    write_json(subsys_scores, os.path.join(args.outdir, "subsystem-scores.json"))
-
     # CASE 3...N subsystems added in order
-    # Note we reset assignments here
     print("\n\n === EXPANDING SUBSYSTEM EXPERIMENTS START ===\n\n")
     assignments, unmatched_at, stats = run_expanding_subystem_experiment(
         order, jobspecs
     )
     print("\n\n === EXPANDING SUBSYSTEM EXPERIMENTS DONE ===\n\n")
 
-    expanding_assignments = combine_assignments(assignments)
-    scores["expanded-subsystems"] = calculate_scores(
-        expanding_assignments, jobspecs, cluster_truth, stats
-    )
+    # Calculate scores for each subsystem combination
+    for uid, st in stats.items():
+        scores[uid] = calculate_scores(assignments[uid], jobspecs, cluster_truth, st)
 
     # unmatched at is the level of compatibility metadata that we added where there was no longer any match
     scores["unmatched_at"] = calculate_unmatched_scoring(unmatched_at)
@@ -472,10 +630,39 @@ def run(args, clusters):
     # as a percentage of unmatched
     summary_unmatched = calculate_summary_unmatched(unmatched_at, jobspecs)
     write_json(summary_unmatched, os.path.join(args.outdir, "unmatched-summary.json"))
-
-    # TODO also save the compat size set so we can do percentage of features where became too many
     write_json(unmatched_at, os.path.join(args.outdir, "unmatched-at-raw.json"))
 
+    # Finally, we are going to take each job, and remove clusters that didn't match with all the data
+    # With the remaining set we are going to add the constraint and have rainbow return ALL the matches
+    # and we will calculate our algorithm locally. I'm doing this because otherwise we'd need to serve
+    # the same models alongside rainbow -something we can do but needs some thought.
+    matching = {k: v for k, v in jobspecs.items() if k not in unmatched_at}
+
+    print("\n\n === CONSTRAINT EXPERIMENTS START ===\n\n")
+    cli.cfg.set_selection_algorithm("constraint", select_options)
+    assignments, unmatched_at, stats = run_constraint_experiment(
+        order, matching, with_replacement=True
+    )
+
+    # Same scoring
+    scores["constraint-with-replacement"] = calculate_scores(
+        assignments, jobspecs, cluster_truth, stats
+    )
+
+    # Now don't allow clusters to be used twice
+    assignments, unmatched_at, stats = run_constraint_experiment(
+        order, matching, with_replacement=False
+    )
+    scores["constraint-without-replacement"] = calculate_scores(
+        assignments, jobspecs, cluster_truth, stats
+    )
+
+    import IPython
+
+    IPython.embed()
+    sys.exit()
+
+    print("\n\n === CONSTRAINT EXPERIMENTS FINISHED ===\n\n")
     print(f"🧪️ Experiments are finished. See output in {args.outdir}")
     write_json(scores, os.path.join(args.outdir, "scores.json"))
 
@@ -511,6 +698,33 @@ def calculate_summary_unmatched(unmatched_at, jobspecs):
             }
         )
     return summary
+
+
+def do_final_selection(contenders, package, memory_best_runtime):
+    """
+    Given a selection with >1 cluster, do final assignment.
+
+    We want to minimize the build cost, regardless of all else.
+    """
+    # Assume minimum cost is the first
+    min_cost_cluster = None
+    smallest_cost = None
+    for contender in contenders:
+        cluster_name = contender.replace("cluster-", "")
+        cluster_features = cluster_truth[cluster_name]
+        shaped = numpy.array(cluster_features["memory"]).reshape(-1, 1)
+        predicted_duration = models[package].predict(shaped)[0]
+
+        # Calculate total cost
+        hours_runtime = predicted_duration / 60 / 60
+        total_cost = hours_runtime * cluster_features["cost_per_node_hour"]
+        print(f"Cluster {contender} has a total cost of {total_cost}")
+        if smallest_cost is None or total_cost < smallest_cost:
+            smallest_cost = total_cost
+            min_cost_cluster = contender
+
+    print(f"The lowest cost cluster is {min_cost_cluster}")
+    return min_cost_cluster
 
 
 def calculate_scores(assignment, jobspecs, cluster_truth, stats):
@@ -715,6 +929,11 @@ def get_parser():
         default=os.path.join(here, "clusters", "jobspec-to-cluster-matches.csv"),
     )
     parser.add_argument(
+        "--testing",
+        action="store_true",
+        help="testing mode (only 100 jobspecs)",
+    )
+    parser.add_argument(
         "--force",
         action="store_true",
         help="do not ask for confirmation",
@@ -734,6 +953,38 @@ def register(cluster_name, cluster_node, secret):
     response = cli.register(cluster_name, secret=secret, cluster_nodes=cluster_node)
     if response.status not in register_success:
         raise ValueError(f"Issue registering cluster {cluster_name}: {response}")
+
+    # In the response:
+    # secret is for the cluster to receive jobs
+    # token is to submit to it
+    # Note that the server should be started so response.token is always "rainbow"
+    return response
+
+
+def update_cluster_state(cluster_name, metadata, init=False):
+    """
+    get cluster state returns cluster state metadata.
+    If no metadata is provided, we are assuming an init
+    and also set unchanging variables like cost and memory
+    per node.
+    """
+    # If we are init-ing, also set memory and cost
+    cluster_color = cluster_name.replace("cluster-", "")
+    truth = cluster_truth[cluster_color]
+    cluster_meta = clusters[cluster_name]
+    if init:
+        metadata["cost_per_node_hour"] = truth["cost_per_node_hour"]
+        metadata["memory_per_node"] = truth["memory"]
+    update_state(cluster_name, cluster_meta["secret"], metadata)
+
+
+def update_state(cluster_name, secret, metadata):
+    """
+    Update state for a cluster.
+    """
+    response = cli.update_state(cluster_name, secret=secret, state_data=metadata)
+    if response.status not in update_state_success:
+        raise ValueError(f"Issue updating state of cluster {cluster_name}: {response}")
 
     # In the response:
     # secret is for the cluster to receive jobs
@@ -768,6 +1019,7 @@ def get_cluster_name(cluster_node):
 
 def main():
     global cli
+    global clusters
 
     parser = get_parser()
     args, _ = parser.parse_known_args()
@@ -779,12 +1031,19 @@ def main():
     # Also organize results by mode
     if not os.path.exists(args.outdir):
         os.makedirs(args.outdir)
+    cluster_nodes = list(recursive_find(args.clusters, "nodes.json"))
 
-    # Save cluster tokens and secrets - we need these to retrieve assigned jobs
-    clusters = {}
+    # Show parameters to the user
+    print(f"▶️  Output directory: {outdir}")
+    print(f"▶️          Jobspecs: {args.jobspecs}")
+    print(f"▶️          Clusters: {len(cluster_nodes)}")
+    print(f"▶️           Testing: {args.testing}")
+
+    if not args.force and not confirm_action("Would you like to continue?"):
+        sys.exit("Cancelled!")
 
     # Find cluster nodes and register
-    cluster_nodes = list(recursive_find(args.clusters, "nodes.json"))
+    # Here we are also updating their state. Each has equal resources.
     print(f"Found {len(cluster_nodes)} clusters to register.")
     for i, cluster_node in enumerate(cluster_nodes):
         cluster_name = get_cluster_name(cluster_node)
@@ -796,16 +1055,8 @@ def main():
                 "token": response.token,
             }
 
-    # Show parameters to the user
-    print(f"▶️  Output directory: {outdir}")
-    print(f"▶️          Jobspecs: {args.jobspecs}")
-    print(f"▶️          Clusters: {len(clusters)}")
-
-    if not args.force and not confirm_action("Would you like to continue?"):
-        sys.exit("Cancelled!")
-
     try:
-        run(args, clusters)
+        run(args)
     except Exception as e:
         print(e)
         raise

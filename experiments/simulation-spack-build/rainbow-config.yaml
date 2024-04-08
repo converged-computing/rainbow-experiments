@@ -1,0 +1,25 @@
+scheduler:
+    secret: chocolate-cookies
+    name: keebler
+    algorithms:
+        selection:
+            name: constraint
+            options: 
+                # This is a list of priorities. If the first returns no matches we try the second, etc.
+                priorities: |
+                  - priority: 1 
+                    steps:
+                    - filter: "nodes_free > 0"
+        match:
+            name: match
+cluster:
+    name: keebler
+    secret: 4a193104-d7fa-460a-a13d-9482173eb85d
+graphdatabase:
+    name: memory
+    host: 127.0.0.1:50051
+    options:
+        host: 127.0.0.1:50051
+clusters:
+    - name: keebler
+      token: rainbow

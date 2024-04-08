@@ -1,0 +1,136 @@
+{
+  "graph": {
+    "directed": true,
+    "nodes": {
+      "compiler0": {
+        "label": "compiler0",
+        "metadata": {
+          "basename": "compiler",
+          "exclusive": false,
+          "id": 0,
+          "name": "compiler0",
+          "paths": {
+            "containment": "/compiler0"
+          },
+          "size": 1,
+          "type": "compiler",
+          "uniq_id": 0
+        }
+      },
+      "compiler1": {
+        "label": "compiler1",
+        "metadata": {
+          "basename": "compiler",
+          "exclusive": true,
+          "id": 1,
+          "name": "compiler0",
+          "paths": {
+            "containment": "/compiler0/compiler0"
+          },
+          "size": 1,
+          "value": "gcc",
+          "type": "compiler",
+          "uniq_id": 1
+        }
+      },
+      "compiler2": {
+        "label": "compiler2",
+        "metadata": {
+          "basename": "compiler-version",
+          "exclusive": true,
+          "id": 1,
+          "name": "compiler-version0",
+          "paths": {
+            "containment": "/compiler0/compiler-version0"
+          },
+          "size": 1,
+          "value": "7.3.1",
+          "type": "compiler-version",
+          "uniq_id": 1
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "2",
+        "target": "compiler1",
+        "relation": "contains"
+      },
+      {
+        "source": "compiler1",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "compiler1",
+        "relation": "contains"
+      },
+      {
+        "source": "compiler1",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "compiler1",
+        "relation": "contains"
+      },
+      {
+        "source": "compiler1",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "compiler1",
+        "relation": "contains"
+      },
+      {
+        "source": "compiler1",
+        "target": "6",
+        "relation": "in"
+      },
+      {
+        "source": "2",
+        "target": "compiler2",
+        "relation": "contains"
+      },
+      {
+        "source": "compiler2",
+        "target": "2",
+        "relation": "in"
+      },
+      {
+        "source": "14",
+        "target": "compiler2",
+        "relation": "contains"
+      },
+      {
+        "source": "compiler2",
+        "target": "14",
+        "relation": "in"
+      },
+      {
+        "source": "10",
+        "target": "compiler2",
+        "relation": "contains"
+      },
+      {
+        "source": "compiler2",
+        "target": "10",
+        "relation": "in"
+      },
+      {
+        "source": "5",
+        "target": "compiler2",
+        "relation": "contains"
+      },
+      {
+        "source": "compiler2",
+        "target": "6",
+        "relation": "in"
+      }
+    ]
+  }
+}
