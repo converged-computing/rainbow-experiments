@@ -146,28 +146,24 @@ def plot_histograms(scores, ideal_costs, outdir):
     plt.clf()
 
     # Plot reasons for failure
-    rdf = pandas.DataFrame(columns=["experiment", "reason_for_failure", "count"])
+    rdf = pandas.DataFrame(
+        columns=["experiment", "reason_for_failure", "count", "total_count"]
+    )
     idx = 0
 
+    import IPython
+
+    IPython.embed()
+    sys.exit()
     for experiment, data in scores.items():
         if experiment == "unmatched_at":
             continue
         reasons = data["reasons_for_failure"]
         for reason, count in reasons.items():
-            rdf.loc[idx] = [experiment, reason, count]
+            rdf.loc[idx] = [experiment, reason, count, data["total_jobs"]["value"]]
             idx += 1
 
-    # Also calculate percentage for each
-    total_counts = {}
-    for experiment in rdf.experiment.unique():
-        total_counts[experiment] = rdf[rdf.experiment == experiment]["count"].sum()
-    rdf.loc[:, "total_count"] = 0
-    for experiment, count in total_counts.items():
-        rdf.loc[rdf.experiment == experiment, "total_count"] = count
     rdf["percentage"] = rdf["count"] / rdf.total_count
-
-    # That makes some nans
-    rdf = rdf.fillna(0)
 
     rdf.to_csv(os.path.join(outdir, "reasons-for-failure.csv"))
 
