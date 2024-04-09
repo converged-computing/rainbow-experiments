@@ -4,9 +4,9 @@ These are experiments with the rainbow scheduler. They are a continuation of [la
 
  - [scheduler](experiments/scheduler)
  - [simulation-lammps](experiments/simulation-lammps): simulation using original lammps metadata
- - [simulation-reliabuild](simulation-reliabuild): simulation using dataset with build outcomes and package dependencies
- - [simulation-spack-build](simulation-spack-build) simulation with more robust metadata for spack builds
- - [simulation-spack-build-0](simulation-spack-build-0) the same base clusters and data, but with added reasons for failure
+ - [simulation-reliabuild](experiments/simulation-reliabuild): simulation using dataset with build outcomes and package dependencies
+ - [simulation-spack-build](experiments/simulation-spack-build) simulation with more robust metadata for spack builds
+ - [simulation-spack-build-0](experiments/simulation-spack-build-0) the same base clusters and data, but with added reasons for failure
 
 > How do I contribute?
 
