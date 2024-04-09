@@ -914,6 +914,7 @@ def calculate_scores(assignment, jobspecs, cluster_truth, stats):
             "std": mean_total_mismatches_std,
             "description": "number of clusters rainbow deemed a mismatch based on version ranges and compatibility metadata provided",
         },
+        "reasons_for_failure": reasons_for_failure,
     }
 
 
