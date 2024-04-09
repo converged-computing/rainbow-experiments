@@ -4,6 +4,7 @@ import argparse
 import os
 import re
 
+from matplotlib.ticker import FormatStrFormatter
 import matplotlib.pyplot as plt
 import pandas
 import seaborn as sns
@@ -13,6 +14,7 @@ plt.style.use("bmh")
 here = os.path.dirname(os.path.abspath(__file__))
 
 skips = ["unmatched_at", "unmatched", "reasons_for_failure"]
+
 
 def get_parser():
     parser = argparse.ArgumentParser(
@@ -155,15 +157,31 @@ def plot_histograms(scores, ideal_costs, outdir):
             rdf.loc[idx] = [experiment, reason, count]
             idx += 1
 
+    # Also calculate percentage for each
+    total_counts = {}
+    for experiment in rdf.experiment.unique():
+        total_counts[experiment] = rdf[rdf.experiment == experiment]["count"].sum()
+    rdf.loc[:, "total_count"] = 0
+    for experiment, count in total_counts.items():
+        rdf.loc[rdf.experiment == experiment, "total_count"] = count
+    rdf["percentage"] = rdf["count"] / rdf.total_count
+
+    # That makes some nans
+    rdf = rdf.fillna(0)
+
     rdf.to_csv(os.path.join(outdir, "reasons-for-failure.csv"))
 
     # Remove reasons for failure with values of 0.
     # rdf = rdf[rdf['count'] != 0]
-    
+
     # make labels more human friendly to read
-    rdf.reason_for_failure[rdf.reason_for_failure=="compiler_too_old"] = "compiler too old"
-    rdf.reason_for_failure[rdf.reason_for_failure=="wrong_arch"] = "wrong arch"
-    rdf.reason_for_failure[rdf.reason_for_failure=="missing_compiler"] = "missing compiler"
+    rdf.reason_for_failure[
+        rdf.reason_for_failure == "compiler_too_old"
+    ] = "compiler too old"
+    rdf.reason_for_failure[rdf.reason_for_failure == "wrong_arch"] = "wrong arch"
+    rdf.reason_for_failure[
+        rdf.reason_for_failure == "missing_compiler"
+    ] = "missing compiler"
 
     plt.figure(figsize=(12, 8))
     ax = sns.barplot(x="experiment", y="count", hue="reason_for_failure", data=rdf)
@@ -173,7 +191,21 @@ def plot_histograms(scores, ideal_costs, outdir):
     ax.set_xticklabels(ax.get_xmajorticklabels(), fontsize=14)
     ax.set_yticklabels(ax.get_yticks(), fontsize=14)
     ax.tick_params(axis="x", labelrotation=90)
-    plt.savefig(os.path.join(outdir, "reasons-for-failure.png"), bbox_inches='tight')
+    plt.savefig(os.path.join(outdir, "reasons-for-failure.png"), bbox_inches="tight")
+    plt.clf()
+
+    # Also plot as percentage
+    ax = sns.barplot(x="experiment", y="percentage", hue="reason_for_failure", data=rdf)
+    plt.title("Reasons for Failure (Percentages) Across Experiments")
+    ax.set_xlabel("Experiment", fontsize=16)
+    ax.set_ylabel("Percent of Total", fontsize=16)
+    ax.set_xticklabels(ax.get_xmajorticklabels(), fontsize=14)
+    ax.set_yticklabels(ax.get_yticks(), fontsize=14)
+    ax.tick_params(axis="x", labelrotation=90)
+    ax.yaxis.set_major_formatter(FormatStrFormatter("%.2f"))
+    plt.savefig(
+        os.path.join(outdir, "reasons-for-failure-percentage.png"), bbox_inches="tight"
+    )
     plt.clf()
 
     # Try plotting by package
