@@ -1,0 +1,26 @@
+version: 1
+
+# rm -rf rainbow.db && make server-verbose
+# make register && go run ./cmd/rainbow/rainbow.go submit --config-path ./docs/examples/match-algorithms/range/rainbow-config.yaml --jobspec ./docs/examples/scheduler/jobspec-spack.yaml
+resources:
+  spack-resources:    
+    count: 1
+    type: node
+    with:
+    - count: 10
+      type: core
+
+tasks:
+- name: build
+  command: ["spack", "install", "ior"]
+  resources: spack-resources
+
+- name: ior
+  depends_on: ["build"]
+  resources: spack-resources
+  command:
+    - bash
+    - -c
+    - |
+      spack load ior
+      ior -b 10g -O summaryFormat=json

@@ -1,0 +1,23 @@
+apiVersion: flux-framework.org/v1alpha2
+kind: MiniCluster
+metadata:
+  name: blue
+spec:
+  size: 2
+  interactive: true
+  flux:
+    container:
+      image: ghcr.io/converged-computing/flux-view-ubuntu:tag-jammy
+
+  containers:
+    - image: vanessa/rainbow-spack-experiment:prototype
+      environment:
+        CLUSTER_NAME: blue
+      commands:
+        pre: |
+          mkdir -p /code/cluster
+          for i in $(seq 1 4)
+            do
+             compspec extract --name library --name nfd[cpu,memory,network,storage,system] --name system[cpu,processor,arch,memory] --out /code/cluster/node-${i}.json
+            done
+          compspec create nodes --cluster-name flux-sample --node-dir /code/cluster/ --nodes-output /code/cluster-nodes.json
