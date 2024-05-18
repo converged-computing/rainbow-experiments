@@ -69,6 +69,8 @@ flux run -N 2 -n 128 -o cpu-affinity=per-task singularity exec --pwd /opt/lammps
 
 What I'm not sure about here is if we would be better of binding the MPI in the container to the host, or (if by way of flux) that is handled indirectly?
 
+## Thinking
+
 What I'm trying to think about is if there is an experiment we can do that isn't about "build a million different clusters where the cluster is different" but rather "assume we have two generic clusters, ARM and X86, and allow the compatibility metadata to inform _how_ to run the application, either by way of:
 
 - parameters specified to the app directly
