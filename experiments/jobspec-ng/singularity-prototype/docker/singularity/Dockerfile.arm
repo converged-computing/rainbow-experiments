@@ -1,0 +1,10 @@
+FROM ubuntu:latest@sha256:3f85b7caad41a95462cf5b787d8a04604c8262cdcdf9a472b8c52ef83375fe15
+
+# docker buildx build -f Dockerfile.arm --platform linux/arm64 --tag ghcr.io/converged-computing/rainbow-experiments:singularity-mamba-arm .
+
+RUN apt-get update && apt-get install -y wget curl vim
+RUN /bin/bash -c "curl -L https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh > mambaforge.sh && \
+    bash mambaforge.sh -b -p /opt/conda && \
+    rm mambaforge.sh"
+ENV PATH=/opt/conda/bin:$PATH
+RUN mamba install singularity

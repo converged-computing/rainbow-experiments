@@ -1,0 +1,35 @@
+apiVersion: flux-framework.org/v1alpha2
+kind: MiniCluster
+metadata:
+  name: flux-sample
+spec:
+
+  # Number of pods to create for MiniCluster
+  size: 2
+
+  # This doesn't matter so much in interactive mode, tasks specified with the job
+  # 2 * 64
+  tasks: 128
+
+  # This starts the flux broker without a command (interactive)
+  interactive: true
+  flux:
+    container:
+      image: ghcr.io/converged-computing/flux-view-ubuntu:arm-jammy
+
+  containers:
+    - image: ghcr.io/converged-computing/rainbow-experiments:singularity-mamba-arm
+      resources:
+        limits:
+          vpc.amazonaws.com/efa: 1
+          memory: "110G"
+          cpu: "62"
+
+        requests:
+          vpc.amazonaws.com/efa: 1
+          memory: "110G" # This is actually 128
+          cpu: "62"
+      
+      # This is needed for singularity containers
+      securityContext:
+        privileged: true
