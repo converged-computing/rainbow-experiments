@@ -21,7 +21,7 @@ kubectl apply -f https://raw.githubusercontent.com/flux-framework/flux-operator/
 Try creating the interactive minicluser.
 
 ```bash
-kubectl apply -f crd/minicluster.yaml
+kubectl apply -f crd/minicluster-efa.yaml
 ```
 
 Shell in.

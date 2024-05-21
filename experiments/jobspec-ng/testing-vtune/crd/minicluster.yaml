@@ -1,0 +1,32 @@
+apiVersion: flux-framework.org/v1alpha2
+kind: MiniCluster
+metadata:
+  name: flux-sample
+spec:
+
+  # Number of pods to create for MiniCluster
+  size: 2
+
+  # 36 vCPU
+  # 2 * 4
+  tasks: 18
+
+  # This starts the flux broker without a command (interactive)
+  interactive: true
+  flux:
+    container:
+      image: ghcr.io/converged-computing/flux-view-ubuntu:tag-jammy
+
+  # https://www.intel.com/content/www/us/en/docs/vtune-profiler/cookbook/2024-1/profiling-single-node-kubernetes-applications.html
+  containers:
+    - image: ghcr.io/rse-ops/lammps-matrix:openmpi-ubuntu-vtune-22.04-amd64
+      resources:
+        limits:
+          cpu: "15"
+
+        requests:
+          cpu: "15"
+      
+      # This is needed for singularity containers
+      securityContext:
+        privileged: true
